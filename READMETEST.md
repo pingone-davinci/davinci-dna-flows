@@ -1,7 +1,7 @@
 # Configuration Guide
 
 This document explains how to configure your **`gv-VariableObject`** in **PingOne DaVinci**.  
-The object centralizes settings for **PingOne Protect**, **Ping MFA**, and **PingOne Verify**.  
+The object centralizes settings for **PingOne Protect**, **PingID**, and **PingOne Verify**.  
 
 ---
 
