@@ -103,5 +103,3 @@ Below is an example of an **`gv-VariableObject`** Value
   }
 }
 ```
-
-
