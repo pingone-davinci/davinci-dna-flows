@@ -40,6 +40,7 @@ Copy this template into your DaVinci **`gv-VariableObject`** and replace the pla
     }
   }
 }
+```
 
 ---
 
