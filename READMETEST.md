@@ -1,5 +1,48 @@
+# Configuration Guide
+
+This document explains how to configure your **`gv-VariableObject`** in **PingOne DaVinci**.  
+The object centralizes settings for **PingOne Protect**, **Ping MFA**, and **PingOne Verify**.  
+
+---
+
+## Quick Start
+
+Copy this template into your DaVinci **`gv-VariableObject`** and replace the placeholder values with IDs and settings from your environment.
+
+```json
+{
+  "general": {
+  },
+  "PingOneProtect": {
+    "ProtectPolicyIds": {
+      "authPolicy": "YOUR_AUTH_POLICY_ID_HERE",
+      "ssprPolicy": "YOUR_SSPR_POLICY_ID_HERE"
+    }
+  },
+  "PingMFA": {
+    "mandatoryAuthenticationMethods": [
+      "FIDO2",
+      "PINGID_MOBILE"
+    ],
+    "pingIdFooterMessage": "YOUR_CUSTOM_FOOTER_MESSAGE",
+    "byPassMFADate": "YYYY-MM-DD",
+    "allowOTPFallback": true,
+    "allowedBackUpMethods": [
+      "SMS",
+      "EMAIL",
+      "VOICE"
+    ],
+    "aggregateFido": false
+  },
+  "PingOneVerify": {
+    "VerifyPolicyIds": {
+      "authPolicy": "YOUR_VERIFY_POLICY_ID_HERE"
+    }
+  }
+}
+
 ## Configuration 
-Update your *gv-VariableObject* Company Variable in DaVinci to represent the values from your environment 
+Update your **`gv-VariableObject`** Company Variable in DaVinci to represent the values from your environment.
 
 | Variable                           | Description                                                                                    | Example Value                                                                                   |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -10,7 +53,7 @@ Update your *gv-VariableObject* Company Variable in DaVinci to represent the val
 |     `ssprPolicy`                   | Policy ID used for self-service password reset (SSPR).                                         | `"ssprPolicy": "998e7fc1-ab8e-4d8a-bc24-117x7d66yy49"`                                          |
 | `PingMFA`                          | Settings for Multi-Factor Authentication (MFA).                                                | `"PingMFA": {}`                                                                                 |
 |   `mandatoryAuthenticationMethods` | List of MFA methods required for authentication.                                               | `"mandatoryAuthenticationMethods": ["FIDO2", "PINGID_MOBILE"]`                                  |
-|   `pingIdFooterMessage`            | Footer message displayed in PingID MFA prompts.                                                | `"pingIdFooterMessage": "Copyright © 2003-2025 Ping Identity Corporation. All rights resevrd."` |
+|   `pingIdFooterMessage`            | Footer message displayed in PingID MFA prompts.                                                | `"pingIdFooterMessage": "Copyright © 2003-2025 Ping Identity Corporation. All rights reserved."` |
 |   `byPassMFADate`                  | Date (`YYYY-MM-DD`) after which MFA bypass is no longer allowed.                               | `"byPassMFADate": "2026-10-15"`                                                                 |
 |   `allowOTPFallback`               | Boolean flag to allow OTP fallback if primary MFA fails.                                       | `"allowOTPFallback": true`                                                                      |
 |   `allowedBackUpMethods`           | Backup MFA methods available to users if primary MFA is unavailable.                           | `"allowedBackUpMethods": ["SMS", "EMAIL", "VOICE"]`                                             |
@@ -19,8 +62,8 @@ Update your *gv-VariableObject* Company Variable in DaVinci to represent the val
 |   `VerifyPolicyIds`                | Group of policy IDs for PingOne Verify.                                                        | `"VerifyPolicyIds": {}`                                                                         |
 |     `authPolicy`                   | Policy ID used for identity verification during authentication.                                | `"authPolicy": "7eaf0d51-b7c6-4cde-9359-f5cb959de6zz"`                                          |
 
-Below is an example of an gv-VariableObject Value
-```
+Below is an example of an **`gv-VariableObject`** Value
+```json
 {
   "general": {
     "sample": "value"
