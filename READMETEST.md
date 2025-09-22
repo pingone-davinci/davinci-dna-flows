@@ -1,0 +1,55 @@
+## Configuration 
+Update your *gv-VariableObject* Company Variable in DaVinci to represent the values from your environment 
+
+| Variable                           | Description                                                                                    | Example Value                                                                                   |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `general`                          | Reserved for global settings (currently unused).                                               | `"general": {"sample": "value"}`                                                                |
+| `PingOneProtect`                   | Settings for PingOne Protect policies.                                                         | `"PingOneProtect": {}`                                                                          |
+|   `ProtectPolicyIds`               | Group of policy IDs for PingOne Protect.                                                       | `"ProtectPolicyIds": {}`                                                                        |
+|     `authPolicy`                   | Policy ID used for authentication flows.                                                       | `"authPolicy": "a1b23cde-f456-7890-gh12-34ij567k89lm"`                                          |
+|     `ssprPolicy`                   | Policy ID used for self-service password reset (SSPR).                                         | `"ssprPolicy": "998e7fc1-ab8e-4d8a-bc24-117x7d66yy49"`                                          |
+| `PingMFA`                          | Settings for Multi-Factor Authentication (MFA).                                                | `"PingMFA": {}`                                                                                 |
+|   `mandatoryAuthenticationMethods` | List of MFA methods required for authentication.                                               | `"mandatoryAuthenticationMethods": ["FIDO2", "PINGID_MOBILE"]`                                  |
+|   `pingIdFooterMessage`            | Footer message displayed in PingID MFA prompts.                                                | `"pingIdFooterMessage": "Copyright © 2003-2025 Ping Identity Corporation. All rights resevrd."` |
+|   `byPassMFADate`                  | Date (`YYYY-MM-DD`) after which MFA bypass is no longer allowed.                               | `"byPassMFADate": "2026-10-15"`                                                                 |
+|   `allowOTPFallback`               | Boolean flag to allow OTP fallback if primary MFA fails.                                       | `"allowOTPFallback": true`                                                                      |
+|   `allowedBackUpMethods`           | Backup MFA methods available to users if primary MFA is unavailable.                           | `"allowedBackUpMethods": ["SMS", "EMAIL", "VOICE"]`                                             |
+|   `aggregateFido`                  | Whether multiple FIDO2 authenticators are aggregated (`true`) or treated separately (`false`). | `"aggregateFido": false`                                                                        |
+| `PingOneVerify`                    | Settings for PingOne Verify policies.                                                          | `"PingOneVerify": {}`                                                                           |
+|   `VerifyPolicyIds`                | Group of policy IDs for PingOne Verify.                                                        | `"VerifyPolicyIds": {}`                                                                         |
+|     `authPolicy`                   | Policy ID used for identity verification during authentication.                                | `"authPolicy": "7eaf0d51-b7c6-4cde-9359-f5cb959de6zz"`                                          |
+
+Below is an example of an gv-VariableObject Value
+```
+{
+  "general": {
+    "sample": "value"
+  },
+  "PingOneProtect": {
+    "ProtectPolicyIds": {
+      "authPolicy": "a1b23cde-f456-7890-gh12-34ij567k89lm",
+      "ssprPolicy": "998e7fc1-ab8e-4d8a-bc24-117x7d66yy49"
+    }
+  },
+  "PingMFA": {
+    "mandatoryAuthenticationMethods": [
+      "FIDO2",
+      "PINGID_MOBILE"
+    ],
+    "pingIdFooterMessage": "Copyright © 2003-2025 Ping Identity Corporation. All rights resevrd.",
+    "byPassMFADate": "2026-10-15",
+    "allowOTPFallback": true,
+    "allowedBackUpMethods": [
+      "SMS",
+      "EMAIL",
+      "VOICE"
+    ],
+    "aggregateFido": false
+  },
+  "PingOneVerify": {
+    "VerifyPolicyIds": {
+      "authPolicy": "7eaf0d51-b7c6-4cde-9359-f5cb959de6zz"
+    }
+  }
+}
+```
