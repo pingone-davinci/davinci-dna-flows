@@ -5364,8 +5364,8 @@
         "pingOneMfaConnector",
         "notificationsConnector"
       ],
-      "createdDate": 1758575012251,
-      "currentVersion": 27,
+      "createdDate": 1758672239141,
+      "currentVersion": 34,
       "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
       "description": "Flow to trigger a standard Authentication experience, which includes:\nStandard Username/Password Login\nGateway Migration\nKerberos Authentication\nPasswordless Login\nChange Password\nForgot Password\nForgot Username",
       "flowStatus": "enabled",
@@ -5430,7 +5430,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "[SubFlow: SSO-1] Login Flow | [PID-1, PRO]",
-      "publishedVersion": 27,
+      "publishedVersion": 34,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -5446,9 +5446,9 @@
       },
       "timeouts": "null",
       "trigger": {},
-      "updatedDate": 1758575018493,
+      "updatedDate": 1758672243672,
       "flowId": "cd2cfeeaafcc56ec1d5466446ff6f64b",
-      "versionId": 27,
+      "versionId": 34,
       "graphData": {
         "elements": {
           "nodes": [
@@ -5921,8 +5921,8 @@
                 "idUnique": "wuvnpcupyn"
               },
               "position": {
-                "x": 586.3243456572017,
-                "y": 4758.247574371906
+                "x": 554.416298467836,
+                "y": 4735.639216079433
               },
               "group": "nodes",
               "removed": false,
@@ -5972,8 +5972,8 @@
                 "idUnique": "edeg03q128"
               },
               "position": {
-                "x": 270.61123645717,
-                "y": 4690.594765257613
+                "x": 231.006791028265,
+                "y": 4666.337178770953
               },
               "group": "nodes",
               "removed": false,
@@ -6032,8 +6032,8 @@
                 "idUnique": "7r9oykc4g"
               },
               "position": {
-                "x": 338.2640455714625,
-                "y": 4825.900383486198
+                "x": 300.3088283367445,
+                "y": 4804.941253387912
               },
               "group": "nodes",
               "removed": false,
@@ -6201,8 +6201,8 @@
                 "idUnique": "ud8thyic2h"
               },
               "position": {
-                "x": 1375.6071186572808,
-                "y": 4938.655065343352
+                "x": 1339.839387963937,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -6235,8 +6235,8 @@
                 "idUnique": "v1wzc4z0b6"
               },
               "position": {
-                "x": 405.91685468575497,
-                "y": 4938.655065343352
+                "x": 369.610865645224,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -6292,8 +6292,8 @@
                 "idUnique": "0s6qpit9a8"
               },
               "position": {
-                "x": 315.7131092000317,
-                "y": 5412.2247291434
+                "x": 277.208149233918,
+                "y": 5382.458230958575
               },
               "group": "nodes",
               "removed": false,
@@ -6357,8 +6357,8 @@
                 "idUnique": "5faddabsya"
               },
               "position": {
-                "x": 1059.8940094572492,
-                "y": 5547.530347371985
+                "x": 1016.429880524366,
+                "y": 5521.062305575534
               },
               "group": "nodes",
               "removed": false,
@@ -6391,8 +6391,8 @@
                 "idUnique": "cgsgnfk7da"
               },
               "position": {
-                "x": 405.91685468575497,
-                "y": 5547.530347371985
+                "x": 369.610865645224,
+                "y": 5521.062305575534
               },
               "group": "nodes",
               "removed": false,
@@ -6442,8 +6442,8 @@
                 "idUnique": "wbfsq6lwe4"
               },
               "position": {
-                "x": 293.16217282860083,
-                "y": 5276.919110914815
+                "x": 254.1074701310915,
+                "y": 5243.854156341616
               },
               "group": "nodes",
               "removed": false,
@@ -6874,8 +6874,8 @@
                 "idUnique": "m10ma37zfj"
               },
               "position": {
-                "x": 608.8752820286325,
-                "y": 5367.122856400538
+                "x": 577.5169775706626,
+                "y": 5336.2568727529215
               },
               "group": "nodes",
               "removed": false,
@@ -7835,8 +7835,8 @@
                 "idUnique": "s5pcls9hj7"
               },
               "position": {
-                "x": 347.3423937327358,
-                "y": 2034.4340204345954
+                "x": 346.5101865423975,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -7853,8 +7853,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 496.203419618194,
-                "y": 2034.4340204345954
+                "x": 485.1142611593565,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -7889,8 +7889,8 @@
                 }
               },
               "position": {
-                "x": 5880.010522475599,
-                "y": 2481.0170980909697
+                "x": 5867.572492117931,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -7936,8 +7936,8 @@
                 "idUnique": "ieb00yvk0b"
               },
               "position": {
-                "x": 4093.6782118501005,
-                "y": 2481.0170980909697
+                "x": 4088.8202012002907,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -8026,8 +8026,8 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 4416.210434601927,
-                "y": 2481.0170980909697
+                "x": 4412.229708639861,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -8055,8 +8055,8 @@
                 }
               },
               "position": {
-                "x": 4242.539237735558,
-                "y": 2481.0170980909697
+                "x": 4227.4242758172495,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -8140,8 +8140,8 @@
                 }
               },
               "position": {
-                "x": 967.5966682554783,
-                "y": 2133.674704358234
+                "x": 970.228522318713,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -8211,8 +8211,8 @@
                 "idUnique": "0crkg5a1qc"
               },
               "position": {
-                "x": 1587.8509427782208,
-                "y": 2034.4340204345954
+                "x": 1570.846178992202,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -8267,8 +8267,8 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 1265.3187200263947,
-                "y": 2133.674704358234
+                "x": 1247.436671552631,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -8307,8 +8307,8 @@
                 "idUnique": "0yylt3htww"
               },
               "position": {
-                "x": 1612.6611137591306,
-                "y": 2431.3967561291506
+                "x": 1617.047537197855,
+                "y": 2471.7726640024357
               },
               "group": "nodes",
               "removed": false,
@@ -8325,8 +8325,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1463.8000878736723,
-                "y": 2431.3967561291506
+                "x": 1455.3427834780696,
+                "y": 2471.7726640024357
               },
               "group": "nodes",
               "removed": false,
@@ -8343,8 +8343,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1091.6475231600268,
-                "y": 2133.674704358234
+                "x": 1085.7319178328455,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -8366,8 +8366,8 @@
                 }
               },
               "position": {
-                "x": 1463.8000878736723,
-                "y": 2183.2950463200536
+                "x": 1455.3427834780696,
+                "y": 2217.665193871344
               },
               "group": "nodes",
               "removed": false,
@@ -8385,8 +8385,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1463.8000878736723,
-                "y": 2257.7255592627826
+                "x": 1455.3427834780696,
+                "y": 2286.9672311798236
               },
               "group": "nodes",
               "removed": false,
@@ -8421,8 +8421,8 @@
                 }
               },
               "position": {
-                "x": 1612.6611137591306,
-                "y": 2257.7255592627826
+                "x": 1617.047537197855,
+                "y": 2286.9672311798236
               },
               "group": "nodes",
               "removed": false,
@@ -8444,8 +8444,8 @@
                 }
               },
               "position": {
-                "x": 4540.261289506475,
-                "y": 2481.0170980909697
+                "x": 4527.733104153994,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -8467,8 +8467,8 @@
                 }
               },
               "position": {
-                "x": 5731.14949659014,
-                "y": 2232.9153882818728
+                "x": 5728.9684175009725,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -8520,8 +8520,8 @@
                 "idUnique": "j0002duy8j"
               },
               "position": {
-                "x": 4713.9324863728425,
-                "y": 2481.0170980909697
+                "x": 4712.538536976606,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -8539,8 +8539,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4862.793512258301,
-                "y": 2629.878123976428
+                "x": 4851.142611593566,
+                "y": 2679.678775927874
               },
               "group": "nodes",
               "removed": false,
@@ -8575,8 +8575,8 @@
                 }
               },
               "position": {
-                "x": 5011.654538143759,
-                "y": 2629.878123976428
+                "x": 5012.847365313351,
+                "y": 2679.678775927874
               },
               "group": "nodes",
               "removed": false,
@@ -8598,8 +8598,8 @@
                 }
               },
               "position": {
-                "x": 3895.1968440028227,
-                "y": 2034.4340204345954
+                "x": 3880.914089274852,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -8698,8 +8698,8 @@
                 "idUnique": "j12d9qivse"
               },
               "position": {
-                "x": 4093.6782118501005,
-                "y": 2034.4340204345954
+                "x": 4088.8202012002907,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -8756,8 +8756,8 @@
                 "idUnique": "1djtpbl2mz"
               },
               "position": {
-                "x": 3746.335818117365,
-                "y": 2034.4340204345954
+                "x": 3742.310014657893,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -8826,8 +8826,8 @@
                 "idUnique": "yhgj3a9mwp"
               },
               "position": {
-                "x": 2555.447611033699,
-                "y": 2034.4340204345954
+                "x": 2541.074701310915,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -8865,8 +8865,8 @@
                 }
               },
               "position": {
-                "x": 3150.8917145755318,
-                "y": 2232.9153882818728
+                "x": 3141.692357984404,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -8949,8 +8949,8 @@
                 }
               },
               "position": {
-                "x": 4713.9324863728425,
-                "y": 2232.9153882818728
+                "x": 4712.538536976606,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9000,8 +9000,8 @@
                 "idUnique": "qajgdlbc8h"
               },
               "position": {
-                "x": 236.42946321088652,
-                "y": 1828.9213511838286
+                "x": 231.006791028265,
+                "y": 1871.1550073289466
               },
               "group": "nodes",
               "removed": false,
@@ -9276,8 +9276,8 @@
                 "idUnique": "z34fc1faup"
               },
               "position": {
-                "x": 3150.8917145755318,
-                "y": 2034.4340204345954
+                "x": 3141.692357984404,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9303,8 +9303,8 @@
                 "idUnique": "92mo1e8utb"
               },
               "position": {
-                "x": 3274.9425694800802,
-                "y": 2034.4340204345954
+                "x": 3257.1957534985368,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9372,8 +9372,8 @@
                 "idUnique": "tlvmoxmrux"
               },
               "position": {
-                "x": 3448.6137663464483,
-                "y": 2034.4340204345954
+                "x": 3442.0011863211485,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9390,8 +9390,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3597.4747922319066,
-                "y": 2034.4340204345954
+                "x": 3580.6052609381077,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9507,8 +9507,8 @@
                 "idUnique": "3j3coapbvw"
               },
               "position": {
-                "x": 2853.1696628046157,
-                "y": 2034.4340204345954
+                "x": 2841.3835296476595,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9533,8 +9533,8 @@
                 }
               },
               "position": {
-                "x": 2679.4984659382476,
-                "y": 2034.4340204345954
+                "x": 2679.678775927874,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9551,8 +9551,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3002.0306886900735,
-                "y": 2232.9153882818728
+                "x": 3003.088283367445,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9573,12 +9573,15 @@
                   },
                   "sdk5ldfsva": {
                     "value": "anyTriggersFalse"
+                  },
+                  "m56c1ps1ia": {
+                    "value": "anyTriggersFalse"
                   }
                 }
               },
               "position": {
-                "x": 1711.9017976827693,
-                "y": 2034.4340204345954
+                "x": 1709.450253609161,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9669,8 +9672,8 @@
                 "idUnique": "qoeln9z2wg"
               },
               "position": {
-                "x": 1935.1933365109567,
-                "y": 2034.4340204345954
+                "x": 1917.3563655345995,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9687,8 +9690,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3002.0306886900735,
-                "y": 2133.674704358234
+                "x": 3003.088283367445,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -9705,8 +9708,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4242.539237735558,
-                "y": 2034.4340204345954
+                "x": 4227.4242758172495,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -9728,8 +9731,8 @@
                 }
               },
               "position": {
-                "x": 4862.793512258301,
-                "y": 2232.9153882818728
+                "x": 4851.142611593566,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9768,8 +9771,8 @@
                 "idUnique": "nq6m9ng5z7"
               },
               "position": {
-                "x": 5011.654538143759,
-                "y": 2356.9662431864213
+                "x": 5012.847365313351,
+                "y": 2402.470626693956
               },
               "group": "nodes",
               "removed": false,
@@ -9875,8 +9878,8 @@
                 "idUnique": "sd6zj6fbdn"
               },
               "position": {
-                "x": 5011.654538143759,
-                "y": 2232.9153882818728
+                "x": 5012.847365313351,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9901,8 +9904,8 @@
                 }
               },
               "position": {
-                "x": 5160.515564029218,
-                "y": 2232.9153882818728
+                "x": 5151.45143993031,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9932,8 +9935,8 @@
                 "idUnique": "fmcrix6l5u"
               },
               "position": {
-                "x": 5880.010522475599,
-                "y": 2232.9153882818728
+                "x": 5867.572492117931,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -9971,8 +9974,8 @@
                 }
               },
               "position": {
-                "x": 4416.210434601927,
-                "y": 2654.688294957338
+                "x": 4412.229708639861,
+                "y": 2702.779455030701
               },
               "group": "nodes",
               "removed": false,
@@ -10027,8 +10030,8 @@
                 "idUnique": "4zt46e4s1h"
               },
               "position": {
-                "x": 5011.654538143759,
-                "y": 2481.0170980909697
+                "x": 5012.847365313351,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10045,8 +10048,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4862.793512258301,
-                "y": 2481.0170980909697
+                "x": 4851.142611593566,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10074,8 +10077,8 @@
                 }
               },
               "position": {
-                "x": 5160.515564029218,
-                "y": 2481.0170980909697
+                "x": 5151.45143993031,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10093,8 +10096,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4837.983341277391,
-                "y": 2729.118807900067
+                "x": 4828.041932490739,
+                "y": 2772.08149233918
               },
               "group": "nodes",
               "removed": false,
@@ -10132,8 +10135,8 @@
                 }
               },
               "position": {
-                "x": 5011.654538143759,
-                "y": 2729.118807900067
+                "x": 5012.847365313351,
+                "y": 2772.08149233918
               },
               "group": "nodes",
               "removed": false,
@@ -10185,8 +10188,8 @@
                 "idUnique": "byy9phiu9o"
               },
               "position": {
-                "x": 4416.210434601927,
-                "y": 2034.4340204345954
+                "x": 4412.229708639861,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -10203,8 +10206,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3895.1968440028227,
-                "y": 2481.0170980909697
+                "x": 3880.914089274852,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10243,8 +10246,8 @@
                 "idUnique": "b91sgapcqb"
               },
               "position": {
-                "x": 3795.956160079184,
-                "y": 2481.0170980909697
+                "x": 3788.511372863546,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10261,8 +10264,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4540.261289506475,
-                "y": 2232.9153882818728
+                "x": 4527.733104153994,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -10280,8 +10283,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4540.261289506475,
-                "y": 2034.4340204345954
+                "x": 4527.733104153994,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -10310,8 +10313,8 @@
                 }
               },
               "position": {
-                "x": 4713.9324863728425,
-                "y": 2034.4340204345954
+                "x": 4712.538536976606,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -10329,8 +10332,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4540.261289506475,
-                "y": 2133.674704358234
+                "x": 4527.733104153994,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -10359,8 +10362,8 @@
                 }
               },
               "position": {
-                "x": 4713.9324863728425,
-                "y": 2133.674704358234
+                "x": 4712.538536976606,
+                "y": 2171.463835665691
               },
               "group": "nodes",
               "removed": false,
@@ -10393,8 +10396,8 @@
                 "idUnique": "dl2pvklz2j"
               },
               "position": {
-                "x": 5334.186760895585,
-                "y": 2356.9662431864213
+                "x": 5336.2568727529215,
+                "y": 2402.470626693956
               },
               "group": "nodes",
               "removed": false,
@@ -10429,8 +10432,8 @@
                 }
               },
               "position": {
-                "x": 1587.8509427782208,
-                "y": 1935.1933365109567
+                "x": 1570.846178992202,
+                "y": 1963.5577237402526
               },
               "group": "nodes",
               "removed": false,
@@ -10447,8 +10450,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1711.9017976827693,
-                "y": 1935.1933365109567
+                "x": 1709.450253609161,
+                "y": 1963.5577237402526
               },
               "group": "nodes",
               "removed": false,
@@ -10535,8 +10538,8 @@
                 "idUnique": "kuvnl0ffdw"
               },
               "position": {
-                "x": 5607.098641685592,
-                "y": 2232.9153882818728
+                "x": 5590.364342884013,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -10553,8 +10556,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 5458.237615800134,
-                "y": 2232.9153882818728
+                "x": 5451.760268267054,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -10623,8 +10626,8 @@
                 "idUnique": "wkbo47hbun"
               },
               "position": {
-                "x": 5607.098641685592,
-                "y": 2481.0170980909697
+                "x": 5590.364342884013,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10641,8 +10644,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 5458.237615800134,
-                "y": 2481.0170980909697
+                "x": 5451.760268267054,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10664,8 +10667,8 @@
                 }
               },
               "position": {
-                "x": 5731.14949659014,
-                "y": 2481.0170980909697
+                "x": 5728.9684175009725,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -10704,8 +10707,8 @@
                 "idUnique": "tzvbpjxh3e"
               },
               "position": {
-                "x": 5880.010522475599,
-                "y": 2356.9662431864213
+                "x": 5867.572492117931,
+                "y": 2402.470626693956
               },
               "group": "nodes",
               "removed": false,
@@ -10744,8 +10747,8 @@
                 "idUnique": "obf2fjue7e"
               },
               "position": {
-                "x": 5880.010522475599,
-                "y": 2629.878123976428
+                "x": 5867.572492117931,
+                "y": 2679.678775927874
               },
               "group": "nodes",
               "removed": false,
@@ -11552,8 +11555,8 @@
                 "idUnique": "fgwhm9g2yy"
               },
               "position": {
-                "x": 1612.6611137591306,
-                "y": 2356.9662431864213
+                "x": 1617.047537197855,
+                "y": 2402.470626693956
               },
               "group": "nodes",
               "removed": false,
@@ -11570,8 +11573,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1463.8000878736723,
-                "y": 2356.9662431864213
+                "x": 1455.3427834780696,
+                "y": 2402.470626693956
               },
               "group": "nodes",
               "removed": false,
@@ -11881,48 +11884,8 @@
                 "idUnique": "0gg30ex2r6"
               },
               "position": {
-                "x": 2853.1696628046157,
-                "y": 2332.156072205512
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "sdk5ldfsva",
-                "nodeType": "CONNECTION",
-                "connectionId": "53ab83a4a4ab919d9f2cb02d9e111ac8",
-                "connectorId": "errorConnector",
-                "name": "Error Message",
-                "label": "Error Message",
-                "status": "configured",
-                "capabilityName": "customErrorMessage",
-                "type": "action",
-                "properties": {
-                  "errorDescription": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
-                  },
-                  "errorMessage": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"pingIdentity.svg\",\n        \"url\": \"message\",\n        \"data\": \"{{local.eif8bqzfhj.payload.error.message}}\",\n        \"tooltip\": \"{{local.eif8bqzfhj.payload.error.message}}\",\n        \"children\": [\n          {\n            \"text\": \"message\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
-                  },
-                  "nodeTitle": {
-                    "value": "On Screen Error"
-                  },
-                  "nodeDescription": {
-                    "value": "Shows an error message on screen from the Lookup User"
-                  }
-                },
-                "idUnique": "b6487c3zzh"
-              },
-              "position": {
-                "x": 1935.1933365109567,
-                "y": 2208.1052173009634
+                "x": 2841.3835296476595,
+                "y": 2379.3699475911294
               },
               "group": "nodes",
               "removed": false,
@@ -12245,8 +12208,8 @@
                 "idUnique": "xgjmwje0av"
               },
               "position": {
-                "x": 270.61123645717,
-                "y": 3901.3119922575343
+                "x": 240,
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -12282,8 +12245,8 @@
                 "idUnique": "p27ng909qq"
               },
               "position": {
-                "x": 405.91685468575497,
-                "y": 4059.1685468575497
+                "x": 369.610865645224,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12370,8 +12333,8 @@
                 }
               },
               "position": {
-                "x": 1037.3430730858183,
-                "y": 4194.474165086135
+                "x": 993.3292014215396,
+                "y": 4158.12223850877
               },
               "group": "nodes",
               "removed": false,
@@ -12413,8 +12376,8 @@
                 "idUnique": "0crkg5a1qc"
               },
               "position": {
-                "x": 1646.2183551144508,
-                "y": 4059.1685468575497
+                "x": 1617.047537197855,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12469,8 +12432,8 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 1353.05618228585,
-                "y": 4194.474165086135
+                "x": 1316.7387088611106,
+                "y": 4158.12223850877
               },
               "group": "nodes",
               "removed": false,
@@ -12487,8 +12450,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1488.361800514435,
-                "y": 4419.983528800443
+                "x": 1455.3427834780696,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -12505,8 +12468,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1172.6486913144033,
-                "y": 4194.474165086135
+                "x": 1131.9332760384984,
+                "y": 4158.12223850877
               },
               "group": "nodes",
               "removed": false,
@@ -12528,8 +12491,8 @@
                 }
               },
               "position": {
-                "x": 1488.361800514435,
-                "y": 4194.474165086135
+                "x": 1455.3427834780696,
+                "y": 4158.12223850877
               },
               "group": "nodes",
               "removed": false,
@@ -12547,8 +12510,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1488.361800514435,
-                "y": 4262.126974200427
+                "x": 1455.3427834780696,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -12583,8 +12546,8 @@
                 }
               },
               "position": {
-                "x": 1646.2183551144508,
-                "y": 4262.126974200427
+                "x": 1617.047537197855,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -12653,8 +12616,8 @@
                 "idUnique": "yhgj3a9mwp"
               },
               "position": {
-                "x": 2615.9086190859766,
-                "y": 4059.1685468575497
+                "x": 2587.2760595165682,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12675,12 +12638,15 @@
                   },
                   "7wf16gy8fc": {
                     "value": "anyTriggersFalse"
+                  },
+                  "4fa1q1lk6x": {
+                    "value": "anyTriggersFalse"
                   }
                 }
               },
               "position": {
-                "x": 1781.5239733430358,
-                "y": 4059.1685468575497
+                "x": 1732.5509327119876,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12716,8 +12682,8 @@
                 "idUnique": "fgwhm9g2yy"
               },
               "position": {
-                "x": 1646.2183551144508,
-                "y": 4352.330719686151
+                "x": 1617.047537197855,
+                "y": 4319.826992228555
               },
               "group": "nodes",
               "removed": false,
@@ -12734,48 +12700,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1488.361800514435,
-                "y": 4352.330719686151
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "7wf16gy8fc",
-                "nodeType": "CONNECTION",
-                "connectionId": "53ab83a4a4ab919d9f2cb02d9e111ac8",
-                "connectorId": "errorConnector",
-                "name": "Error Message",
-                "label": "Error Message",
-                "status": "configured",
-                "capabilityName": "customErrorMessage",
-                "type": "action",
-                "properties": {
-                  "errorDescription": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
-                  },
-                  "errorMessage": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"pingIdentity.svg\",\n        \"url\": \"message\",\n        \"data\": \"{{local.uk02fj1rrt.payload.error.message}}\",\n        \"tooltip\": \"{{local.uk02fj1rrt.payload.error.message}}\",\n        \"children\": [\n          {\n            \"text\": \"message\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
-                  },
-                  "nodeTitle": {
-                    "value": "On Screen Error"
-                  },
-                  "nodeDescription": {
-                    "value": "Shows an error message on screen from the Lookup User"
-                  }
-                },
-                "idUnique": "b6487c3zzh"
-              },
-              "position": {
-                "x": 1961.9314643144824,
-                "y": 4262.126974200427
+                "x": 1455.3427834780696,
+                "y": 4319.826992228555
               },
               "group": "nodes",
               "removed": false,
@@ -12798,8 +12724,8 @@
                 }
               },
               "position": {
-                "x": 541.22247291434,
-                "y": 4059.1685468575497
+                "x": 508.214940262183,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12837,8 +12763,8 @@
                 }
               },
               "position": {
-                "x": 721.6299638857867,
-                "y": 4059.1685468575497
+                "x": 693.020373084795,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12866,8 +12792,8 @@
                 }
               },
               "position": {
-                "x": 856.9355821143716,
-                "y": 4059.1685468575497
+                "x": 808.5237685989275,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -12969,8 +12895,8 @@
                 "idUnique": "gruuw6a76f"
               },
               "position": {
-                "x": 1961.9314643144824,
-                "y": 4059.1685468575497
+                "x": 1917.3563655345995,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -13005,8 +12931,8 @@
                 }
               },
               "position": {
-                "x": 6652.526229572096,
-                "y": 4555.289147029028
+                "x": 6606.794223408379,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13098,8 +13024,8 @@
                 "isDisabled": false
               },
               "position": {
-                "x": 4735.696638000475,
-                "y": 4555.289147029028
+                "x": 4689.43785787378,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13127,8 +13053,8 @@
                 }
               },
               "position": {
-                "x": 4600.39101977189,
-                "y": 4555.289147029028
+                "x": 4550.83378325682,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13150,8 +13076,8 @@
                 }
               },
               "position": {
-                "x": 4893.553192600491,
-                "y": 4555.289147029028
+                "x": 4851.142611593566,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13207,8 +13133,8 @@
                 "idUnique": "j0002duy8j"
               },
               "position": {
-                "x": 5096.511619943368,
-                "y": 4555.289147029028
+                "x": 5059.048723519004,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13226,8 +13152,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 5231.817238171953,
-                "y": 4803.349447114768
+                "x": 5197.652798135962,
+                "y": 4781.8405742850855
               },
               "group": "nodes",
               "removed": false,
@@ -13262,8 +13188,8 @@
                 }
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4803.349447114768
+                "x": 5359.357551855748,
+                "y": 4781.8405742850855
               },
               "group": "nodes",
               "removed": false,
@@ -13288,8 +13214,8 @@
                 }
               },
               "position": {
-                "x": 4171.923228714704,
-                "y": 4081.7194832289806
+                "x": 4135.021559405944,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13388,8 +13314,8 @@
                 "idUnique": "j12d9qivse"
               },
               "position": {
-                "x": 4419.983528800443,
-                "y": 4081.7194832289806
+                "x": 4389.129029537035,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13446,8 +13372,8 @@
                 "idUnique": "1djtpbl2mz"
               },
               "position": {
-                "x": 4014.0666741146883,
-                "y": 4081.7194832289806
+                "x": 3973.316805686158,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13485,8 +13411,8 @@
                 }
               },
               "position": {
-                "x": 3314.9876466003325,
-                "y": 4284.677910571858
+                "x": 3280.296432601363,
+                "y": 4250.524954920076
               },
               "group": "nodes",
               "removed": false,
@@ -13569,8 +13495,8 @@
                 }
               },
               "position": {
-                "x": 5096.511619943368,
-                "y": 4262.126974200427
+                "x": 5059.048723519004,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -13625,8 +13551,8 @@
                 "idUnique": "z34fc1faup"
               },
               "position": {
-                "x": 3314.9876466003325,
-                "y": 4081.7194832289806
+                "x": 3280.296432601363,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13652,8 +13578,8 @@
                 "idUnique": "92mo1e8utb"
               },
               "position": {
-                "x": 3472.8442012003484,
-                "y": 4081.7194832289806
+                "x": 3442.0011863211485,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13721,8 +13647,8 @@
                 "idUnique": "tlvmoxmrux"
               },
               "position": {
-                "x": 3653.2516921717947,
-                "y": 4081.7194832289806
+                "x": 3603.705940040934,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13739,8 +13665,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3833.6591831432415,
-                "y": 4081.7194832289806
+                "x": 3788.511372863546,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13792,8 +13718,8 @@
                 "idUnique": "3j3coapbvw"
               },
               "position": {
-                "x": 2954.1726646574393,
-                "y": 4059.1685468575497
+                "x": 2910.685566956139,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -13810,8 +13736,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3112.0292192574548,
-                "y": 4284.677910571858
+                "x": 3072.3903206759246,
+                "y": 4250.524954920076
               },
               "group": "nodes",
               "removed": false,
@@ -13828,8 +13754,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3112.0292192574548,
-                "y": 4194.474165086135
+                "x": 3072.3903206759246,
+                "y": 4158.12223850877
               },
               "group": "nodes",
               "removed": false,
@@ -13846,8 +13772,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4555.289147029028,
-                "y": 4081.7194832289806
+                "x": 4527.733104153994,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -13886,8 +13812,8 @@
                 "idUnique": "nq6m9ng5z7"
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4419.983528800443
+                "x": 5359.357551855748,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -13925,8 +13851,8 @@
                 }
               },
               "position": {
-                "x": 4735.696638000475,
-                "y": 4735.696638000475
+                "x": 4689.43785787378,
+                "y": 4712.538536976606
               },
               "group": "nodes",
               "removed": false,
@@ -13951,8 +13877,8 @@
                 }
               },
               "position": {
-                "x": 5524.979411000554,
-                "y": 4555.289147029028
+                "x": 5474.860947369881,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -13970,8 +13896,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 5231.817238171953,
-                "y": 4893.553192600491
+                "x": 5197.652798135962,
+                "y": 4851.142611593566
               },
               "group": "nodes",
               "removed": false,
@@ -14009,8 +13935,8 @@
                 }
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4893.553192600491
+                "x": 5359.357551855748,
+                "y": 4851.142611593566
               },
               "group": "nodes",
               "removed": false,
@@ -14062,8 +13988,8 @@
                 "idUnique": "byy9phiu9o"
               },
               "position": {
-                "x": 4735.696638000475,
-                "y": 4081.7194832289806
+                "x": 4689.43785787378,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -14080,8 +14006,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4194.474165086135,
-                "y": 4555.289147029028
+                "x": 4158.12223850877,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14120,8 +14046,8 @@
                 "idUnique": "b91sgapcqb"
               },
               "position": {
-                "x": 4036.6176104861192,
-                "y": 4555.289147029028
+                "x": 3996.4174847889844,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14138,8 +14064,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 4893.553192600491,
-                "y": 4262.126974200427
+                "x": 4851.142611593566,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -14157,8 +14083,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4893.553192600491,
-                "y": 4081.7194832289806
+                "x": 4851.142611593566,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -14187,8 +14113,8 @@
                 }
               },
               "position": {
-                "x": 5096.511619943368,
-                "y": 4081.7194832289806
+                "x": 5059.048723519004,
+                "y": 4042.618842994638
               },
               "group": "nodes",
               "removed": false,
@@ -14206,8 +14132,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 4893.553192600491,
-                "y": 4149.372292343273
+                "x": 4851.142611593566,
+                "y": 4111.920880303117
               },
               "group": "nodes",
               "removed": false,
@@ -14236,8 +14162,8 @@
                 }
               },
               "position": {
-                "x": 5096.511619943368,
-                "y": 4149.372292343273
+                "x": 5059.048723519004,
+                "y": 4111.920880303117
               },
               "group": "nodes",
               "removed": false,
@@ -14306,8 +14232,8 @@
                 "idUnique": "wkbo47hbun"
               },
               "position": {
-                "x": 6359.364056743495,
-                "y": 4555.289147029028
+                "x": 6329.586074174461,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14324,8 +14250,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 6178.956565772049,
-                "y": 4555.289147029028
+                "x": 6144.780641351849,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14347,8 +14273,8 @@
                 }
               },
               "position": {
-                "x": 6494.6696749720795,
-                "y": 4555.289147029028
+                "x": 6445.089469688593,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14387,8 +14313,8 @@
                 "idUnique": "obf2fjue7e"
               },
               "position": {
-                "x": 6652.526229572096,
-                "y": 4735.696638000475
+                "x": 6606.794223408379,
+                "y": 4712.538536976606
               },
               "group": "nodes",
               "removed": false,
@@ -14427,8 +14353,8 @@
                 "idUnique": "0gg30ex2r6"
               },
               "position": {
-                "x": 2954.1726646574393,
-                "y": 4329.77978331472
+                "x": 2910.685566956139,
+                "y": 4296.726313125729
               },
               "group": "nodes",
               "removed": false,
@@ -14451,8 +14377,8 @@
                 }
               },
               "position": {
-                "x": 2796.3161100574234,
-                "y": 4059.1685468575497
+                "x": 2748.9808132363537,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -14510,8 +14436,8 @@
                 "idUnique": "d7fa85mvuo"
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4262.126974200427
+                "x": 5359.357551855748,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -14589,8 +14515,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 5231.817238171953,
-                "y": 4555.289147029028
+                "x": 5197.652798135962,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14629,8 +14555,8 @@
                 "idUnique": "8oyu0sjvvy"
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4555.289147029028
+                "x": 5359.357551855748,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14688,8 +14614,8 @@
                 "idUnique": "btder6km6x"
               },
               "position": {
-                "x": 5727.937838343431,
-                "y": 4555.289147029028
+                "x": 5682.767059295319,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14717,8 +14643,8 @@
                 }
               },
               "position": {
-                "x": 5863.243456572017,
-                "y": 4555.289147029028
+                "x": 5821.371133912278,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14763,8 +14689,8 @@
                 "idUnique": "uwho1r9yfa"
               },
               "position": {
-                "x": 4419.983528800443,
-                "y": 4555.289147029028
+                "x": 4389.129029537035,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -14782,8 +14708,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 5231.817238171953,
-                "y": 4713.145701629044
+                "x": 5197.652798135962,
+                "y": 4689.43785787378
               },
               "group": "nodes",
               "removed": false,
@@ -14812,8 +14738,8 @@
                 }
               },
               "position": {
-                "x": 5389.673792771969,
-                "y": 4713.145701629044
+                "x": 5359.357551855748,
+                "y": 4689.43785787378
               },
               "group": "nodes",
               "removed": false,
@@ -14865,8 +14791,8 @@
                 "idUnique": "ty9gokvpwh"
               },
               "position": {
-                "x": 2282.5357302436923,
-                "y": 2034.4340204345954
+                "x": 2286.9672311798236,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -14883,8 +14809,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2108.8645333773243,
-                "y": 2034.4340204345954
+                "x": 2102.1617983572114,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -14901,8 +14827,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2406.586585148241,
-                "y": 2034.4340204345954
+                "x": 2402.470626693956,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -14920,8 +14846,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 2406.586585148241,
-                "y": 2183.2950463200536
+                "x": 2402.470626693956,
+                "y": 2217.665193871344
               },
               "group": "nodes",
               "removed": false,
@@ -14950,8 +14876,8 @@
                 }
               },
               "position": {
-                "x": 2555.447611033699,
-                "y": 2183.2950463200536
+                "x": 2541.074701310915,
+                "y": 2217.665193871344
               },
               "group": "nodes",
               "removed": false,
@@ -14990,8 +14916,8 @@
                 "idUnique": "1k59evxuqz"
               },
               "position": {
-                "x": 2555.447611033699,
-                "y": 2332.156072205512
+                "x": 2541.074701310915,
+                "y": 2379.3699475911294
               },
               "group": "nodes",
               "removed": false,
@@ -15008,8 +14934,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2406.586585148241,
-                "y": 2332.156072205512
+                "x": 2402.470626693956,
+                "y": 2379.3699475911294
               },
               "group": "nodes",
               "removed": false,
@@ -15061,8 +14987,8 @@
                 "idUnique": "6lnbh7sj00"
               },
               "position": {
-                "x": 2322.7464462573757,
-                "y": 4059.1685468575497
+                "x": 2286.9672311798236,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -15079,8 +15005,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2142.338955285929,
-                "y": 4059.1685468575497
+                "x": 2102.1617983572114,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -15109,8 +15035,8 @@
                 }
               },
               "position": {
-                "x": 2615.9086190859766,
-                "y": 4217.025101457566
+                "x": 2587.2760595165682,
+                "y": 4181.222917611597
               },
               "group": "nodes",
               "removed": false,
@@ -15149,8 +15075,8 @@
                 "idUnique": "1k59evxuqz"
               },
               "position": {
-                "x": 2615.9086190859766,
-                "y": 4329.77978331472
+                "x": 2587.2760595165682,
+                "y": 4296.726313125729
               },
               "group": "nodes",
               "removed": false,
@@ -15167,8 +15093,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2458.0520644859607,
-                "y": 4059.1685468575497
+                "x": 2425.571305796783,
+                "y": 4019.518163891811
               },
               "group": "nodes",
               "removed": false,
@@ -15185,8 +15111,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2458.0520644859607,
-                "y": 4217.025101457566
+                "x": 2425.571305796783,
+                "y": 4181.222917611597
               },
               "group": "nodes",
               "removed": false,
@@ -15203,8 +15129,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 2458.0520644859607,
-                "y": 4329.77978331472
+                "x": 2425.571305796783,
+                "y": 4296.726313125729
               },
               "group": "nodes",
               "removed": false,
@@ -15260,8 +15186,8 @@
                 "idUnique": "gth62n5i0p"
               },
               "position": {
-                "x": 3076.461201632803,
-                "y": 1935.1933365109567
+                "x": 3072.3903206759246,
+                "y": 1963.5577237402526
               },
               "group": "nodes",
               "removed": false,
@@ -15317,8 +15243,8 @@
                 "idUnique": "ldmd4zilou"
               },
               "position": {
-                "x": 3314.9876466003325,
-                "y": 3968.9648013718265
+                "x": 3280.296432601363,
+                "y": 3927.1154474805053
               },
               "group": "nodes",
               "removed": false,
@@ -15363,8 +15289,8 @@
                 "idUnique": "f43kb98ww1"
               },
               "position": {
-                "x": 5727.937838343431,
-                "y": 4735.696638000475
+                "x": 5682.767059295319,
+                "y": 4712.538536976606
               },
               "group": "nodes",
               "removed": false,
@@ -15421,8 +15347,8 @@
                 "idUnique": "2j99z8pz1e"
               },
               "position": {
-                "x": 5334.186760895585,
-                "y": 2232.9153882818728
+                "x": 5336.2568727529215,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -15479,8 +15405,8 @@
                 "idUnique": "mue3hbvbyt"
               },
               "position": {
-                "x": 5334.186760895585,
-                "y": 2481.0170980909697
+                "x": 5336.2568727529215,
+                "y": 2517.9740222080886
               },
               "group": "nodes",
               "removed": false,
@@ -15537,8 +15463,8 @@
                 "idUnique": "mue3hbvbyt"
               },
               "position": {
-                "x": 6021.100011172032,
-                "y": 4555.289147029028
+                "x": 5983.075887632063,
+                "y": 4527.733104153994
               },
               "group": "nodes",
               "removed": false,
@@ -15580,8 +15506,8 @@
                 "idUnique": "baj6pvcmoi"
               },
               "position": {
-                "x": 6021.100011172032,
-                "y": 4735.696638000475
+                "x": 5983.075887632063,
+                "y": 4712.538536976606
               },
               "group": "nodes",
               "removed": false,
@@ -15614,8 +15540,8 @@
                 "idUnique": "1mkiotadrk"
               },
               "position": {
-                "x": 5334.186760895585,
-                "y": 2629.878123976428
+                "x": 5336.2568727529215,
+                "y": 2679.678775927874
               },
               "group": "nodes",
               "removed": false,
@@ -15694,8 +15620,8 @@
                 "idUnique": "mb49h0gdyw"
               },
               "position": {
-                "x": 3448.6137663464483,
-                "y": 2232.9153882818728
+                "x": 3442.0011863211485,
+                "y": 2263.866552076997
               },
               "group": "nodes",
               "removed": false,
@@ -15734,8 +15660,8 @@
                 "idUnique": "hge7bnk69e"
               },
               "position": {
-                "x": 3653.2516921717947,
-                "y": 4262.126974200427
+                "x": 3603.705940040934,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -15771,8 +15697,8 @@
                 "idUnique": "ug2gj7hdez"
               },
               "position": {
-                "x": 1646.2183551144508,
-                "y": 3968.9648013718265
+                "x": 1617.047537197855,
+                "y": 3927.1154474805053
               },
               "group": "nodes",
               "removed": false,
@@ -15789,8 +15715,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1781.5239733430358,
-                "y": 3968.9648013718265
+                "x": 1732.5509327119876,
+                "y": 3927.1154474805053
               },
               "group": "nodes",
               "removed": false,
@@ -15813,8 +15739,8 @@
                 }
               },
               "position": {
-                "x": 5231.817238171953,
-                "y": 4262.126974200427
+                "x": 5197.652798135962,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -15849,8 +15775,8 @@
                 }
               },
               "position": {
-                "x": 6314.262184000633,
-                "y": 4262.126974200427
+                "x": 6283.384715968808,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -15919,8 +15845,8 @@
                 "idUnique": "wkbo47hbun"
               },
               "position": {
-                "x": 6043.650947543463,
-                "y": 4262.126974200427
+                "x": 6006.17656673489,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -15937,8 +15863,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 5863.243456572017,
-                "y": 4262.126974200427
+                "x": 5821.371133912278,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -15960,8 +15886,8 @@
                 }
               },
               "position": {
-                "x": 6178.956565772049,
-                "y": 4262.126974200427
+                "x": 6144.780641351849,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -16000,8 +15926,8 @@
                 "idUnique": "obf2fjue7e"
               },
               "position": {
-                "x": 6314.262184000633,
-                "y": 4419.983528800443
+                "x": 6283.384715968808,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -16029,8 +15955,8 @@
                 }
               },
               "position": {
-                "x": 5547.530347371985,
-                "y": 4262.126974200427
+                "x": 5497.961626472707,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -16087,8 +16013,8 @@
                 "idUnique": "mue3hbvbyt"
               },
               "position": {
-                "x": 5727.937838343431,
-                "y": 4262.126974200427
+                "x": 5682.767059295319,
+                "y": 4227.4242758172495
               },
               "group": "nodes",
               "removed": false,
@@ -16133,8 +16059,8 @@
                 "idUnique": "baj6pvcmoi"
               },
               "position": {
-                "x": 5727.937838343431,
-                "y": 4419.983528800443
+                "x": 5682.767059295319,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -16192,8 +16118,8 @@
                 "status": "configured"
               },
               "position": {
-                "x": 4465.085401543305,
-                "y": 4419.983528800443
+                "x": 4435.330387742688,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -16232,8 +16158,8 @@
                 "idUnique": "gdzb44gidt"
               },
               "position": {
-                "x": 1646.2183551144508,
-                "y": 4419.983528800443
+                "x": 1617.047537197855,
+                "y": 4389.129029537035
               },
               "group": "nodes",
               "removed": false,
@@ -16272,8 +16198,8 @@
                 "idUnique": "dw7t3lfae5"
               },
               "position": {
-                "x": 669.8746164845619,
-                "y": 2034.4340204345954
+                "x": 669.9196939819685,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -16295,8 +16221,8 @@
                 }
               },
               "position": {
-                "x": 793.9254713891104,
-                "y": 2034.4340204345954
+                "x": 785.423089496101,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -16488,8 +16414,8 @@
                 "idUnique": "1h315jqa7o"
               },
               "position": {
-                "x": 297.7220517709164,
-                "y": 1910.3831655300469
+                "x": 300.3088283367445,
+                "y": 1940.457044637426
               },
               "group": "nodes",
               "removed": false,
@@ -16602,8 +16528,8 @@
                 "idUnique": "ymqgygk4tr"
               },
               "position": {
-                "x": 338.2640455714625,
-                "y": 3946.4138650003956
+                "x": 300.3088283367445,
+                "y": 3904.0147683776786
               },
               "group": "nodes",
               "removed": false,
@@ -18436,8 +18362,8 @@
                 "idUnique": "9yae4ailln"
               },
               "position": {
-                "x": 744.1809002572174,
-                "y": 5547.530347371985
+                "x": 716.1210521876216,
+                "y": 5521.062305575534
               },
               "group": "nodes",
               "removed": false,
@@ -18454,8 +18380,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 563.7734092857709,
-                "y": 5547.530347371985
+                "x": 531.3156193650095,
+                "y": 5521.062305575534
               },
               "group": "nodes",
               "removed": false,
@@ -18472,8 +18398,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 879.4865184858024,
-                "y": 5547.530347371985
+                "x": 831.624447701754,
+                "y": 5521.062305575534
               },
               "group": "nodes",
               "removed": false,
@@ -18606,8 +18532,8 @@
                 }
               },
               "position": {
-                "x": 676.528091142925,
-                "y": 4938.655065343352
+                "x": 646.8190148791421,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -18655,8 +18581,8 @@
                 }
               },
               "position": {
-                "x": 1014.7921367143874,
-                "y": 4938.655065343352
+                "x": 970.228522318713,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -18681,8 +18607,8 @@
                 }
               },
               "position": {
-                "x": 834.3846457429408,
-                "y": 4938.655065343352
+                "x": 785.423089496101,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -18707,8 +18633,8 @@
                 }
               },
               "position": {
-                "x": 1127.5468185715417,
-                "y": 4938.655065343352
+                "x": 1085.7319178328455,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -18725,8 +18651,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 518.6715365429092,
-                "y": 4938.655065343352
+                "x": 485.1142611593565,
+                "y": 4897.343969799218
               },
               "group": "nodes",
               "removed": false,
@@ -18764,8 +18690,8 @@
                 }
               },
               "position": {
-                "x": 1014.7921367143874,
-                "y": 5186.715365429091
+                "x": 970.228522318713,
+                "y": 5151.45143993031
               },
               "group": "nodes",
               "removed": false,
@@ -18804,8 +18730,8 @@
                 "idUnique": "d8rvaju1yr"
               },
               "position": {
-                "x": 1375.6071186572808,
-                "y": 5186.715365429091
+                "x": 1339.839387963937,
+                "y": 5151.45143993031
               },
               "group": "nodes",
               "removed": false,
@@ -18840,8 +18766,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3002.0306886900735,
-                "y": 2034.4340204345954
+                "x": 3003.088283367445,
+                "y": 2079.061119254385
               },
               "group": "nodes",
               "removed": false,
@@ -18858,8 +18784,453 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 3112.0292192574548,
-                "y": 4081.7194832289806
+                "x": 3072.3903206759246,
+                "y": 4042.618842994638
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "capabilityName": "customHTMLTemplate",
+                "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+                "connectorId": "httpConnector",
+                "id": "m56c1ps1ia",
+                "label": "Http",
+                "name": "Http",
+                "nodeType": "CONNECTION",
+                "properties": {
+                  "customCSS": {
+                    "value": ".alignleft {\n    float: left;\n    margin-right: 15px;\n}\n.alignright {\n    float: right;\n    margin-left: 15px;\n}\n.aligncenter {\n    display: block;\n    margin: 0 auto 15px;\n}\na:focus { outline: 0 solid }\nimg {\n    max-width: 100%;\n    height: auto;\n}\n.fix { overflow: hidden }\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    margin: 0 0 15px;\n    font-weight: 700;\n}\nhtml,\nbody { height: 100% }\n\na {\n    -moz-transition: 0.3s;\n    -o-transition: 0.3s;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    color: rgba(220, 220, 220, 0.865);\n}\na:hover { text-decoration: none }\n\n.container {\n    position: relative;\n    max-width: 400px;\n    margin: auto; \n    padding-left: 0 !important;\n    padding-right: 0 !important;\n}\n\n#newPassword {\n    width: 100%;\n    margin-bottom: 10px;\n}\n\n#pswd_info {\n    background: #FFFFFF;\n    color: #000;\n    display: none;\n    padding: 8px;\n    font-size: 0.85rem;\n    border-radius: 4px;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.15);\n    left: 100%;\n    top: 0%;\n    transform: translateY(-90%);\n    z-index: 100;\n    position: absolute;\n    margin-left: 10px;\n    white-space: nowrap;\n    transition: opacity 1s ease-in-out, transform 1s ease-in-out;\n    width: 360px;\n    max-width:360px;\n}\n\n@media (max-width: 767px) {\n    #pswd_info {\n        width: 100%;\n        margin-top: 20px;\n    }\n}\n\n.input-group {\n    position: relative;\n}\n\n#pswd_info ul {\n    list-style: none;\n    padding-left: 0;\n}\n\n#pswd_info li {\n    color: black;\n    position: relative;\n    padding-left: 25px;\n    margin-bottom: 5px;\n    font-size: 12px;\n    display:none;\n}\n\n#pswd_info li.valid {\n    color: green;\n}\n\n#pswd_info {\n    display:none;\n}\n\n.text-red {\n    color:red !important;\n}\n\n.text-12 {\n    font-size:12px;\n}\n"
+                  },
+                  "customHTML": {
+                    "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  <div class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mh-100 h-75\" style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card shadow mb-5\">\n        <div class=\"card-body p-5 d-flex flex-column\">\n          <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n          {{#if title}}\n          <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          {{#if textTwo}}\n          <p class=\"text-muted text-center\">{{textTwo}}</p>\n          {{/if}}\n\n          {{#if errorMessage}}\n            <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\">{{errorMessage}}</p>\n          {{/if}}\n\n          <!-- Generic Error Message -->\n          <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n          \n          <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n            <!-- Do not touch the container, any other inputs go above this line -->\n            <div class=\"container\">\n              <div id=\"passwordContainer\" class=\"mb-3 form-floating\">\n                <input\n                  id=\"newPassword\"\n                  data-id=\"newPassword\"\n                  class=\"form-control\"\n                  type=\"password\"\n                  name=\"newPassword\"\n                  placeholder=\"newPassword\"\n                  autocomplete=\"off\"\n                  value=\"\" />\n                <label class=\"form-label\" for=\"newPassword\">New Password</label>\n              </div>\n              <div id=\"confirmPasswordContainer\" class=\"mb-3 form-floating\">\n                <input\n                  id=\"confirmPassword\"\n                  data-id=\"confirmPassword\"\n                  class=\"form-control\"\n                  type=\"password\"\n                  name=\"confirmPassword\"\n                  placeholder=\"confirmPassword\"\n                  autocomplete=\"off\"\n                  value=\"\" />\n                <label class=\"form-label\" for=\"confirmPassword\">Confirm Password</label>\n              </div>\n              <p id=\"matchFeedback\" class=\"text text-red text-12\" style=\"display:none;\">Password fields must match</p>\n              <!-- <div class=\"aro-pswd_info\">\n                <div id=\"pswd_info\">\n                  <h4 class=\"text-muted text-center\">Minimum Password Requirements:</h4>\n                  <ul>\n                    <li id=\"similar\" class=\"invalid\">Differs from current password</li>\n                    <li id=\"repeating\" class=\"invalid\">No more than 2 repeating characters</li>\n                    <li id=\"unique\" class=\"invalid\">Five unique characters</li>\n                    <li id=\"letter\" class=\"invalid\">One lowercase character</li>\n                    <li id=\"capital\" class=\"invalid\">One UPPERCASE character</strong></li>\n                    <li id=\"number\" class=\"invalid\">One number</strong></li>\n                    <li id=\"length\" class=\"invalid\">From 8 to 255 characters</li>\n                    <li id=\"space\" class=\"invalid\">One special characters: ~!@#$%^&*()-_=+[]{}|;:,.<>/?</strong></li>\n                  </ul>\n                </div>\n              </div> -->\n              <div class=\"show tooltip mt-2\" id=\"password-tooltip\" style=\"display: none;\">\n                <h4 class=\"text-muted text-center\">Minimum Password Requirements:</h4>\n                <ul class=\"list-inline mt-2\" id=\"password-requirements\">\n                    <!-- Dyanmicall populated List -->\n                </ul>\n              </div>\n            </div>\n\n            <div class=\"d-flex flex-column\">\n              {{#if continueButtonLabel}}\n              <button\n                id=\"submitBtn\"\n                data-id=\"submitBtn\"\n                class=\"btn btn-primary mb-3\"\n                type=\"submit\"\n                data-skcomponent=\"skbutton\"\n                data-skbuttontype=\"form-submit\"\n                data-skform=\"recoveryCodeForm\"\n                data-skbuttonvalue=\"SUBMIT\" >\n                  {{continueButtonLabel}}\n              </button>\n              {{/if}}\n\n              {{#if cancelButtonLabel}}\n              <button\n                id=\"cancelBtn\"\n                data-id=\"cancelBtn\"\n                class=\"btn btn-link\"\n                type=\"submit\"\n                data-skcomponent=\"skbutton\"\n                data-skbuttontype=\"next-event\"\n                data-skform=\"recoveryCodeForm\"\n                data-skbuttonvalue=\"CANCEL\">\n                  {{cancelButtonLabel}}\n              </button>\n              {{/if}}\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                  },
+                  "customScript": {
+                    "value": "// ==============================================\r\n// Globals and Configuration\r\n// ==============================================\r\n\r\nconst pswdPolicy = {{global.company.variables.gv-p1PasswordPolicy}};\r\nlet confirmPasswordFocused = false;\r\nconst minCharacters = pswdPolicy.minCharacters;\r\n\r\n\r\n// ==============================================\r\n// Password Rule Generation\r\n// ==============================================\r\n\r\n/**\r\n * Builds and injects password policy rules into the UI.\r\n */\r\nfunction generatePasswordRules() {\r\n    const requirementsList = $('#password-requirements');\r\n    requirementsList.empty();\r\n\r\n    const rules = [];\r\n\r\n    // Length requirement\r\n    if (pswdPolicy.length) {\r\n        rules.push({\r\n            id: \"length\",\r\n            text: `From ${pswdPolicy.length.min} to ${pswdPolicy.length.max} characters`,\r\n            check: pswdPolicy.length.min > 0\r\n        });\r\n    }\r\n\r\n    // Unique characters\r\n    if (pswdPolicy.minUniqueCharacters) {\r\n        rules.push({\r\n            id: \"unique\",\r\n            text: `${pswdPolicy.minUniqueCharacters} unique characters`,\r\n            check: true\r\n        });\r\n    }\r\n\r\n    // Repeating characters\r\n    if (pswdPolicy.maxRepeatedCharacters) {\r\n        rules.push({\r\n            id: \"repeating\",\r\n            text: `No more than ${pswdPolicy.maxRepeatedCharacters} repeating characters`,\r\n            check: true\r\n        });\r\n    }\r\n\r\n    // Must differ from current password\r\n    // if (pswdPolicy.notSimilarToCurrent) {\r\n    //     rules.push({\r\n    //         id: \"different\",\r\n    //         text: `Must differ from current password`,\r\n    //         check: false\r\n    //     });\r\n    // }\r\n\r\n    // Required character types\r\n    for (const [charSet, minCount] of Object.entries(minCharacters)) {\r\n        if (charSet.includes(\"abcdefghijklmnopqrstuvwxyz\")) {\r\n            rules.push({ id: \"letter\", text: `One lowercase character`, check: true });\r\n        } else if (charSet.includes(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")) {\r\n            rules.push({ id: \"capital\", text: `One UPPERCASE character`, check: true });\r\n        } else if (charSet.includes(\"0123456789\")) {\r\n            rules.push({ id: \"number\", text: `One number`, check: true });\r\n        } else {\r\n            rules.push({ id: \"special\", text: `One special character: ${charSet}`, check: true });\r\n        }\r\n    }\r\n\r\n    // Inject into the DOM\r\n    rules.forEach(rule => {\r\n        requirementsList.append(\r\n            `<li id=\"${rule.id}\" class=\"text-dark\">\r\n                <i class=\"mdi mdi-checkbox-blank-circle-outline\"></i> ${rule.text}\r\n            </li>`\r\n        );\r\n    });\r\n}\r\n\r\n\r\n// ==============================================\r\n// Validation Utilities\r\n// ==============================================\r\n\r\n/**\r\n * Updates visual state for a rule in the UI.\r\n * @param {string} selector - jQuery selector for the rule item.\r\n * @param {boolean} isValid - Whether the rule is met.\r\n */\r\nfunction updateRequirement(selector, isValid) {\r\n    const element = $(selector);\r\n    const originalText = element.text().trim().replace(/<[^>]*>/g, '');\r\n\r\n    element.toggleClass(\"text-success\", isValid);\r\n    element.toggleClass(\"text-dark\", !isValid);\r\n\r\n    const icon = isValid\r\n        ? '<i class=\"mdi mdi-check-circle\"></i>'\r\n        : '<i class=\"mdi mdi-checkbox-blank-circle-outline\"></i>';\r\n\r\n    element.html(`${icon} ${originalText}`);\r\n    return isValid;\r\n}\r\n\r\n\r\n/**\r\n * Enables the submit button only if all password requirements are met\r\n * and new/confirm passwords match.\r\n */\r\nfunction enableSubmitButton() {\r\n    const pswd = $('#newPassword').val();\r\n    const currentPswd = $('#currentPassword').val();\r\n    let allRequirementsMet = true;\r\n\r\n    allRequirementsMet &= updateRequirement('#length', pswd.length >= pswdPolicy.length.min);\r\n    allRequirementsMet &= updateRequirement('#unique', new Set(pswd).size >= pswdPolicy.minUniqueCharacters);\r\n    allRequirementsMet &= updateRequirement('#repeating', !/(.)\\1{2,}/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#letter', /[a-z]/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#capital', /[A-Z]/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#number', /\\d/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#special', /[^a-zA-Z0-9]/.test(pswd));\r\n\r\n    if (pswdPolicy.notSimilarToCurrent) {\r\n        const different = pswd !== currentPswd && currentPswd.length > 0;\r\n        allRequirementsMet &= updateRequirement('#different', different);\r\n    }\r\n\r\n    const confirmPassword = $('#confirmPassword').val();\r\n    const passwordsMatch = pswd === confirmPassword;\r\n\r\n    $('#submitBtn').prop('disabled', !(allRequirementsMet && passwordsMatch));\r\n}\r\n\r\n\r\n/**\r\n * Validates whether the two password fields match.\r\n */\r\nfunction validatePasswords() {\r\n    const newPassword = $('#newPassword').val();\r\n    const confirmPassword = $('#confirmPassword').val();\r\n    const isMatch = newPassword === confirmPassword;\r\n\r\n    $('#matchFeedback').toggle(!isMatch);\r\n    $('#confirmPassword').css('border', isMatch ? '1px solid #8b9197' : '1px solid red');\r\n}\r\n\r\n\r\n// ==============================================\r\n// Password Toggle Control\r\n// ==============================================\r\n\r\n/**\r\n * Adds a show/hide toggle button to a password field container.\r\n * @param {string} id - Container element ID.\r\n */\r\nfunction makePasswordToggle(id) {\r\n    const container = document.getElementById(id);\r\n    if (!container) return;\r\n\r\n    const password = container.querySelector(\"input\");\r\n    const toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    toggler.addEventListener(\"click\", () => {\r\n        const isHidden = password.type === \"password\";\r\n        password.type = isHidden ? \"text\" : \"password\";\r\n        toggler.classList.toggle(\"mdi-eye-outline\", isHidden);\r\n        toggler.classList.toggle(\"mdi-eye-off-outline\", !isHidden);\r\n        password.focus();\r\n    });\r\n}\r\n\r\n\r\n// ==============================================\r\n// Focus Helpers\r\n// ==============================================\r\n\r\n/**\r\n * Focuses on the current password field initially.\r\n */\r\nconst focusOnFirstInputElement = () => {\r\n    document.getElementById(\"newPassword\")?.focus();\r\n};\r\n\r\n\r\n// ==============================================\r\n// Initialization\r\n// ==============================================\r\n\r\n$(document).ready(function () {\r\n    // Generate the rules list\r\n    generatePasswordRules();\r\n\r\n    // Wire toggle buttons\r\n    makePasswordToggle(\"currentPasswordContainer\");\r\n    makePasswordToggle(\"passwordContainer\");\r\n    makePasswordToggle(\"confirmPasswordContainer\");\r\n\r\n    // Focus first input\r\n    focusOnFirstInputElement();\r\n\r\n    // Tooltip handling\r\n    const passwordField = $('#newPassword');\r\n    const tooltip = $('#password-tooltip');\r\n    tooltip.hide();\r\n\r\n    passwordField.on('focus', () => tooltip.fadeIn(200));\r\n    passwordField.on('keyup', () => {\r\n        if (passwordField.val().length > 0) {\r\n            tooltip.show();\r\n        }\r\n        enableSubmitButton();\r\n    });\r\n    passwordField.on('blur', () => {\r\n        if (passwordField.val().length === 0) {\r\n            tooltip.fadeOut(200);\r\n        }\r\n    });\r\n\r\n    // Confirm password validation\r\n    $('#confirmPassword')\r\n        .on('focus', () => { confirmPasswordFocused = true; })\r\n        .on('blur', () => { confirmPasswordFocused = false; })\r\n        .on('input', () => {\r\n            if (confirmPasswordFocused) {\r\n                validatePasswords();\r\n                enableSubmitButton();\r\n            }\r\n        });\r\n\r\n    // Run initial validation\r\n    enableSubmitButton();\r\n});\r\n"
+                  },
+                  "formFieldsList": {
+                    "value": [
+                      {
+                        "displayName": "New Password",
+                        "hashedVisibility": true,
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "newPassword",
+                        "value": ""
+                      },
+                      {
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "buttonValue"
+                      },
+                      {
+                        "propertyName": "riskPayload",
+                        "preferredControlType": "textField",
+                        "preferredDataType": "Object",
+                        "value": "",
+                        "hashedVisibility": false,
+                        "displayName": ""
+                      }
+                    ]
+                  },
+                  "nextButtonText": {
+                    "value": "Sign On"
+                  },
+                  "nodeDescription": {
+                    "value": "Form to allow the user to enter their New Password, utilizing a password tool tip."
+                  },
+                  "nodeTitle": {
+                    "value": "New Password Form - False "
+                  },
+                  "title": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Enter New Password\"\n      }\n    ]\n  }\n]"
+                  },
+                  "validationRules": {
+                    "value": []
+                  },
+                  "inputSchema": {
+                    "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"textTwo\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text Two\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"continueButtonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Continue Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"cancelButtonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Cancel Password Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"errorMessage\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        }\n    }\n}"
+                  },
+                  "errorMessage": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"errorMessage\",\n        \"data\": \"{{local.1xwzg03vfv.payload.output.errorMessage}}\",\n        \"tooltip\": \"{{local.1xwzg03vfv.payload.output.errorMessage}}\",\n        \"children\": [\n          {\n            \"text\": \"errorMessage\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "textOne": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Please set you password below\"\n      }\n    ]\n  }\n]"
+                  },
+                  "continueButtonLabel": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Submit\"\n      }\n    ]\n  }\n]"
+                  },
+                  "cancelButtonLabel": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Cancel\"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "status": "configured",
+                "type": "trigger",
+                "idUnique": "0894khaqao"
+              },
+              "position": {
+                "x": 1917.3563655345995,
+                "y": 2494.873343105262
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "uymaba8xpf",
+                "nodeType": "CONNECTION",
+                "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+                "connectorId": "httpConnector",
+                "name": "Http",
+                "label": "Http",
+                "status": "configured",
+                "capabilityName": "customHTMLTemplate",
+                "type": "trigger",
+                "properties": {
+                  "customHTML": {
+                    "value": "<div class=\"end-user-nano\">\n    <div class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n        <div class=\"mh-100 h-75\" style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n                    <div class=\"d-flex flex-column\">\n                        <button\n                            data-id=\"button\"\n                            type=\"submit\"\n                            class=\"btn btn-primary mb-3\"\n                            data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"next-event\">\n                            {{buttonLabel}}\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "formFieldsList": {
+                    "value": [
+                      {
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "buttonValue"
+                      }
+                    ]
+                  },
+                  "nodeTitle": {
+                    "value": "False Success Message"
+                  },
+                  "nodeDescription": {
+                    "value": "Display False Success message"
+                  },
+                  "inputSchema": {
+                    "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        },\n        \"textTwo\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text Two\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textTwo\"\n        },\n        \"buttonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"buttonLabel\"\n        }\n    }\n}"
+                  },
+                  "title": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Failure\"\n      }\n    ]\n  }\n]"
+                  },
+                  "buttonLabel": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Continue\"\n      }\n    ]\n  }\n]"
+                  },
+                  "textOne": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"There was an issue updating your password. Please press continue to restart your experience \"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "idUnique": "9ol58r20bg"
+              },
+              "position": {
+                "x": 2286.9672311798236,
+                "y": 2494.873343105262
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "9i459szbhg",
+                "nodeType": "EVAL"
+              },
+              "position": {
+                "x": 2102.1617983572114,
+                "y": 2494.873343105262
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "52w2ns7934",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Node",
+                "status": "configured",
+                "capabilityName": "goToNode",
+                "type": "action",
+                "properties": {
+                  "nodeInstanceId": {
+                    "value": "tbteczbt9t"
+                  }
+                },
+                "idUnique": "l5uhe67j83"
+              },
+              "position": {
+                "x": 2541.074701310915,
+                "y": 2494.873343105262
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "dsbywgy467",
+                "nodeType": "EVAL"
+              },
+              "position": {
+                "x": 2402.470626693956,
+                "y": 2494.873343105262
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "77hmb28n20",
+                "nodeType": "CONNECTION",
+                "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+                "connectorId": "httpConnector",
+                "name": "Http",
+                "label": "Http",
+                "status": "configured",
+                "capabilityName": "customHTMLTemplate",
+                "type": "trigger",
+                "properties": {
+                  "customHTML": {
+                    "value": "<div class=\"end-user-nano\">\n    <div class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n        <div class=\"mh-100 h-75\" style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n                    <div class=\"d-flex flex-column\">\n                        <button\n                            data-id=\"button\"\n                            type=\"submit\"\n                            class=\"btn btn-primary mb-3\"\n                            data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"next-event\">\n                            {{buttonLabel}}\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                  },
+                  "formFieldsList": {
+                    "value": [
+                      {
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "buttonValue"
+                      }
+                    ]
+                  },
+                  "nodeTitle": {
+                    "value": "False Success Message"
+                  },
+                  "nodeDescription": {
+                    "value": "Display False Success message"
+                  },
+                  "inputSchema": {
+                    "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        },\n        \"textTwo\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text Two\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textTwo\"\n        },\n        \"buttonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"buttonLabel\"\n        }\n    }\n}"
+                  },
+                  "title": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Failure\"\n      }\n    ]\n  }\n]"
+                  },
+                  "buttonLabel": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Continue\"\n      }\n    ]\n  }\n]"
+                  },
+                  "textOne": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"There was an issue updating your password. Please press continue to restart your experience \"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "idUnique": "9ol58r20bg"
+              },
+              "position": {
+                "x": 2286.9672311798236,
+                "y": 4458.431066845515
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ttv2crxcyo",
+                "nodeType": "EVAL"
+              },
+              "position": {
+                "x": 2102.1617983572114,
+                "y": 4458.431066845515
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "e0nxl4enp7",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Node",
+                "status": "configured",
+                "capabilityName": "goToNode",
+                "type": "action",
+                "properties": {
+                  "nodeInstanceId": {
+                    "value": "tbteczbt9t"
+                  }
+                },
+                "idUnique": "l5uhe67j83"
+              },
+              "position": {
+                "x": 2587.2760595165682,
+                "y": 4458.431066845515
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "4wo2cvz6yu",
+                "nodeType": "EVAL"
+              },
+              "position": {
+                "x": 2425.571305796783,
+                "y": 4458.431066845515
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "capabilityName": "customHTMLTemplate",
+                "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+                "connectorId": "httpConnector",
+                "id": "4fa1q1lk6x",
+                "label": "Http",
+                "name": "Http",
+                "nodeType": "CONNECTION",
+                "properties": {
+                  "buttonLabel": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Continue\"\n      }\n    ]\n  }\n]"
+                  },
+                  "buttonLabel2": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Cancel\"\n      }\n    ]\n  }\n]"
+                  },
+                  "customCSS": {
+                    "value": ".alignleft {\n    float: left;\n    margin-right: 15px;\n}\n.alignright {\n    float: right;\n    margin-left: 15px;\n}\n.aligncenter {\n    display: block;\n    margin: 0 auto 15px;\n}\na:focus { outline: 0 solid }\nimg {\n    max-width: 100%;\n    height: auto;\n}\n.fix { overflow: hidden }\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    margin: 0 0 15px;\n    font-weight: 700;\n}\nhtml,\nbody { height: 100% }\n\na {\n    -moz-transition: 0.3s;\n    -o-transition: 0.3s;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    color: rgba(220, 220, 220, 0.865);\n}\na:hover { text-decoration: none }\n\n.container {\n    position: relative;\n    max-width: 400px;\n    margin: auto; \n    padding-left: 0 !important;\n    padding-right: 0 !important;\n}\n\n#newPassword {\n    width: 100%;\n    margin-bottom: 10px;\n}\n\n#pswd_info {\n    background: #FFFFFF;\n    color: #000;\n    display: none;\n    padding: 8px;\n    font-size: 0.85rem;\n    border-radius: 4px;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.15);\n    left: 100%;\n    top: 0%;\n    transform: translateY(-90%);\n    z-index: 100;\n    position: absolute;\n    margin-left: 10px;\n    white-space: nowrap;\n    transition: opacity 1s ease-in-out, transform 1s ease-in-out;\n    width: 360px;\n    max-width:360px;\n}\n\n@media (max-width: 767px) {\n    #pswd_info {\n        width: 100%;\n        margin-top: 20px;\n    }\n}\n\n.input-group {\n    position: relative;\n}\n\n#pswd_info ul {\n    list-style: none;\n    padding-left: 0;\n}\n\n#pswd_info li {\n    color: black;\n    position: relative;\n    padding-left: 25px;\n    margin-bottom: 5px;\n    font-size: 12px;\n    display:none;\n}\n\n#pswd_info li.valid {\n    color: green;\n}\n\n#pswd_info {\n    display:none;\n}\n\n.text-red {\n    color:red !important;\n}\n\n.text-12 {\n    font-size:12px;\n}\n"
+                  },
+                  "customHTML": {
+                    "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  <div class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mh-100 h-75\" style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card shadow mb-5\">\n        <div class=\"card-body p-5 d-flex flex-column\">\n          <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n\n          {{#if title}}\n          <h1 class=\"text-center mb-4\">{{title}}</h1>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          {{#if textTwo}}\n          <p class=\"text-danger mdi mdi-alert-circle text-center\">{{textTwo}}</p>\n          {{/if}}\n\n          <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger mdi mdi-alert-circle\" data-skcomponent=\"skerror\"></p>\n          <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n            <div id=\"currentPasswordContainer\" class=\"mb-3 form-floating\">\n              <input id=\"currentPassword\" data-id=\"currentPassword\" class=\"form-control\" type=\"password\" name=\"currentPassword\" placeholder=\"currentPassword\" autocomplete=\"off\" value=\"\" />\n              <label class=\"form-label\" for=\"currentPassword\">Current Password</label>\n            </div>\n            <p class=\"text text-red text-12\" data-skerrorid=\"currentPassword\" data-skcomponent=\"skerrormessage\"></p>\n            <!-- Do not touch the container, any other inputs go above this line -->\n            <div class=\"container\">\n              <div id=\"passwordContainer\" class=\"mb-3 form-floating\">\n                <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\" placeholder=\"newPassword\" autocomplete=\"off\" value=\"\" />\n                <label class=\"form-label\" for=\"newPassword\">New Password</label>\n              </div>\n              <div id=\"confirmPasswordContainer\" class=\"mb-3 form-floating\">\n                <input id=\"confirmPassword\" data-id=\"confirmPassword\" class=\"form-control\" type=\"password\" name=\"confirmPassword\" placeholder=\"confirmPassword\" autocomplete=\"off\" value=\"\" />\n                <label class=\"form-label\" for=\"confirmPassword\">Confirm Password</label>\n              </div>\n              <p id=\"matchFeedback\" class=\"text text-red text-12\" style=\"display:none;\">Password fields must match</p>\n              <!-- <div class=\"aro-pswd_info\">\n                <div id=\"pswd_info\">\n                  <h4 class=\"text-muted text-center\">Minimum Password Requirements:</h4>\n                  <ul>\n                    <li id=\"similar\" class=\"invalid\">Differs from current password</li>\n                    <li id=\"repeating\" class=\"invalid\">No more than 2 repeating characters</li>\n                    <li id=\"unique\" class=\"invalid\">Five unique characters</li>\n                    <li id=\"letter\" class=\"invalid\">One lowercase character</li>\n                    <li id=\"capital\" class=\"invalid\">One UPPERCASE character</strong></li>\n                    <li id=\"number\" class=\"invalid\">One number</strong></li>\n                    <li id=\"length\" class=\"invalid\">From 8 to 255 characters</li>\n                    <li id=\"space\" class=\"invalid\">One special characters: ~!@#$%^&*()-_=+[]{}|;:,.<>/?</strong></li>\n                  </ul>\n                </div>\n              </div> -->\n              <div class=\"show tooltip mt-2\" id=\"password-tooltip\" style=\"display: none;\">\n                <h4 class=\"text-muted text-center\">Minimum Password Requirements:</h4>\n                <ul class=\"list-inline mt-2\" id=\"password-requirements\">\n                    <!-- Dyanmicall populated List -->\n                </ul>\n              </div>\n            </div>\n            {{#if buttonLabel}}\n            <div class=\"d-flex flex-column\">\n              <button\n                id=\"submitBtn\"\n                data-id=\"submitBtn\"\n                class=\"btn btn-primary mb-3\"\n                type=\"submit\"\n                data-skcomponent=\"skbutton\"\n                data-skbuttontype=\"form-submit\"\n                data-skform=\"recoveryCodeForm\"\n                data-skbuttonvalue=\"SUBMIT\"\n                disabled>\n                  {{buttonLabel}}\n              </button>\n            </div>\n            {{/if}}\n            {{#if buttonLabel2}}\n            <div class=\"d-flex flex-column\">\n              <button\n                id=\"cancelBtn\"\n                data-id=\"cancelBtn\"\n                class=\"btn btn-link\"\n                type=\"submit\"\n                data-skcomponent=\"skbutton\"\n                data-skbuttontype=\"next-event\"\n                data-skform=\"recoveryCodeForm\"\n                data-skbuttonvalue=\"CANCEL\">\n                  {{buttonLabel2}}\n              </button>\n            </div>\n            {{/if}}\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                  },
+                  "customScript": {
+                    "value": "// ==============================================\r\n// Globals and Configuration\r\n// ==============================================\r\n\r\nconst pswdPolicy = {{global.company.variables.gv-p1PasswordPolicy}};\r\nlet confirmPasswordFocused = false;\r\nconst minCharacters = pswdPolicy.minCharacters;\r\n\r\n\r\n// ==============================================\r\n// Password Rule Generation\r\n// ==============================================\r\n\r\n/**\r\n * Builds and injects password policy rules into the UI.\r\n */\r\nfunction generatePasswordRules() {\r\n    const requirementsList = $('#password-requirements');\r\n    requirementsList.empty();\r\n\r\n    const rules = [];\r\n\r\n    // Length requirement\r\n    if (pswdPolicy.length) {\r\n        rules.push({\r\n            id: \"length\",\r\n            text: `From ${pswdPolicy.length.min} to ${pswdPolicy.length.max} characters`,\r\n            check: pswdPolicy.length.min > 0\r\n        });\r\n    }\r\n\r\n    // Unique characters\r\n    if (pswdPolicy.minUniqueCharacters) {\r\n        rules.push({\r\n            id: \"unique\",\r\n            text: `${pswdPolicy.minUniqueCharacters} unique characters`,\r\n            check: true\r\n        });\r\n    }\r\n\r\n    // Repeating characters\r\n    if (pswdPolicy.maxRepeatedCharacters) {\r\n        rules.push({\r\n            id: \"repeating\",\r\n            text: `No more than ${pswdPolicy.maxRepeatedCharacters} repeating characters`,\r\n            check: true\r\n        });\r\n    }\r\n\r\n    // Must differ from current password\r\n    if (pswdPolicy.notSimilarToCurrent) {\r\n        rules.push({\r\n            id: \"different\",\r\n            text: `Must differ from current password`,\r\n            check: true\r\n        });\r\n    }\r\n\r\n    // Required character types\r\n    for (const [charSet, minCount] of Object.entries(minCharacters)) {\r\n        if (charSet.includes(\"abcdefghijklmnopqrstuvwxyz\")) {\r\n            rules.push({ id: \"letter\", text: `One lowercase character`, check: true });\r\n        } else if (charSet.includes(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\")) {\r\n            rules.push({ id: \"capital\", text: `One UPPERCASE character`, check: true });\r\n        } else if (charSet.includes(\"0123456789\")) {\r\n            rules.push({ id: \"number\", text: `One number`, check: true });\r\n        } else {\r\n            rules.push({ id: \"special\", text: `One special character: ${charSet}`, check: true });\r\n        }\r\n    }\r\n\r\n    // Inject into the DOM\r\n    rules.forEach(rule => {\r\n        requirementsList.append(\r\n            `<li id=\"${rule.id}\" class=\"text-dark\">\r\n                <i class=\"mdi mdi-checkbox-blank-circle-outline\"></i> ${rule.text}\r\n            </li>`\r\n        );\r\n    });\r\n}\r\n\r\n\r\n// ==============================================\r\n// Validation Utilities\r\n// ==============================================\r\n\r\n/**\r\n * Updates visual state for a rule in the UI.\r\n * @param {string} selector - jQuery selector for the rule item.\r\n * @param {boolean} isValid - Whether the rule is met.\r\n */\r\nfunction updateRequirement(selector, isValid) {\r\n    const element = $(selector);\r\n    const originalText = element.text().trim().replace(/<[^>]*>/g, '');\r\n\r\n    element.toggleClass(\"text-success\", isValid);\r\n    element.toggleClass(\"text-dark\", !isValid);\r\n\r\n    const icon = isValid\r\n        ? '<i class=\"mdi mdi-check-circle\"></i>'\r\n        : '<i class=\"mdi mdi-checkbox-blank-circle-outline\"></i>';\r\n\r\n    element.html(`${icon} ${originalText}`);\r\n    return isValid;\r\n}\r\n\r\n\r\n/**\r\n * Enables the submit button only if all password requirements are met\r\n * and new/confirm passwords match.\r\n */\r\nfunction enableSubmitButton() {\r\n    const pswd = $('#newPassword').val();\r\n    const currentPswd = $('#currentPassword').val();\r\n    let allRequirementsMet = true;\r\n\r\n    allRequirementsMet &= updateRequirement('#length', pswd.length >= pswdPolicy.length.min);\r\n    allRequirementsMet &= updateRequirement('#unique', new Set(pswd).size >= pswdPolicy.minUniqueCharacters);\r\n    allRequirementsMet &= updateRequirement('#repeating', !/(.)\\1{2,}/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#letter', /[a-z]/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#capital', /[A-Z]/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#number', /\\d/.test(pswd));\r\n    allRequirementsMet &= updateRequirement('#special', /[^a-zA-Z0-9]/.test(pswd));\r\n\r\n    if (pswdPolicy.notSimilarToCurrent) {\r\n        const different = pswd !== currentPswd && currentPswd.length > 0;\r\n        allRequirementsMet &= updateRequirement('#different', different);\r\n    }\r\n\r\n    const confirmPassword = $('#confirmPassword').val();\r\n    const passwordsMatch = pswd === confirmPassword;\r\n\r\n    $('#submitBtn').prop('disabled', !(allRequirementsMet && passwordsMatch));\r\n}\r\n\r\n\r\n/**\r\n * Validates whether the two password fields match.\r\n */\r\nfunction validatePasswords() {\r\n    const newPassword = $('#newPassword').val();\r\n    const confirmPassword = $('#confirmPassword').val();\r\n    const isMatch = newPassword === confirmPassword;\r\n\r\n    $('#matchFeedback').toggle(!isMatch);\r\n    $('#confirmPassword').css('border', isMatch ? '1px solid #8b9197' : '1px solid red');\r\n}\r\n\r\n\r\n// ==============================================\r\n// Password Toggle Control\r\n// ==============================================\r\n\r\n/**\r\n * Adds a show/hide toggle button to a password field container.\r\n * @param {string} id - Container element ID.\r\n */\r\nfunction makePasswordToggle(id) {\r\n    const container = document.getElementById(id);\r\n    if (!container) return;\r\n\r\n    const password = container.querySelector(\"input\");\r\n    const toggler = document.createElement(\"button\");\r\n    toggler.setAttribute(\"type\", \"button\");\r\n    toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\r\n    toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\r\n    container.appendChild(toggler);\r\n\r\n    toggler.addEventListener(\"click\", () => {\r\n        const isHidden = password.type === \"password\";\r\n        password.type = isHidden ? \"text\" : \"password\";\r\n        toggler.classList.toggle(\"mdi-eye-outline\", isHidden);\r\n        toggler.classList.toggle(\"mdi-eye-off-outline\", !isHidden);\r\n        password.focus();\r\n    });\r\n}\r\n\r\n\r\n// ==============================================\r\n// Focus Helpers\r\n// ==============================================\r\n\r\n/**\r\n * Focuses on the current password field initially.\r\n */\r\nconst focusOnFirstInputElement = () => {\r\n    document.getElementById(\"currentPassword\")?.focus();\r\n};\r\n\r\n\r\n// ==============================================\r\n// Initialization\r\n// ==============================================\r\n\r\n$(document).ready(function () {\r\n    // Generate the rules list\r\n    generatePasswordRules();\r\n\r\n    // Wire toggle buttons\r\n    makePasswordToggle(\"currentPasswordContainer\");\r\n    makePasswordToggle(\"passwordContainer\");\r\n    makePasswordToggle(\"confirmPasswordContainer\");\r\n\r\n    // Focus first input\r\n    focusOnFirstInputElement();\r\n\r\n    // Tooltip handling\r\n    const passwordField = $('#newPassword');\r\n    const tooltip = $('#password-tooltip');\r\n    tooltip.hide();\r\n\r\n    passwordField.on('focus', () => tooltip.fadeIn(200));\r\n    passwordField.on('keyup', () => {\r\n        if (passwordField.val().length > 0) {\r\n            tooltip.show();\r\n        }\r\n        enableSubmitButton();\r\n    });\r\n    passwordField.on('blur', () => {\r\n        if (passwordField.val().length === 0) {\r\n            tooltip.fadeOut(200);\r\n        }\r\n    });\r\n\r\n    // Confirm password validation\r\n    $('#confirmPassword')\r\n        .on('focus', () => { confirmPasswordFocused = true; })\r\n        .on('blur', () => { confirmPasswordFocused = false; })\r\n        .on('input', () => {\r\n            if (confirmPasswordFocused) {\r\n                validatePasswords();\r\n                enableSubmitButton();\r\n            }\r\n        });\r\n\r\n    // Run initial validation\r\n    enableSubmitButton();\r\n});\r\n"
+                  },
+                  "formFieldsList": {
+                    "value": [
+                      {
+                        "displayName": "New Password",
+                        "hashedVisibility": true,
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "newPassword",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                      },
+                      {
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "buttonValue",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                      },
+                      {
+                        "displayName": "Current Password",
+                        "hashedVisibility": true,
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "currentPassword",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"currentPassword\",\n        \"data\": \"{{local.unczlwjhkl.payload.output.currentPassword}}\",\n        \"tooltip\": \"{{local.unczlwjhkl.payload.output.currentPassword}}\",\n        \"children\": [\n          {\n            \"text\": \"currentPassword\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                      },
+                      {
+                        "propertyName": "riskPayload",
+                        "preferredControlType": "textField",
+                        "preferredDataType": "Object",
+                        "value": "",
+                        "hashedVisibility": false
+                      }
+                    ]
+                  },
+                  "inputSchema": {
+                    "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        },\n        \"textTwo\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text Two\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textTwo\"\n        },\n        \"buttonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"buttonLabel\"\n        },\n        \"buttonLabel2\": {\n            \"type\": \"string\",\n            \"displayName\": \"Button Label2\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"buttonLabel2\"\n        }\n    }\n}"
+                  },
+                  "nextButtonText": {
+                    "value": "Sign On"
+                  },
+                  "nodeDescription": {
+                    "value": "Form to allow the user to enter their Current Password and their New Password, utilizing a password tool tip."
+                  },
+                  "nodeTitle": {
+                    "value": "Current & New Password Form"
+                  },
+                  "textOne": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"Enter your current and new password below\"\n      }\n    ]\n  }\n]"
+                  },
+                  "title": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Change\"\n      },\n      {\n        \"text\": \" Password\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "validationRules": {
+                    "value": []
+                  },
+                  "flowType": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"flowType\",\n        \"data\": \"{{local.djvv9jd9mc.payload.output.flowType}}\",\n        \"tooltip\": \"{{local.djvv9jd9mc.payload.output.flowType}}\",\n        \"children\": [\n          {\n            \"text\": \"flowType\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "textTwo": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"errorMessage\",\n        \"data\": \"{{local.unczlwjhkl.payload.output.errorMessage}}\",\n        \"tooltip\": \"{{local.unczlwjhkl.payload.output.errorMessage}}\",\n        \"children\": [\n          {\n            \"text\": \"errorMessage\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "status": "configured",
+                "type": "trigger",
+                "idUnique": "6mj9kv85cu"
+              },
+              "position": {
+                "x": 1917.3563655345995,
+                "y": 4458.431066845515
               },
               "group": "nodes",
               "removed": false,
@@ -18872,6 +19243,45 @@
             }
           ],
           "edges": [
+            {
+              "data": {
+                "id": "4z47wu6z0c",
+                "source": "77hmb28n20",
+                "target": "4wo2cvz6yu"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "dtip2sf9xf",
+                "source": "jwy3je13fv",
+                "target": "ix24o1ruk0",
+                "multiValueSourceId": "jw3yf7imvb"
+              },
+              "position": {
+                "x": 64,
+                "y": 132
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
             {
               "data": {
                 "id": "pdkmsk18lm",
@@ -21679,25 +22089,6 @@
                 "id": "7myjrquuly",
                 "source": "ru821rgrt0",
                 "target": "4yh27uek10"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "q3yufnpj6u",
-                "source": "mff33i01qv",
-                "target": "sdk5ldfsva"
               },
               "position": {
                 "x": 0,
@@ -24859,9 +25250,9 @@
             },
             {
               "data": {
-                "id": "enqeyyjc5l",
-                "source": "q0ajd8ved2",
-                "target": "7wf16gy8fc"
+                "id": "u8n2sqlntf",
+                "source": "4wo2cvz6yu",
+                "target": "e0nxl4enp7"
               },
               "position": {
                 "x": 0,
@@ -24878,14 +25269,146 @@
             },
             {
               "data": {
-                "id": "dtip2sf9xf",
-                "source": "jwy3je13fv",
-                "target": "ix24o1ruk0",
-                "multiValueSourceId": "jw3yf7imvb"
+                "id": "sc7yubuo2y",
+                "source": "mff33i01qv",
+                "target": "m56c1ps1ia"
               },
               "position": {
-                "x": 64,
-                "y": 132
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "i7zcfts30s",
+                "source": "m56c1ps1ia",
+                "target": "9i459szbhg"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "6h98cb84kh",
+                "source": "9i459szbhg",
+                "target": "uymaba8xpf"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "j7qsuhagdf",
+                "source": "uymaba8xpf",
+                "target": "dsbywgy467"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "x1kimmen2s",
+                "source": "dsbywgy467",
+                "target": "52w2ns7934"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ge8jt4gxij",
+                "source": "ttv2crxcyo",
+                "target": "77hmb28n20"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "z2frhgwymu",
+                "source": "4fa1q1lk6x",
+                "target": "ttv2crxcyo"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "52w50vqrxy",
+                "source": "q0ajd8ved2",
+                "target": "4fa1q1lk6x"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
               },
               "group": "edges",
               "removed": false,
@@ -24967,7 +25490,7 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1758575010743,
+      "savedDate": 1758672237232,
       "variables": [
         {
           "context": "flowInstance",
