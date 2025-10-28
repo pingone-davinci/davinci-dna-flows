@@ -16,7 +16,7 @@
   "currentVersion": 21,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
   "deployedDate": 1761676612373,
-  "description": "Cloned on Tue Oct 28 2025 18:21:09 GMT+0000 (Coordinated Universal Time). \nHandles the orchestration of Login, Registration, MFA, Protect and Verify intended for CIAM",
+  "description": "Handles the orchestration of Login, Registration, MFA, Protect and Verify intended for CIAM",
   "flowStatus": "enabled",
   "isOutputSchemaSaved": false,
   "name": "[MainFlow - 4] Login and Registration with MFA | [SSO, MFA-1, MFA-2]",

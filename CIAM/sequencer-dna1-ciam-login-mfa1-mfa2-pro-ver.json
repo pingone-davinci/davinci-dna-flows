@@ -284,7 +284,7 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: SSO] Login Flow | [PID-1, PRO, VER]",
+                  "label": "[SubFlow: SSO-1] Login Flow | [PID-1, PRO, VER]",
                   "value": "d9d13a75c8ec4281dbaf96684992a2e5"
                 }
               },
