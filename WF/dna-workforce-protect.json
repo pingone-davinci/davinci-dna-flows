@@ -1,5 +1,5 @@
 {
-  "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44",
+  "companyId": "effa9215-e77b-4465-9af7-a4534abbff76",
   "authTokenExpireIds": [],
   "connectorIds": [
     "functionsConnector",
@@ -9,10 +9,10 @@
     "httpConnector",
     "variablesConnector"
   ],
-  "createdDate": 1761666842537,
-  "currentVersion": 1,
+  "createdDate": 1762187793581,
+  "currentVersion": 2,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761666842609,
+  "deployedDate": 1762187795285,
   "description": "PingOne Protect flow to evaluate risk to handle both START and END. Currently allowing: \nLow to SUCCESS\nMedium to MFA\nHigh to VERIFY",
   "flowStatus": "enabled",
   "inputSchemaCompiled": {
@@ -105,8 +105,8 @@
   },
   "isInputSchemaSaved": true,
   "isOutputSchemaSaved": false,
-  "name": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-  "publishedVersion": 1,
+  "name": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+  "publishedVersion": 2,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -114,11 +114,12 @@
     "customTimeoutErrorScreenMessage": "",
     "customTimeoutErrorScreenHTML": "",
     "customTimeoutErrorScreenCSS": "",
-    "logLevel": 4
+    "logLevel": 3
   },
-  "updatedDate": 1761666842651,
-  "flowId": "ba162cb5e982c0d43d891c25c421a88e",
-  "versionId": 1,
+  "timeouts": "null",
+  "updatedDate": 1762187795355,
+  "flowId": "3a9bfd3a96c69934a2fce8036244eef9",
+  "versionId": 2,
   "graphData": {
     "elements": {
       "nodes": [
@@ -4566,11 +4567,11 @@
     }
   ],
   "flowColor": "#E3F0FF",
-  "savedDate": 1761666842343,
+  "savedDate": 1762187793371,
   "variables": [
     {
       "context": "flowInstance",
-      "createdDate": 1760716173122,
+      "createdDate": 1760708779987,
       "fields": {
         "type": "string",
         "displayName": "The Evaluation ID from the Risk Evaluation",
@@ -4578,15 +4579,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "c2998c69-cb3d-4f72-ac26-c3ac68806359",
+      "id": "23af646d-be60-4183-926a-8945ccd6da39",
       "type": "property",
       "visibility": "private",
       "name": "riskEvaluationId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173127,
+      "createdDate": 1760708779983,
       "fields": {
         "type": "string",
         "displayName": "Level for the PingOne Protect Evaluation",
@@ -4594,15 +4595,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "f254335a-519d-40e7-883e-97a57d8b0f12",
+      "id": "5c94ae9c-6c01-4d73-931d-dfe9ebfaabca",
       "type": "property",
       "visibility": "private",
       "name": "riskLevel##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173121,
+      "createdDate": 1760708779985,
       "fields": {
         "type": "object",
         "displayName": "The object from the Risk Evaluation, if needed for later",
@@ -4610,15 +4611,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "65272f3e-50e2-4f79-bc7a-2a36a7da64fc",
+      "id": "928a4c90-1e84-4e49-834d-c36d3f938a65",
       "type": "property",
       "visibility": "private",
       "name": "riskObject##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173128,
+      "createdDate": 1760708779986,
       "fields": {
         "type": "string",
         "displayName": "Recommended Action for Risk Eval",
@@ -4626,11 +4627,11 @@
         "min": 0,
         "max": 2000
       },
-      "id": "196ffbdf-241f-421b-a21d-2edac5c79f1c",
+      "id": "3fc8ec70-7038-480b-9d03-7b3ef24ee3d6",
       "type": "property",
       "visibility": "private",
       "name": "riskRecommendedAction##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ],
   "connections": []

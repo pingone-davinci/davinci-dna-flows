@@ -1,5 +1,5 @@
 {
-  "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44",
+  "companyId": "effa9215-e77b-4465-9af7-a4534abbff76",
   "authTokenExpireIds": [],
   "connectorIds": [
     "pingOneAuthenticationConnector",
@@ -12,15 +12,15 @@
     "analyticsConnector",
     "codeSnippetConnector"
   ],
-  "createdDate": 1761675909556,
-  "currentVersion": 23,
+  "createdDate": 1762188592093,
+  "currentVersion": 8,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761680772190,
+  "deployedDate": 1762189087075,
   "description": "The default & global authentication flow applied to all applications & users without Protect or Verify",
   "flowStatus": "enabled",
   "isOutputSchemaSaved": false,
-  "name": "[MainFlow - 4] Login with MFA | [SSO, PID-1, PID-2]",
-  "publishedVersion": 23,
+  "name": "[MainFlow - 4] Login with MFA _ [SSO, PID-1, PID-2]",
+  "publishedVersion": 8,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -44,9 +44,9 @@
   "trigger": {
     "type": "AUTHENTICATION"
   },
-  "updatedDate": 1761680772255,
-  "flowId": "8d3149673bf20674e36387161c331f8f",
-  "versionId": 23,
+  "updatedDate": 1762189087133,
+  "flowId": "330bf51723d8484a7574c80531bab40d",
+  "versionId": 8,
   "graphData": {
     "elements": {
       "nodes": [
@@ -77,7 +77,7 @@
             }
           },
           "position": {
-            "x": 903.2647919334022,
+            "x": 907.2647919334022,
             "y": 592.7675197062952
           },
           "group": "nodes",
@@ -109,7 +109,7 @@
             }
           },
           "position": {
-            "x": 1044.3999156729963,
+            "x": 1048.3999156729963,
             "y": 592.7675197062952
           },
           "group": "nodes",
@@ -145,7 +145,7 @@
             }
           },
           "position": {
-            "x": 1241.9890889084281,
+            "x": 1245.9890889084281,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -171,7 +171,7 @@
             }
           },
           "position": {
-            "x": 1383.1242126480222,
+            "x": 1387.1242126480222,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -197,8 +197,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: SSO-2] Login Flow without Protect | [PID-1]",
-                  "value": "9b8f626c29b9f2f59fb0cfe89678a7cf"
+                  "label": "[SubFlow: SSO-2] Login Flow without Protect _ [PID-1]",
+                  "value": "a5f772e8a97b702b9dd6b307f5be4c6b"
                 }
               },
               "subFlowVersionId": {
@@ -234,7 +234,7 @@
             }
           },
           "position": {
-            "x": 1241.9890889084281,
+            "x": 1245.9890889084281,
             "y": 762.1296681938081
           },
           "group": "nodes",
@@ -258,7 +258,7 @@
             }
           },
           "position": {
-            "x": 1383.1242126480222,
+            "x": 1387.1242126480222,
             "y": 762.1296681938081
           },
           "group": "nodes",
@@ -357,7 +357,7 @@
             }
           },
           "position": {
-            "x": 1862.983633362642,
+            "x": 1866.983633362642,
             "y": 875.0377671854834
           },
           "group": "nodes",
@@ -386,7 +386,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Success"
+                "value": "Sign On Success                    -                    -                    -                    -                    -                    Sign On Success"
               },
               "width": {
                 "value": 1500
@@ -408,7 +408,7 @@
             "idUnique": "arddjbnwdk"
           },
           "position": {
-            "x": 218.6086746459241,
+            "x": 222.6086746459241,
             "y": 1740
           },
           "group": "nodes",
@@ -465,7 +465,7 @@
             "idUnique": "7r9oykc4g"
           },
           "position": {
-            "x": 218.6086746459241,
+            "x": 222.6086746459241,
             "y": 1860
           },
           "group": "nodes",
@@ -520,7 +520,7 @@
             "idUnique": "f12uwfigwv"
           },
           "position": {
-            "x": 1050,
+            "x": 1054,
             "y": 1950
           },
           "group": "nodes",
@@ -554,7 +554,7 @@
             "idUnique": "v1wzc4z0b6"
           },
           "position": {
-            "x": 398.6086746459241,
+            "x": 402.6086746459241,
             "y": 1950
           },
           "group": "nodes",
@@ -573,7 +573,7 @@
             "idUnique": "e48b4ysbon"
           },
           "position": {
-            "x": 518.6086746459241,
+            "x": 522.6086746459241,
             "y": 1950
           },
           "group": "nodes",
@@ -630,7 +630,7 @@
             "idUnique": "0s6qpit9a8"
           },
           "position": {
-            "x": 218.6086746459241,
+            "x": 222.6086746459241,
             "y": 2430
           },
           "group": "nodes",
@@ -667,7 +667,7 @@
             "idUnique": "cgsgnfk7da"
           },
           "position": {
-            "x": 368.6086746459241,
+            "x": 372.6086746459241,
             "y": 2550
           },
           "group": "nodes",
@@ -696,7 +696,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Failure"
+                "value": "Sign On Failure                    -                    -                    -                    -                    -                    Sign On Failure"
               },
               "width": {
                 "value": 1500
@@ -718,7 +718,7 @@
             "idUnique": "hq4aiqs2sr"
           },
           "position": {
-            "x": 218.6086746459241,
+            "x": 222.6086746459241,
             "y": 2310
           },
           "group": "nodes",
@@ -763,7 +763,7 @@
             }
           },
           "position": {
-            "x": 1580.7133858834538,
+            "x": 1584.7133858834538,
             "y": 592.7675197062952
           },
           "group": "nodes",
@@ -802,7 +802,7 @@
             }
           },
           "position": {
-            "x": 1580.7133858834538,
+            "x": 1584.7133858834538,
             "y": 1100.8539651688338
           },
           "group": "nodes",
@@ -853,7 +853,7 @@
             }
           },
           "position": {
-            "x": 938.6086746459241,
+            "x": 942.6086746459241,
             "y": 2550
           },
           "group": "nodes",
@@ -907,7 +907,7 @@
             "idUnique": "g9fybbwj88"
           },
           "position": {
-            "x": 638.6086746459241,
+            "x": 642.6086746459241,
             "y": 2550
           },
           "group": "nodes",
@@ -925,7 +925,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 458.6086746459241,
+            "x": 462.6086746459241,
             "y": 2550
           },
           "group": "nodes",
@@ -943,7 +943,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 758.6086746459241,
+            "x": 762.6086746459241,
             "y": 2550
           },
           "group": "nodes",
@@ -972,7 +972,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "MFA Experience"
+                "value": "MFA Experience                    -                    -                    -                    -                    -                    MFA Experience"
               },
               "width": {
                 "value": 1500
@@ -994,7 +994,7 @@
             "idUnique": "uk48fn7liv"
           },
           "position": {
-            "x": 225.52055543593082,
+            "x": 229.52055543593082,
             "y": 1187.8125695267154
           },
           "group": "nodes",
@@ -1028,7 +1028,7 @@
             "idUnique": "vu6ciqgf6z"
           },
           "position": {
-            "x": 349.5714103404793,
+            "x": 353.5714103404793,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -1054,8 +1054,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PID-1] PingID Device Authentication | [PID-2]",
-                  "value": "73c840c56d3d6a52540befc653a38e0b"
+                  "label": "[SubFlow: PID-1] PingID Device Authentication _ [PID-2]",
+                  "value": "0ca18a5312cd0a1a1498384f082f3ecd"
                 }
               },
               "subFlowVersionId": {
@@ -1128,7 +1128,7 @@
             "idUnique": "4p8ve3z1fp"
           },
           "position": {
-            "x": 622.483291130486,
+            "x": 626.483291130486,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -1155,7 +1155,7 @@
             }
           },
           "position": {
-            "x": 771.3443170159442,
+            "x": 775.3443170159442,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -1224,7 +1224,7 @@
             }
           },
           "position": {
-            "x": 945.0155138823121,
+            "x": 949.0155138823121,
             "y": 1634.39564718309
           },
           "group": "nodes",
@@ -1269,7 +1269,7 @@
             "idUnique": "9zwqlgro38"
           },
           "position": {
-            "x": 945.0155138823121,
+            "x": 949.0155138823121,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -1342,7 +1342,7 @@
             "idUnique": "0g9t2d6duc"
           },
           "position": {
-            "x": 1267.5477366341381,
+            "x": 1271.5477366341381,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -1367,7 +1367,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
@@ -1437,7 +1437,7 @@
             "idUnique": "iwyl7y9kdj"
           },
           "position": {
-            "x": 1580.7133858834538,
+            "x": 1584.7133858834538,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -1453,7 +1453,7 @@
           "data": {
             "id": "zvv71lhmjx",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1485,7 +1485,7 @@
             }
           },
           "position": {
-            "x": 698.6086746459241,
+            "x": 702.6086746459241,
             "y": 2130
           },
           "group": "nodes",
@@ -1501,7 +1501,7 @@
           "data": {
             "id": "wa4y1kxzz1",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1534,7 +1534,7 @@
             "idUnique": "4vm07atcy6"
           },
           "position": {
-            "x": 638.6086746459241,
+            "x": 642.6086746459241,
             "y": 2700
           },
           "group": "nodes",
@@ -1566,7 +1566,7 @@
                 "value": "Global User Sign On Experience"
               },
               "width": {
-                "value": 2300
+                "value": 3500
               },
               "fontStyle": {
                 "value": "bold"
@@ -1584,7 +1584,7 @@
             "status": "configured"
           },
           "position": {
-            "x": 214,
+            "x": 218,
             "y": 214
           },
           "group": "nodes",
@@ -1613,10 +1613,10 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Check Session and begin Login Journey"
+                "value": "Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey"
               },
               "width": {
-                "value": 2000
+                "value": 3000
               },
               "fontStyle": {
                 "value": "bold"
@@ -1634,8 +1634,8 @@
             "status": "configured"
           },
           "position": {
-            "x": 240.1391325354076,
-            "y": 266.27826507081517
+            "x": 214,
+            "y": 270
           },
           "group": "nodes",
           "removed": false,
@@ -1693,7 +1693,7 @@
             "status": "configured"
           },
           "position": {
-            "x": 548.6086746459241,
+            "x": 552.6086746459241,
             "y": 2370
           },
           "group": "nodes",
@@ -1753,7 +1753,7 @@
             "idUnique": "t0m2lcyapq"
           },
           "position": {
-            "x": 608.6086746459241,
+            "x": 612.6086746459241,
             "y": 1830
           },
           "group": "nodes",
@@ -1813,7 +1813,7 @@
             "idUnique": "es8nqp40b4"
           },
           "position": {
-            "x": 705.6756186979704,
+            "x": 709.6756186979704,
             "y": 338.7242969750258
           },
           "group": "nodes",
@@ -1849,7 +1849,7 @@
             }
           },
           "position": {
-            "x": 1919.4376828584795,
+            "x": 1923.4376828584795,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -1898,7 +1898,7 @@
             }
           },
           "position": {
-            "x": 2258.1619798335055,
+            "x": 2262.1619798335055,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -1944,7 +1944,7 @@
             "idUnique": "st25w9b9hi"
           },
           "position": {
-            "x": 2568.6592520606123,
+            "x": 2572.6592520606123,
             "y": 677.4485939500516
           },
           "group": "nodes",
@@ -1970,7 +1970,7 @@
             }
           },
           "position": {
-            "x": 2371.0700788251806,
+            "x": 2375.0700788251806,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -1993,7 +1993,7 @@
             }
           },
           "position": {
-            "x": 2088.7998313459925,
+            "x": 2092.7998313459925,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -2034,7 +2034,7 @@
             }
           },
           "position": {
-            "x": 338.7242969750258,
+            "x": 342.7242969750258,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -2052,7 +2052,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 451.6323959667011,
+            "x": 455.6323959667011,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -2111,7 +2111,7 @@
             "idUnique": "kpw6rg7ta7"
           },
           "position": {
-            "x": 1580.7133858834538,
+            "x": 1584.7133858834538,
             "y": 762.1296681938081
           },
           "group": "nodes",
@@ -2129,7 +2129,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1721.848509623048,
+            "x": 1725.848509623048,
             "y": 875.0377671854834
           },
           "group": "nodes",
@@ -2148,7 +2148,7 @@
             "label": "Evaluator"
           },
           "position": {
-            "x": 1721.848509623048,
+            "x": 1725.848509623048,
             "y": 762.1296681938081
           },
           "group": "nodes",
@@ -2239,7 +2239,7 @@
             "idUnique": "925o4hy071"
           },
           "position": {
-            "x": 1862.983633362642,
+            "x": 1866.983633362642,
             "y": 762.1296681938081
           },
           "group": "nodes",
@@ -2257,7 +2257,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1721.848509623048,
+            "x": 1725.848509623048,
             "y": 1016.1728909250775
           },
           "group": "nodes",
@@ -2351,7 +2351,7 @@
             "idUnique": "9ppgrvc75g"
           },
           "position": {
-            "x": 1862.983633362642,
+            "x": 1866.983633362642,
             "y": 1016.1728909250775
           },
           "group": "nodes",
@@ -2369,7 +2369,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 473.62226524502785,
+            "x": 477.62226524502785,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -2439,7 +2439,7 @@
             "idUnique": "n7htxrovn6"
           },
           "position": {
-            "x": 1267.5477366341381,
+            "x": 1271.5477366341381,
             "y": 1485.534621297632
           },
           "group": "nodes",
@@ -2457,7 +2457,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1118.68671074868,
+            "x": 1122.68671074868,
             "y": 1386.293937373993
           },
           "group": "nodes",
@@ -2475,7 +2475,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1118.68671074868,
+            "x": 1122.68671074868,
             "y": 1485.534621297632
           },
           "group": "nodes",
@@ -2515,7 +2515,7 @@
             "idUnique": "kn2ab2k91i"
           },
           "position": {
-            "x": 2258.1619798335055,
+            "x": 2262.1619798335055,
             "y": 677.4485939500516
           },
           "group": "nodes",
@@ -2569,7 +2569,7 @@
             "idUnique": "5drwebg4dj"
           },
           "position": {
-            "x": 698.6086746459241,
+            "x": 702.6086746459241,
             "y": 1950
           },
           "group": "nodes",
@@ -2587,7 +2587,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 848.6086746459241,
+            "x": 852.6086746459241,
             "y": 1950
           },
           "group": "nodes",
@@ -2647,7 +2647,7 @@
             "idUnique": "j2hdxh0zso"
           },
           "position": {
-            "x": 994.6358558441316,
+            "x": 998.6358558441316,
             "y": 1262.2430824694445
           },
           "group": "nodes",
@@ -2707,7 +2707,7 @@
             "idUnique": "xk7gg6f6v5"
           },
           "position": {
-            "x": 1637.1674353792914,
+            "x": 1641.1674353792914,
             "y": 649.2215692021329
           },
           "group": "nodes",
@@ -2767,7 +2767,7 @@
             "idUnique": "d2mbrib33f"
           },
           "position": {
-            "x": 275.1408973977502,
+            "x": 279.1408973977502,
             "y": 1237.432911488535
           },
           "group": "nodes",
@@ -2818,7 +2818,7 @@
             "idUnique": "9mvtqge67x"
           },
           "position": {
-            "x": 2568.6592520606123,
+            "x": 2572.6592520606123,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -2906,7 +2906,7 @@
             "idUnique": "q4huaoyxo5"
           },
           "position": {
-            "x": 2879.1565242877195,
+            "x": 2883.1565242877195,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -2997,7 +2997,7 @@
             "idUnique": "am5srk7wu2"
           },
           "position": {
-            "x": 2879.1565242877195,
+            "x": 2883.1565242877195,
             "y": 564.5404949583764
           },
           "group": "nodes",
@@ -3015,7 +3015,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 2738.0214005481253,
+            "x": 2742.0214005481253,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -3033,7 +3033,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 2738.0214005481253,
+            "x": 2742.0214005481253,
             "y": 564.5404949583764
           },
           "group": "nodes",
@@ -3073,7 +3073,7 @@
             "idUnique": "jiom89re3u"
           },
           "position": {
-            "x": 620.9945444542141,
+            "x": 624.9945444542141,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -3096,7 +3096,7 @@
             }
           },
           "position": {
-            "x": 762.1296681938081,
+            "x": 766.1296681938081,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -3114,7 +3114,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1721.848509623048,
+            "x": 1725.848509623048,
             "y": 959.7188414292398
           },
           "group": "nodes",
@@ -3132,7 +3132,7 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1721.848509623048,
+            "x": 1725.848509623048,
             "y": 451.6323959667011
           },
           "group": "nodes",
@@ -4181,11 +4181,11 @@
     }
   },
   "flowColor": "#ff661c",
-  "savedDate": 1761675909315,
+  "savedDate": 1762188591814,
   "variables": [
     {
       "context": "flowInstance",
-      "createdDate": 1760708351502,
+      "createdDate": 1760708780640,
       "fields": {
         "type": "string",
         "displayName": "Url for company's logo image",
@@ -4193,51 +4193,53 @@
         "min": 0,
         "max": 2000
       },
-      "id": "28a23b00-d386-4f74-bdbe-4e1227f65fe7",
+      "id": "1ab00024-b6f4-4b60-85d0-d4b9ec81fee5",
       "type": "property",
       "visibility": "private",
       "name": "companyLogo##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760708351500,
+      "createdDate": 1760708780679,
       "fields": {
         "type": "string",
         "displayName": "",
         "mutable": true,
         "min": 0,
-        "max": 2000
+        "max": 2000,
+        "value": "Ping Identity"
       },
-      "id": "a8ed9354-da8a-48a5-a38f-263fc498fe00",
+      "id": "7734eb54-165e-4dff-9392-10c603268db4",
       "type": "property",
+      "updatedDate": 1761881760481,
       "visibility": "private",
       "name": "companyName##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716175685,
+      "createdDate": 1760708782567,
       "fields": {
         "type": "object",
         "displayName": "JSON Object to host all Ping Identity create variables",
-        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"7018280b-f5a0-41fb-aa76-cb64fd7dac6a\",             \"ssprPolicy\": \"07730a51-bbd6-4b5b-98d4-ade96c6b6b93\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"41439de5-e0e0-4b07-9e58-67827749bd72\",             \"selfiePolicy\": \"015ad860-85b8-4a95-bf4c-3264f66fb877\"         }     } }",
+        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"38a3a659-16ed-48f0-aaaa-d679cb7098a5\",             \"ssprPolicy\": \"75e9977b-5418-4ae1-99a9-125f8babcc68\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"2ab4da34-e4a8-4a79-91cd-fd9db56dd442\",             \"selfiePolicy\": \"888495ad-bc88-4237-bcaa-81153f3987ec\"         }     } }",
         "mutable": true,
         "min": 0,
         "max": 2000
       },
-      "id": "9af1e5d3-640a-4fd9-b2c7-e4eabbd4c8c5",
+      "id": "50513cbc-c1b9-467d-92f8-5971b71141c2",
       "type": "property",
-      "updatedDate": 1760716383483,
+      "updatedDate": 1760710980844,
       "visibility": "private",
       "name": "gv-VariableObject##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ],
   "connections": [
     {
       "connectorId": "codeSnippetConnector",
-      "createdDate": 1760716175732,
+      "createdDate": 1760708782600,
       "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
       "name": "Variable Parse",
       "properties": {
@@ -4280,7 +4282,7 @@
       },
       "updatedDate": 1755031019315,
       "connectionId": "f38f99131630a9f27c0d3c8ec57a6252",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ]
 }

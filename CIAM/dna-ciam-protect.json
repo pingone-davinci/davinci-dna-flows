@@ -9,10 +9,10 @@
     "httpConnector",
     "variablesConnector"
   ],
-  "createdDate": 1761674457871,
-  "currentVersion": 8,
+  "createdDate": 1762191462898,
+  "currentVersion": 1,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761674458653,
+  "deployedDate": 1762191462962,
   "description": "Headless PingOne Protect flow to evaluate risk to handle both START and END. Currently allowing: \nLow to SUCCESS\nMedium to MFA\nHigh to VERIFY",
   "flowStatus": "enabled",
   "inputSchemaCompiled": {
@@ -105,8 +105,8 @@
   },
   "isInputSchemaSaved": true,
   "isOutputSchemaSaved": false,
-  "name": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-  "publishedVersion": 8,
+  "name": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+  "publishedVersion": 1,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -114,12 +114,11 @@
     "customTimeoutErrorScreenMessage": "",
     "customTimeoutErrorScreenHTML": "",
     "customTimeoutErrorScreenCSS": "",
-    "logLevel": 3
+    "logLevel": 4
   },
-  "timeouts": "null",
-  "updatedDate": 1761674458704,
-  "flowId": "9c1f63c5483c24ac2c7bf82c797baac6",
-  "versionId": 8,
+  "updatedDate": 1762191462995,
+  "flowId": "60c6f4238b91e8fa0645c635ab630282",
+  "versionId": 1,
   "graphData": {
     "elements": {
       "nodes": [
@@ -4624,7 +4623,7 @@
     }
   ],
   "flowColor": "#E3F0FF",
-  "savedDate": 1761674457609,
+  "savedDate": 1762191462680,
   "variables": [
     {
       "context": "flowInstance",

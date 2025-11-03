@@ -1,5 +1,5 @@
 {
-  "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44",
+  "companyId": "effa9215-e77b-4465-9af7-a4534abbff76",
   "authTokenExpireIds": [],
   "connectorIds": [
     "pingOneAuthenticationConnector",
@@ -13,15 +13,15 @@
     "codeSnippetConnector",
     "errorConnector"
   ],
-  "createdDate": 1761668760355,
-  "currentVersion": 6,
+  "createdDate": 1762195673614,
+  "currentVersion": 17,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761668762281,
+  "deployedDate": 1762195674837,
   "description": "This flow handles a standard authentication Journey for a Help Desk Agent, which then goes into a Verify flow to send to an end user for the Help Desk Agent to work on behalf of that user.",
   "flowStatus": "enabled",
   "isOutputSchemaSaved": false,
-  "name": "[MainFlow - 2] Help Desk Agent Login and End User Verification | [SSO, PID-1, PID-2, PRO, VER]",
-  "publishedVersion": 6,
+  "name": "[MainFlow - 2] Help Desk Agent Login and End User Verification _ [SSO, PID-1, PID-2, PRO, VER]",
+  "publishedVersion": 17,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -45,9 +45,9 @@
   "trigger": {
     "type": "AUTHENTICATION"
   },
-  "updatedDate": 1761668762339,
-  "flowId": "19e540a8e60d945f72551ad734a86607",
-  "versionId": 6,
+  "updatedDate": 1762195674906,
+  "flowId": "1c537788d36a76625f1088334cc71bb9",
+  "versionId": 17,
   "graphData": {
     "elements": {
       "nodes": [
@@ -78,8 +78,8 @@
             }
           },
           "position": {
-            "x": 1176.2609640933415,
-            "y": 601.2000483143746
+            "x": 1176.1452123616773,
+            "y": 652.0726061808386
           },
           "group": "nodes",
           "removed": false,
@@ -110,8 +110,8 @@
             }
           },
           "position": {
-            "x": 1333.0957593057872,
-            "y": 601.2000483143746
+            "x": 1329.5554574523308,
+            "y": 652.0726061808386
           },
           "group": "nodes",
           "removed": false,
@@ -146,8 +146,8 @@
             }
           },
           "position": {
-            "x": 1516.0696870536403,
-            "y": 444.36525310192906
+            "x": 1508.5340767247599,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -172,8 +172,8 @@
             }
           },
           "position": {
-            "x": 1672.9044822660858,
-            "y": 444.36525310192906
+            "x": 1661.9443218154136,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -265,8 +265,8 @@
             }
           },
           "position": {
-            "x": 3424.2263621383945,
-            "y": 522.7826507081518
+            "x": 3784.1193789027875,
+            "y": 575.3674836355119
           },
           "group": "nodes",
           "removed": false,
@@ -291,8 +291,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: SSO-1] Login Flow | [PID-1, PRO]",
-                  "value": "3447600a32e09f3803f28229ab228741"
+                  "label": "[SubFlow: SSO-1] Login Flow _ [PID-1, PRO]",
+                  "value": "d0e66a9239e3a550e357b439475375a9"
                 }
               },
               "subFlowVersionId": {
@@ -331,8 +331,8 @@
             }
           },
           "position": {
-            "x": 1530,
-            "y": 750
+            "x": 1534.1024509065355,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -355,8 +355,8 @@
             }
           },
           "position": {
-            "x": 1680,
-            "y": 750
+            "x": 1687.512695997189,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -457,8 +457,8 @@
             }
           },
           "position": {
-            "x": 2130,
-            "y": 840
+            "x": 2122.175057087374,
+            "y": 882.187973816819
           },
           "group": "nodes",
           "removed": false,
@@ -486,7 +486,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Success"
+                "value": "Sign On Success                    -                    -                    -                    -                    -                    Sign On Success"
               },
               "width": {
                 "value": 1500
@@ -509,7 +509,7 @@
           },
           "position": {
             "x": 216.8545064104097,
-            "y": 2846.2153966366272
+            "y": 2910.2153966366272
           },
           "group": "nodes",
           "removed": false,
@@ -566,7 +566,7 @@
           },
           "position": {
             "x": 216.8545064104097,
-            "y": 2954.6426498418323
+            "y": 3018.6426498418323
           },
           "group": "nodes",
           "removed": false,
@@ -621,7 +621,7 @@
           },
           "position": {
             "x": 921.6316522442412,
-            "y": 3063.069903047037
+            "y": 3127.069903047037
           },
           "group": "nodes",
           "removed": false,
@@ -655,7 +655,7 @@
           },
           "position": {
             "x": 379.495386218217,
-            "y": 3063.069903047037
+            "y": 3127.069903047037
           },
           "group": "nodes",
           "removed": false,
@@ -674,7 +674,7 @@
           },
           "position": {
             "x": 460.8158261221206,
-            "y": 3063.069903047037
+            "y": 3127.069903047037
           },
           "group": "nodes",
           "removed": false,
@@ -731,7 +731,7 @@
           },
           "position": {
             "x": 239.5683741817756,
-            "y": 3528.435637085032
+            "y": 3592.435637085032
           },
           "group": "nodes",
           "removed": false,
@@ -768,7 +768,7 @@
           },
           "position": {
             "x": 367.4102450906536,
-            "y": 3656.2775079939097
+            "y": 3720.2775079939097
           },
           "group": "nodes",
           "removed": false,
@@ -796,7 +796,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Failure"
+                "value": "Sign On Failure                    -                    -                    -                    -                    -                    Sign On Failure"
               },
               "width": {
                 "value": 1500
@@ -819,7 +819,7 @@
           },
           "position": {
             "x": 214,
-            "y": 3426.1621403579293
+            "y": 3490.1621403579293
           },
           "group": "nodes",
           "removed": false,
@@ -863,8 +863,8 @@
             }
           },
           "position": {
-            "x": 1855.878410013939,
-            "y": 575.060915778967
+            "x": 1866.4913152696183,
+            "y": 626.504231999063
           },
           "group": "nodes",
           "removed": false,
@@ -902,8 +902,8 @@
             }
           },
           "position": {
-            "x": 1860,
-            "y": 1050
+            "x": 1866.4913152696183,
+            "y": 1086.7349672710238
           },
           "group": "nodes",
           "removed": false,
@@ -973,7 +973,7 @@
           },
           "position": {
             "x": 947.4530065457952,
-            "y": 1864
+            "y": 1928
           },
           "group": "nodes",
           "removed": false,
@@ -1024,7 +1024,7 @@
           },
           "position": {
             "x": 955.4828512714921,
-            "y": 3656.2775079939097
+            "y": 3720.2775079939097
           },
           "group": "nodes",
           "removed": false,
@@ -1078,7 +1078,7 @@
           },
           "position": {
             "x": 648.6623610901851,
-            "y": 3656.2775079939097
+            "y": 3720.2775079939097
           },
           "group": "nodes",
           "removed": false,
@@ -1096,7 +1096,7 @@
           },
           "position": {
             "x": 469.68374181775596,
-            "y": 3656.2775079939097
+            "y": 3720.2775079939097
           },
           "group": "nodes",
           "removed": false,
@@ -1114,7 +1114,7 @@
           },
           "position": {
             "x": 750.9358578172875,
-            "y": 3656.2775079939097
+            "y": 3720.2775079939097
           },
           "group": "nodes",
           "removed": false,
@@ -1142,7 +1142,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "MFA Experience"
+                "value": "MFA Experience                    -                    -                    -                    -                    -                    MFA Experience"
               },
               "width": {
                 "value": 1500
@@ -1165,7 +1165,7 @@
           },
           "position": {
             "x": 240.2049806154042,
-            "y": 1078.343434254177
+            "y": 1142.343434254177
           },
           "group": "nodes",
           "removed": false,
@@ -1199,7 +1199,7 @@
           },
           "position": {
             "x": 377.45300654579523,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -1224,8 +1224,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PID-1] PingID Device Authentication | [PID-2]",
-                  "value": "73c840c56d3d6a52540befc653a38e0b"
+                  "label": "[SubFlow: PID-1] PingID Device Authentication _ [PID-2]",
+                  "value": "0ca18a5312cd0a1a1498384f082f3ecd"
                 }
               },
               "subFlowVersionId": {
@@ -1308,7 +1308,7 @@
           },
           "position": {
             "x": 647.4530065457952,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -1335,7 +1335,7 @@
           },
           "position": {
             "x": 797.4530065457952,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -1401,7 +1401,7 @@
           },
           "position": {
             "x": 977.4530065457952,
-            "y": 1504
+            "y": 1568
           },
           "group": "nodes",
           "removed": false,
@@ -1446,7 +1446,7 @@
           },
           "position": {
             "x": 977.4530065457952,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -1480,7 +1480,7 @@
           },
           "position": {
             "x": 377.45300654579523,
-            "y": 1864
+            "y": 1928
           },
           "group": "nodes",
           "removed": false,
@@ -1498,7 +1498,7 @@
           },
           "position": {
             "x": 497.45300654579523,
-            "y": 1864
+            "y": 1928
           },
           "group": "nodes",
           "removed": false,
@@ -1571,7 +1571,7 @@
           },
           "position": {
             "x": 1277.4530065457952,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -1595,7 +1595,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
@@ -1665,8 +1665,8 @@
             "idUnique": "iwyl7y9kdj"
           },
           "position": {
-            "x": 1855.878410013939,
-            "y": 444.36525310192906
+            "x": 1866.4913152696183,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -1681,7 +1681,7 @@
           "data": {
             "id": "zvv71lhmjx",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1714,7 +1714,7 @@
           },
           "position": {
             "x": 650.5635192312291,
-            "y": 3225.710782854844
+            "y": 3289.710782854844
           },
           "group": "nodes",
           "removed": false,
@@ -1729,7 +1729,7 @@
           "data": {
             "id": "wa4y1kxzz1",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1763,7 +1763,7 @@
           },
           "position": {
             "x": 648.6623610901851,
-            "y": 3809.687753084563
+            "y": 3873.687753084563
           },
           "group": "nodes",
           "removed": false,
@@ -1794,7 +1794,7 @@
                 "value": "Global User Sign On Experience"
               },
               "width": {
-                "value": 2300
+                "value": 4000
               },
               "fontStyle": {
                 "value": "bold"
@@ -1812,7 +1812,7 @@
             "status": "configured"
           },
           "position": {
-            "x": 227.45300654579526,
+            "x": 240,
             "y": 214
           },
           "group": "nodes",
@@ -1841,10 +1841,10 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Check Session and begin Login Journey"
+                "value": "Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey"
               },
               "width": {
-                "value": 2000
+                "value": 3500
               },
               "fontStyle": {
                 "value": "bold"
@@ -1862,8 +1862,8 @@
             "status": "configured"
           },
           "position": {
-            "x": 227.36813450173955,
-            "y": 269.83025591188857
+            "x": 240,
+            "y": 274
           },
           "group": "nodes",
           "removed": false,
@@ -1922,7 +1922,7 @@
           },
           "position": {
             "x": 546.3888643630827,
-            "y": 3477.2988887214806
+            "y": 3541.2988887214806
           },
           "group": "nodes",
           "removed": false,
@@ -1982,7 +1982,7 @@
           },
           "position": {
             "x": 623.4567059299279,
-            "y": 2927.535836540531
+            "y": 2991.535836540531
           },
           "group": "nodes",
           "removed": false,
@@ -2042,7 +2042,7 @@
           },
           "position": {
             "x": 703.4530065457952,
-            "y": 1740
+            "y": 1804
           },
           "group": "nodes",
           "removed": false,
@@ -2101,8 +2101,8 @@
             "idUnique": "es8nqp40b4"
           },
           "position": {
-            "x": 744.0846587900364,
-            "y": 325.28175961561453
+            "x": 741.4828512714922,
+            "y": 370.8204901813071
           },
           "group": "nodes",
           "removed": false,
@@ -2137,8 +2137,8 @@
             }
           },
           "position": {
-            "x": 2483.217590863721,
-            "y": 444.36525310192906
+            "x": 2812.521159995315,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2186,8 +2186,8 @@
             }
           },
           "position": {
-            "x": 2796.8871812886123,
-            "y": 444.36525310192906
+            "x": 3144.910024358398,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2232,8 +2232,8 @@
             "idUnique": "st25w9b9hi"
           },
           "position": {
-            "x": 3120,
-            "y": 750
+            "x": 3477.2988887214806,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -2258,8 +2258,8 @@
             }
           },
           "position": {
-            "x": 2927.58284396565,
-            "y": 444.36525310192906
+            "x": 3272.751895267276,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2281,32 +2281,8 @@
             }
           },
           "position": {
-            "x": 2640.052386076167,
-            "y": 444.36525310192906
-          },
-          "group": "nodes",
-          "removed": false,
-          "selected": false,
-          "selectable": true,
-          "locked": false,
-          "grabbable": true,
-          "pannable": false,
-          "classes": ""
-        },
-        {
-          "data": {
-            "id": "p9tgefruwc",
-            "nodeType": "EVAL",
-            "label": "Evaluator",
-            "properties": {
-              "1op7fc2h0e": {
-                "value": "anyTriggersFalse"
-              }
-            }
-          },
-          "position": {
-            "x": 1986.574072690977,
-            "y": 444.36525310192906
+            "x": 2965.931405085969,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2331,8 +2307,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-                  "value": "ba162cb5e982c0d43d891c25c421a88e"
+                  "label": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+                  "value": "3a9bfd3a96c69934a2fce8036244eef9"
                 }
               },
               "subFlowVersionId": {
@@ -2371,8 +2347,8 @@
             }
           },
           "position": {
-            "x": 2143.4088679034226,
-            "y": 444.36525310192906
+            "x": 2480.1322956322324,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2397,8 +2373,8 @@
             }
           },
           "position": {
-            "x": 2326.3827956512755,
-            "y": 444.36525310192906
+            "x": 2633.542540722886,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2423,8 +2399,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-                  "value": "ba162cb5e982c0d43d891c25c421a88e"
+                  "label": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+                  "value": "3a9bfd3a96c69934a2fce8036244eef9"
                 }
               },
               "subFlowVersionId": {
@@ -2465,7 +2441,7 @@
           },
           "position": {
             "x": 647.4530065457952,
-            "y": 1864
+            "y": 1928
           },
           "group": "nodes",
           "removed": false,
@@ -2488,7 +2464,7 @@
           },
           "position": {
             "x": 797.4530065457952,
-            "y": 1864
+            "y": 1928
           },
           "group": "nodes",
           "removed": false,
@@ -2528,7 +2504,7 @@
           },
           "position": {
             "x": 947.4530065457952,
-            "y": 1984
+            "y": 2048
           },
           "group": "nodes",
           "removed": false,
@@ -2568,8 +2544,8 @@
             }
           },
           "position": {
-            "x": 627.3391808497822,
-            "y": 444.36525310192906
+            "x": 639.2093545443898,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2586,8 +2562,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 731.8957109914126,
-            "y": 444.36525310192906
+            "x": 741.4828512714922,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2626,8 +2602,8 @@
             "idUnique": "o5t34kztof"
           },
           "position": {
-            "x": 2483.217590863721,
-            "y": 705.756578456005
+            "x": 2812.521159995315,
+            "y": 626.504231999063
           },
           "group": "nodes",
           "removed": false,
@@ -2685,8 +2661,8 @@
             "idUnique": "kpw6rg7ta7"
           },
           "position": {
-            "x": 1860,
-            "y": 750
+            "x": 1866.4913152696183,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -2703,8 +2679,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1980,
-            "y": 840
+            "x": 1994.3331861784961,
+            "y": 882.187973816819
           },
           "group": "nodes",
           "removed": false,
@@ -2722,8 +2698,8 @@
             "label": "Evaluator"
           },
           "position": {
-            "x": 1980,
-            "y": 750
+            "x": 1994.3331861784961,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -2813,8 +2789,8 @@
             "idUnique": "925o4hy071"
           },
           "position": {
-            "x": 2130,
-            "y": 750
+            "x": 2122.175057087374,
+            "y": 805.4828512714922
           },
           "group": "nodes",
           "removed": false,
@@ -2831,8 +2807,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1980,
-            "y": 960
+            "x": 1994.3331861784961,
+            "y": 1010.0298447256969
           },
           "group": "nodes",
           "removed": false,
@@ -2925,8 +2901,8 @@
             "idUnique": "9ppgrvc75g"
           },
           "position": {
-            "x": 2130,
-            "y": 960
+            "x": 2122.175057087374,
+            "y": 1010.0298447256969
           },
           "group": "nodes",
           "removed": false,
@@ -2944,7 +2920,7 @@
           },
           "position": {
             "x": 497.45300654579523,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -3014,7 +2990,7 @@
           },
           "position": {
             "x": 1277.4530065457952,
-            "y": 1354
+            "y": 1418
           },
           "group": "nodes",
           "removed": false,
@@ -3032,7 +3008,7 @@
           },
           "position": {
             "x": 1127.4530065457952,
-            "y": 1264
+            "y": 1328
           },
           "group": "nodes",
           "removed": false,
@@ -3050,7 +3026,7 @@
           },
           "position": {
             "x": 1127.4530065457952,
-            "y": 1354
+            "y": 1418
           },
           "group": "nodes",
           "removed": false,
@@ -3089,8 +3065,8 @@
             "idUnique": "kn2ab2k91i"
           },
           "position": {
-            "x": 2796.8871812886123,
-            "y": 705.756578456005
+            "x": 3144.910024358398,
+            "y": 626.504231999063
           },
           "group": "nodes",
           "removed": false,
@@ -3118,7 +3094,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "End Risk Experience"
+                "value": "End Risk Experience                    -                    -                    -                    -                    -                    End Risk Experience"
               },
               "width": {
                 "value": 1500
@@ -3141,7 +3117,7 @@
           },
           "position": {
             "x": 227.45300654579526,
-            "y": 1654
+            "y": 1718
           },
           "group": "nodes",
           "removed": false,
@@ -3195,7 +3171,7 @@
           },
           "position": {
             "x": 650.5635192312291,
-            "y": 3063.069903047037
+            "y": 3127.069903047037
           },
           "group": "nodes",
           "removed": false,
@@ -3213,7 +3189,7 @@
           },
           "position": {
             "x": 786.0975857377351,
-            "y": 3063.069903047037
+            "y": 3127.069903047037
           },
           "group": "nodes",
           "removed": false,
@@ -3273,7 +3249,7 @@
           },
           "position": {
             "x": 1007.4530065457952,
-            "y": 1144
+            "y": 1208
           },
           "group": "nodes",
           "removed": false,
@@ -3332,8 +3308,8 @@
             "idUnique": "xk7gg6f6v5"
           },
           "position": {
-            "x": 1890,
-            "y": 630
+            "x": 1559.6708250883112,
+            "y": 677.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -3393,7 +3369,7 @@
           },
           "position": {
             "x": 283.45300654579523,
-            "y": 1140
+            "y": 1204
           },
           "group": "nodes",
           "removed": false,
@@ -3453,7 +3429,7 @@
           },
           "position": {
             "x": 223.45300654579526,
-            "y": 1740
+            "y": 1804
           },
           "group": "nodes",
           "removed": false,
@@ -3511,8 +3487,8 @@
             "idUnique": "9mvtqge67x"
           },
           "position": {
-            "x": 3110.556771713503,
-            "y": 444.36525310192906
+            "x": 3451.730514539705,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3529,8 +3505,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3267.3915669259486,
-            "y": 522.7826507081518
+            "x": 3630.709133812134,
+            "y": 575.3674836355119
           },
           "group": "nodes",
           "removed": false,
@@ -3617,8 +3593,8 @@
             "idUnique": "q4huaoyxo5"
           },
           "position": {
-            "x": 3424.2263621383945,
-            "y": 444.36525310192906
+            "x": 3784.1193789027875,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3708,8 +3684,8 @@
             "idUnique": "am5srk7wu2"
           },
           "position": {
-            "x": 3420,
-            "y": 690
+            "x": 3784.1193789027875,
+            "y": 728.7777287261654
           },
           "group": "nodes",
           "removed": false,
@@ -3726,8 +3702,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3267.3915669259486,
-            "y": 444.36525310192906
+            "x": 3630.709133812134,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3744,8 +3720,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3270,
-            "y": 690
+            "x": 3630.709133812134,
+            "y": 728.7777287261654
           },
           "group": "nodes",
           "removed": false,
@@ -3784,8 +3760,8 @@
             "idUnique": "jiom89re3u"
           },
           "position": {
-            "x": 914.8696387392656,
-            "y": 444.36525310192906
+            "x": 920.4614705439213,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3807,8 +3783,8 @@
             }
           },
           "position": {
-            "x": 1045.5653014163036,
-            "y": 444.36525310192906
+            "x": 1048.3033414527993,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3832,7 +3808,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
+                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
               },
               "formFieldsList": {
                 "value": [
@@ -3939,8 +3915,8 @@
             "idUnique": "nflwpxcywq"
           },
           "position": {
-            "x": 365.9478554957063,
-            "y": 444.36525310192906
+            "x": 357.9572385448583,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3957,8 +3933,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 496.6435181727442,
-            "y": 444.36525310192906
+            "x": 485.79910945373626,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3989,7 +3965,7 @@
                 "value": "Verification Experience                    -                    -                    -                    -                    -                    Verification Experience"
               },
               "width": {
-                "value": 1500
+                "value": 2300
               },
               "fontStyle": {
                 "value": "bold"
@@ -4009,7 +3985,7 @@
           },
           "position": {
             "x": 214,
-            "y": 2147.74343126915
+            "y": 2211.74343126915
           },
           "group": "nodes",
           "removed": false,
@@ -4044,7 +4020,7 @@
           },
           "position": {
             "x": 390,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4104,7 +4080,7 @@
           },
           "position": {
             "x": 1355.3406650650606,
-            "y": 2249.8655040080007
+            "y": 2313.8655040080007
           },
           "group": "nodes",
           "removed": false,
@@ -4164,7 +4140,7 @@
           },
           "position": {
             "x": 379.495386218217,
-            "y": 2222.7586907066993
+            "y": 2286.7586907066993
           },
           "group": "nodes",
           "removed": false,
@@ -4213,7 +4189,7 @@
           },
           "position": {
             "x": 1980,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4289,7 +4265,7 @@
           },
           "position": {
             "x": 2280,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4307,7 +4283,7 @@
           },
           "position": {
             "x": 2130,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4325,7 +4301,7 @@
           },
           "position": {
             "x": 2130,
-            "y": 2640
+            "y": 2704
           },
           "group": "nodes",
           "removed": false,
@@ -4351,7 +4327,7 @@
           },
           "position": {
             "x": 1800,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4427,7 +4403,7 @@
           },
           "position": {
             "x": 2520,
-            "y": 2490
+            "y": 2554
           },
           "group": "nodes",
           "removed": false,
@@ -4503,7 +4479,7 @@
           },
           "position": {
             "x": 1980,
-            "y": 2640
+            "y": 2704
           },
           "group": "nodes",
           "removed": false,
@@ -4527,7 +4503,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <div id=\"usernameDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control rounded-3\"\n                  type=\"text\"\n                  id=\"username\"\n                  name=\"username\"\n                  placeholder=\"Username\"\n                  autocomplete=\"\"\n                  value=\"\"\n                  data-id=\"username-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\"\n                />\n                <label id=\"usernameLabel\" for=\"username\">Email</label>\n              </div>\n              \n              <input type=\"hidden\" id=\"origin\" name=\"origin\" value=\"\">\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" value=\"\">\n              <input type=\"hidden\" id=\"webAuthNSupport\" value=\"\">\n\n              <!-- <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"password\"\n                  id=\"password\"\n                  name=\"password\"\n                  placeholder=\"Password\"\n                  autocomplete=\"current-password\"\n                  value=\"\"\n                  data-id=\"password-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\"\n                />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div> -->\n\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
+                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <div id=\"usernameDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control rounded-3\"\n                  type=\"text\"\n                  id=\"username\"\n                  name=\"username\"\n                  placeholder=\"Username\"\n                  autocomplete=\"\"\n                  value=\"\"\n                  data-id=\"username-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\"\n                />\n                <label id=\"usernameLabel\" for=\"username\">Email</label>\n              </div>\n              \n              <input type=\"hidden\" id=\"origin\" name=\"origin\" value=\"\">\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" value=\"\">\n              <input type=\"hidden\" id=\"webAuthNSupport\" value=\"\">\n\n              <!-- <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"password\"\n                  id=\"password\"\n                  name=\"password\"\n                  placeholder=\"Password\"\n                  autocomplete=\"current-password\"\n                  value=\"\"\n                  data-id=\"password-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\"\n                />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div> -->\n\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
               },
               "formFieldsList": {
                 "value": [
@@ -4638,7 +4614,7 @@
           },
           "position": {
             "x": 1020,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4683,7 +4659,7 @@
           },
           "position": {
             "x": 1320,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4707,7 +4683,7 @@
           },
           "position": {
             "x": 1440,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4733,8 +4709,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[Subflow: VER] Verify Evaluation | [PID-1]",
-                  "value": "4a91dda108b78bbebd0b42dbbc3c79c5"
+                  "label": "[Subflow: VER] Verify Evaluation _ [PID-1]",
+                  "value": "43c7e3248d122406e1ae0f796877d26c"
                 }
               },
               "subFlowVersionId": {
@@ -4831,7 +4807,7 @@
           },
           "position": {
             "x": 1650,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4861,7 +4837,7 @@
           },
           "position": {
             "x": 1650,
-            "y": 2580
+            "y": 2644
           },
           "group": "nodes",
           "removed": false,
@@ -4884,7 +4860,7 @@
           },
           "position": {
             "x": 870,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -4927,7 +4903,7 @@
           },
           "position": {
             "x": 1020,
-            "y": 2580
+            "y": 2644
           },
           "group": "nodes",
           "removed": false,
@@ -4945,7 +4921,7 @@
           },
           "position": {
             "x": 1170,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -5002,7 +4978,7 @@
           },
           "position": {
             "x": 690,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -5020,7 +4996,7 @@
           },
           "position": {
             "x": 510,
-            "y": 2400
+            "y": 2464
           },
           "group": "nodes",
           "removed": false,
@@ -5037,8 +5013,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1980,
-            "y": 900
+            "x": 1994.3331861784961,
+            "y": 933.3247221803701
           },
           "group": "nodes",
           "removed": false,
@@ -5062,7 +5038,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <!-- <div id=\"usernameDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"text\"\n                  id=\"username\"\n                  name=\"username\"\n                  placeholder=\"Username\"\n                  autocomplete=\"\"\n                  value=\"\"\n                  data-id=\"username-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\"\n                />\n                <label id=\"usernameLabel\" for=\"username\">Email</label>\n              </div> -->\n              \n              <input type=\"hidden\" id=\"origin\" name=\"origin\" value=\"\">\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" value=\"\">\n              <input type=\"hidden\" id=\"webAuthNSupport\" value=\"\">\n\n              <!-- <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"password\"\n                  id=\"password\"\n                  name=\"password\"\n                  placeholder=\"Password\"\n                  autocomplete=\"current-password\"\n                  value=\"\"\n                  data-id=\"password-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\"\n                />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div> -->\n\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
+                "value": "<div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            \n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            \n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"passwordForm\" aria-labelledby=\"title\" data-id=\"passwordForm\">\n              <!-- <div id=\"usernameDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"text\"\n                  id=\"username\"\n                  name=\"username\"\n                  placeholder=\"Username\"\n                  autocomplete=\"\"\n                  value=\"\"\n                  data-id=\"username-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\"\n                />\n                <label id=\"usernameLabel\" for=\"username\">Email</label>\n              </div> -->\n              \n              <input type=\"hidden\" id=\"origin\" name=\"origin\" value=\"\">\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" value=\"\">\n              <input type=\"hidden\" id=\"webAuthNSupport\" value=\"\">\n\n              <!-- <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input\n                  class=\"form-control\"\n                  type=\"password\"\n                  id=\"password\"\n                  name=\"password\"\n                  placeholder=\"Password\"\n                  autocomplete=\"current-password\"\n                  value=\"\"\n                  data-id=\"password-input\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\"\n                />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div> -->\n\n              <div class=\"d-flex flex-column\">\n                {{#if continueButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  id=\"btnContinue\"\n                  data-skform=\"passwordForm\"\n                  data-skbuttonvalue=\"SUBMIT\">\n                  {{continueButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if changeButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnBack\"\n                  data-skbuttonvalue=\"CHANGE\">\n                  {{changeButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if forgotButtonLabel}}\n                <button\n                  data-id=\"button\"\n                  class=\"btn btn-link rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"passwordForm\"\n                  id=\"btnForgot\"\n                  data-skbuttonvalue=\"TROUBLE\">\n                  {{forgotButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
               },
               "formFieldsList": {
                 "value": [
@@ -5173,7 +5149,7 @@
           },
           "position": {
             "x": 2280,
-            "y": 2490
+            "y": 2554
           },
           "group": "nodes",
           "removed": false,
@@ -5196,7 +5172,7 @@
           },
           "position": {
             "x": 2400,
-            "y": 2490
+            "y": 2554
           },
           "group": "nodes",
           "removed": false,
@@ -5214,7 +5190,7 @@
           },
           "position": {
             "x": 2130,
-            "y": 2490
+            "y": 2554
           },
           "group": "nodes",
           "removed": false,
@@ -5290,7 +5266,7 @@
           },
           "position": {
             "x": 2280,
-            "y": 2640
+            "y": 2704
           },
           "group": "nodes",
           "removed": false,
@@ -5307,8 +5283,287 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3270,
-            "y": 600
+            "x": 3630.709133812134,
+            "y": 652.0726061808386
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "k35607dwni",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "goToNode",
+            "type": "action",
+            "properties": {
+              "nodeInstanceId": {
+                "value": "1fcdzoi3x7"
+              }
+            }
+          },
+          "position": {
+            "x": 2812.521159995315,
+            "y": 728.7777287261654
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "19rwg3mdfa",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHTMLTemplate",
+            "type": "trigger",
+            "properties": {
+              "customHTML": {
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+              },
+              "customScript": {
+                "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
+              },
+              "formFieldsList": {
+                "value": [
+                  {
+                    "propertyName": "buttonValue",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false,
+                    "displayName": ""
+                  },
+                  {
+                    "propertyName": "origin",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "rpId",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "webAuthNSupport",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "riskPayload",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  }
+                ]
+              },
+              "nodeTitle": {
+                "value": "Gather Protect Payload"
+              },
+              "nodeDescription": {
+                "value": "JS to execute PingOne Protect profiling. <contains skRisk Component>"
+              },
+              "outputSchema": {
+                "value": {}
+              },
+              "inputSchema": {
+                "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"navBar\": {\n            \"type\": \"string\",\n            \"displayName\": \"Nav Bar Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        }\n    }\n}"
+              },
+              "title": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Ensuring a secure experience.\"\n      }\n    ]\n  }\n]"
+              },
+              "textOne": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"We are ensuring your experience is secure. We apologize for your delay.\"\n      }\n    ]\n  }\n]"
+              },
+              "navBar": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              }
+            },
+            "idUnique": "ym0b2vhqf1"
+          },
+          "position": {
+            "x": 2480.1322956322324,
+            "y": 728.7777287261654
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "40hv4vrwhj",
+            "nodeType": "EVAL",
+            "label": "Evaluator"
+          },
+          "position": {
+            "x": 2633.542540722886,
+            "y": 728.7777287261654
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "na2lkkmfm4",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1661.9443218154136,
+            "y": 370.8204901813071
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "1fcdzoi3x7",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "startNode",
+            "type": "trigger",
+            "properties": {
+              "nodeTitle": {
+                "value": "Re-Profile"
+              },
+              "nodeDescription": {
+                "value": "Ensure the payload is not empty before continuing "
+              }
+            },
+            "idUnique": "mw94vk1pyy"
+          },
+          "position": {
+            "x": 1508.5340767247599,
+            "y": 370.8204901813071
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "1pve9sdk8r",
+            "nodeType": "CONNECTION",
+            "connectionId": "de650ca45593b82c49064ead10b9fe17",
+            "connectorId": "functionsConnector",
+            "name": "Functions",
+            "label": "Functions",
+            "status": "configured",
+            "capabilityName": "AIsEmpty",
+            "type": "trigger",
+            "properties": {
+              "leftValueA": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"http.svg\",\n        \"url\": \"riskPayload\",\n        \"data\": \"{{local.1mgmh1717z.payload.output.riskPayload}}\",\n        \"tooltip\": \"{{local.1mgmh1717z.payload.output.riskPayload}}\",\n        \"children\": [\n          {\n            \"text\": \"riskPayload\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "checkNullORUndefined": {
+                "value": true
+              },
+              "nodeTitle": {
+                "value": "is riskPayload empty?"
+              },
+              "nodeDescription": {
+                "value": "Is the Risk Payload empty or null, if so go back to profile the browser"
+              }
+            }
+          },
+          "position": {
+            "x": 2147.74343126915,
+            "y": 498.6623610901851
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "0xlud9hvrp",
+            "nodeType": "EVAL",
+            "properties": {
+              "undefined": {
+                "value": "anyTriggersFalse"
+              },
+              "mg2ug4c9dq": {
+                "value": "anyTriggersFalse"
+              }
+            }
+          },
+          "position": {
+            "x": 2301.1536763598033,
+            "y": 498.6623610901851
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "ccmbdqkdt0",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1994.3331861784961,
+            "y": 498.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -5321,6 +5576,25 @@
         }
       ],
       "edges": [
+        {
+          "data": {
+            "id": "k7p0gnjq4b",
+            "source": "vlx5pmhoqg",
+            "target": "59cxwl8mez"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
         {
           "data": {
             "id": "p1vw1nwwn3",
@@ -6664,13 +6938,14 @@
         },
         {
           "data": {
-            "id": "2o52j0oztq",
-            "source": "p9tgefruwc",
-            "target": "mg2ug4c9dq"
+            "id": "uvupiw9zlf",
+            "source": "g9sb0svnmm",
+            "target": "d06zrd6pey",
+            "multiValueSourceId": "roufbungss"
           },
           "position": {
-            "x": 0,
-            "y": 0
+            "x": 64,
+            "y": 132
           },
           "group": "edges",
           "removed": false,
@@ -6702,9 +6977,9 @@
         },
         {
           "data": {
-            "id": "crg2vncul2",
-            "source": "qgxc6nvhfo",
-            "target": "p9tgefruwc"
+            "id": "uttrqkmvam",
+            "source": "d06zrd6pey",
+            "target": "y8yndf3q1z"
           },
           "position": {
             "x": 0,
@@ -6950,9 +7225,9 @@
         },
         {
           "data": {
-            "id": "k7p0gnjq4b",
-            "source": "vlx5pmhoqg",
-            "target": "59cxwl8mez"
+            "id": "o8i6hucc55",
+            "source": "19rwg3mdfa",
+            "target": "40hv4vrwhj"
           },
           "position": {
             "x": 0,
@@ -6969,14 +7244,13 @@
         },
         {
           "data": {
-            "id": "uvupiw9zlf",
-            "source": "g9sb0svnmm",
-            "target": "d06zrd6pey",
-            "multiValueSourceId": "roufbungss"
+            "id": "jtvcx08s1z",
+            "source": "1fcdzoi3x7",
+            "target": "na2lkkmfm4"
           },
           "position": {
-            "x": 64,
-            "y": 132
+            "x": 0,
+            "y": 0
           },
           "group": "edges",
           "removed": false,
@@ -6989,9 +7263,123 @@
         },
         {
           "data": {
-            "id": "uttrqkmvam",
-            "source": "d06zrd6pey",
-            "target": "y8yndf3q1z"
+            "id": "0d4cen9u2l",
+            "source": "1pve9sdk8r",
+            "target": "0xlud9hvrp"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "3idv24d7f0",
+            "source": "40hv4vrwhj",
+            "target": "k35607dwni"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "8yfj4x703k",
+            "source": "0xlud9hvrp",
+            "target": "19rwg3mdfa"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "8d4rq8bi7u",
+            "source": "qgxc6nvhfo",
+            "target": "ccmbdqkdt0"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "epyegcrbgy",
+            "source": "ccmbdqkdt0",
+            "target": "1pve9sdk8r"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "gje4qkxm2a",
+            "source": "0xlud9hvrp",
+            "target": "mg2ug4c9dq"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "9vq1kjgp1e",
+            "source": "na2lkkmfm4",
+            "target": "qgxc6nvhfo"
           },
           "position": {
             "x": 0,
@@ -7026,11 +7414,11 @@
     }
   },
   "flowColor": "#ff661c",
-  "savedDate": 1761668759787,
+  "savedDate": 1762195673247,
   "variables": [
     {
       "context": "flowInstance",
-      "createdDate": 1760708351502,
+      "createdDate": 1760708780640,
       "fields": {
         "type": "string",
         "displayName": "Url for company's logo image",
@@ -7038,31 +7426,33 @@
         "min": 0,
         "max": 2000
       },
-      "id": "28a23b00-d386-4f74-bdbe-4e1227f65fe7",
+      "id": "1ab00024-b6f4-4b60-85d0-d4b9ec81fee5",
       "type": "property",
       "visibility": "private",
       "name": "companyLogo##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760708351500,
+      "createdDate": 1760708780679,
       "fields": {
         "type": "string",
         "displayName": "",
         "mutable": true,
         "min": 0,
-        "max": 2000
+        "max": 2000,
+        "value": "Ping Identity"
       },
-      "id": "a8ed9354-da8a-48a5-a38f-263fc498fe00",
+      "id": "7734eb54-165e-4dff-9392-10c603268db4",
       "type": "property",
+      "updatedDate": 1761881760481,
       "visibility": "private",
       "name": "companyName##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716173844,
+      "createdDate": 1760708780619,
       "fields": {
         "type": "string",
         "displayName": "Navigation Bar header title",
@@ -7071,36 +7461,36 @@
         "min": 0,
         "max": 2000
       },
-      "id": "768068a2-c4b6-4f68-89e7-0d3308f2ccbf",
+      "id": "cbdf7d92-1c00-4c10-b140-97931abaa02f",
       "type": "property",
       "updatedDate": 1754075474090,
       "visibility": "private",
       "name": "cv-navBarHeader##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716175685,
+      "createdDate": 1760708782567,
       "fields": {
         "type": "object",
         "displayName": "JSON Object to host all Ping Identity create variables",
-        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"7018280b-f5a0-41fb-aa76-cb64fd7dac6a\",             \"ssprPolicy\": \"07730a51-bbd6-4b5b-98d4-ade96c6b6b93\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"41439de5-e0e0-4b07-9e58-67827749bd72\",             \"selfiePolicy\": \"015ad860-85b8-4a95-bf4c-3264f66fb877\"         }     } }",
+        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"38a3a659-16ed-48f0-aaaa-d679cb7098a5\",             \"ssprPolicy\": \"75e9977b-5418-4ae1-99a9-125f8babcc68\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"2ab4da34-e4a8-4a79-91cd-fd9db56dd442\",             \"selfiePolicy\": \"888495ad-bc88-4237-bcaa-81153f3987ec\"         }     } }",
         "mutable": true,
         "min": 0,
         "max": 2000
       },
-      "id": "9af1e5d3-640a-4fd9-b2c7-e4eabbd4c8c5",
+      "id": "50513cbc-c1b9-467d-92f8-5971b71141c2",
       "type": "property",
-      "updatedDate": 1760716383483,
+      "updatedDate": 1760710980844,
       "visibility": "private",
       "name": "gv-VariableObject##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ],
   "connections": [
     {
       "connectorId": "codeSnippetConnector",
-      "createdDate": 1760716175732,
+      "createdDate": 1760708782600,
       "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
       "name": "Variable Parse",
       "properties": {
@@ -7143,7 +7533,7 @@
       },
       "updatedDate": 1755031019315,
       "connectionId": "f38f99131630a9f27c0d3c8ec57a6252",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ]
 }

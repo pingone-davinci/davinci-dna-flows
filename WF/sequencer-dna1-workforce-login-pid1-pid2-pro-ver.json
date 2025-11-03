@@ -1,5 +1,5 @@
 {
-  "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44",
+  "companyId": "effa9215-e77b-4465-9af7-a4534abbff76",
   "authTokenExpireIds": [],
   "connectorIds": [
     "pingOneAuthenticationConnector",
@@ -12,15 +12,15 @@
     "analyticsConnector",
     "codeSnippetConnector"
   ],
-  "createdDate": 1761666849334,
-  "currentVersion": 1,
+  "createdDate": 1762195612697,
+  "currentVersion": 15,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761666849401,
+  "deployedDate": 1762195614698,
   "description": "The default & global authentication flow applied to all applications & users",
   "flowStatus": "enabled",
   "isOutputSchemaSaved": false,
-  "name": "[MainFlow - 1] Login with Protect, MFA and Verify | [SSO, PID-1, PID-2, PRO, VER]",
-  "publishedVersion": 1,
+  "name": "[MainFlow - 1] Login with Protect, MFA and Verify _ [SSO, PID-1, PID-2, PRO, VER]",
+  "publishedVersion": 15,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -28,7 +28,7 @@
     "customTimeoutErrorScreenMessage": "",
     "customTimeoutErrorScreenHTML": "",
     "customTimeoutErrorScreenCSS": "",
-    "logLevel": 4,
+    "logLevel": 3,
     "pingOneFlow": true,
     "useCustomCSS": true,
     "flowTimeoutInSeconds": 800,
@@ -40,12 +40,13 @@
     "css": ".companyLogo {\n    /* Ping Logo  */\n    content: url(\"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\");\n    width: 65px;\n    height: 65px;\n}\n\n.footerLogo {\n    /* Ping Logo  */\n    content: url(\"https://authenticator.pingone.com/pingid/assets/images/ping-logo.sm.2x.png\");\n    width: 85px !important;\n    height: auto;\n}",
     "validateOnSave": false
   },
+  "timeouts": "null",
   "trigger": {
     "type": "AUTHENTICATION"
   },
-  "updatedDate": 1761666849456,
-  "flowId": "d39740eff0e5e42a9773f5ccd4ee2df2",
-  "versionId": 1,
+  "updatedDate": 1762195614759,
+  "flowId": "6712fd05e0f9e5cb80f7fae2505898d1",
+  "versionId": 15,
   "graphData": {
     "elements": {
       "nodes": [
@@ -76,8 +77,8 @@
             }
           },
           "position": {
-            "x": 918.5636349345914,
-            "y": 612.375756623061
+            "x": 971.5982189074725,
+            "y": 648.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -108,8 +109,8 @@
             }
           },
           "position": {
-            "x": 1085.575204922699,
-            "y": 612.375756623061
+            "x": 1099.4400898163506,
+            "y": 648.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -144,8 +145,8 @@
             }
           },
           "position": {
-            "x": 1280.4220365754911,
-            "y": 445.3641866349534
+            "x": 1278.4187090887797,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -170,8 +171,8 @@
             }
           },
           "position": {
-            "x": 1419.5983448989139,
-            "y": 445.3641866349534
+            "x": 1431.8289541794331,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -260,8 +261,8 @@
             }
           },
           "position": {
-            "x": 3201.0550914387277,
-            "y": 528.8699716290072
+            "x": 3528.435637085032,
+            "y": 597.5256127266339
           },
           "group": "nodes",
           "removed": false,
@@ -286,8 +287,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: SSO-1] Login Flow | [PID-1, PRO]",
-                  "value": "3447600a32e09f3803f28229ab228741"
+                  "label": "[SubFlow: SSO-1] Login Flow _ [PID-1, PRO]",
+                  "value": "d0e66a9239e3a550e357b439475375a9"
                 }
               },
               "subFlowVersionId": {
@@ -323,8 +324,8 @@
             }
           },
           "position": {
-            "x": 1280.4220365754911,
-            "y": 779.3873266111684
+            "x": 1278.4187090887797,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -347,8 +348,8 @@
             }
           },
           "position": {
-            "x": 1419.5983448989139,
-            "y": 779.3873266111684
+            "x": 1431.8289541794331,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -446,8 +447,8 @@
             }
           },
           "position": {
-            "x": 1892.797793198552,
-            "y": 835.0578499405376
+            "x": 1892.0596894513938,
+            "y": 929.9144770897166
           },
           "group": "nodes",
           "removed": false,
@@ -475,7 +476,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Success"
+                "value": "Sign On Success                    -                    -                    -                    -                    -                    Sign On Success"
               },
               "width": {
                 "value": 1500
@@ -498,7 +499,7 @@
           },
           "position": {
             "x": 216.8545064104097,
-            "y": 2917.5702720224062
+            "y": 2978.160026931753
           },
           "group": "nodes",
           "removed": false,
@@ -555,7 +556,7 @@
           },
           "position": {
             "x": 216.8545064104097,
-            "y": 3025.9975252276113
+            "y": 3086.587280136958
           },
           "group": "nodes",
           "removed": false,
@@ -609,8 +610,8 @@
             "idUnique": "f12uwfigwv"
           },
           "position": {
-            "x": 960,
-            "y": 3131.354875385779
+            "x": 971.5982189074725,
+            "y": 3205.4997792677445
           },
           "group": "nodes",
           "removed": false,
@@ -643,8 +644,8 @@
             "idUnique": "v1wzc4z0b6"
           },
           "position": {
-            "x": 390,
-            "y": 3131.354875385779
+            "x": 383.5256127266339,
+            "y": 3205.4997792677445
           },
           "group": "nodes",
           "removed": false,
@@ -662,8 +663,8 @@
             "idUnique": "e48b4ysbon"
           },
           "position": {
-            "x": 510,
-            "y": 3131.354875385779
+            "x": 511.36748363551186,
+            "y": 3205.4997792677445
           },
           "group": "nodes",
           "removed": false,
@@ -720,7 +721,7 @@
           },
           "position": {
             "x": 239.5683741817756,
-            "y": 3599.790512470811
+            "y": 3660.3802673801574
           },
           "group": "nodes",
           "removed": false,
@@ -756,8 +757,8 @@
             "idUnique": "cgsgnfk7da"
           },
           "position": {
-            "x": 367.4102450906536,
-            "y": 3727.6323833796887
+            "x": 383.5256127266339,
+            "y": 3793.572385448583
           },
           "group": "nodes",
           "removed": false,
@@ -785,7 +786,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Sign On Failure"
+                "value": "Sign On Failure                    -                    -                    -                    -                    -                    Sign On Failure"
               },
               "width": {
                 "value": 1500
@@ -808,7 +809,7 @@
           },
           "position": {
             "x": 214,
-            "y": 3497.5170157437083
+            "y": 3558.106770653055
           },
           "group": "nodes",
           "removed": false,
@@ -852,8 +853,8 @@
             }
           },
           "position": {
-            "x": 1614.445176551706,
-            "y": 584.5404949583764
+            "x": 1636.375947633638,
+            "y": 623.0939869084094
           },
           "group": "nodes",
           "removed": false,
@@ -891,8 +892,8 @@
             }
           },
           "position": {
-            "x": 1614.445176551706,
-            "y": 1113.4104665873836
+            "x": 1610.8075734518623,
+            "y": 1160.029844725697
           },
           "group": "nodes",
           "removed": false,
@@ -959,7 +960,7 @@
           },
           "position": {
             "x": 960,
-            "y": 2651.354875385779
+            "y": 2711.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -1009,8 +1010,8 @@
             }
           },
           "position": {
-            "x": 955.4828512714921,
-            "y": 3727.6323833796887
+            "x": 971.5982189074725,
+            "y": 3793.572385448583
           },
           "group": "nodes",
           "removed": false,
@@ -1063,8 +1064,8 @@
             "idUnique": "g9fybbwj88"
           },
           "position": {
-            "x": 648.6623610901851,
-            "y": 3727.6323833796887
+            "x": 690.346102907941,
+            "y": 3793.572385448583
           },
           "group": "nodes",
           "removed": false,
@@ -1081,8 +1082,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 469.68374181775596,
-            "y": 3727.6323833796887
+            "x": 511.36748363551186,
+            "y": 3793.572385448583
           },
           "group": "nodes",
           "removed": false,
@@ -1099,8 +1100,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 750.9358578172875,
-            "y": 3727.6323833796887
+            "x": 818.187973816819,
+            "y": 3793.572385448583
           },
           "group": "nodes",
           "removed": false,
@@ -1128,7 +1129,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "MFA Experience"
+                "value": "MFA Experience                    -                    -                    -                    -                    -                    MFA Experience"
               },
               "width": {
                 "value": 1500
@@ -1151,7 +1152,7 @@
           },
           "position": {
             "x": 272.9118807900067,
-            "y": 1187.8125695267154
+            "y": 1248.402324436062
           },
           "group": "nodes",
           "removed": false,
@@ -1185,7 +1186,7 @@
           },
           "position": {
             "x": 396.9627356945552,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -1210,8 +1211,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PID-1] PingID Device Authentication | [PID-2]",
-                  "value": "73c840c56d3d6a52540befc653a38e0b"
+                  "label": "[SubFlow: PID-1] PingID Device Authentication _ [PID-2]",
+                  "value": "0ca18a5312cd0a1a1498384f082f3ecd"
                 }
               },
               "subFlowVersionId": {
@@ -1285,7 +1286,7 @@
           },
           "position": {
             "x": 669.8746164845619,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -1312,7 +1313,7 @@
           },
           "position": {
             "x": 818.7356423700201,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -1378,7 +1379,7 @@
           },
           "position": {
             "x": 992.406839236388,
-            "y": 1634.39564718309
+            "y": 1694.9854020924365
           },
           "group": "nodes",
           "removed": false,
@@ -1423,7 +1424,7 @@
           },
           "position": {
             "x": 992.406839236388,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -1457,7 +1458,7 @@
           },
           "position": {
             "x": 390,
-            "y": 2651.354875385779
+            "y": 2711.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -1475,7 +1476,7 @@
           },
           "position": {
             "x": 510,
-            "y": 2651.354875385779
+            "y": 2711.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -1545,7 +1546,7 @@
           },
           "position": {
             "x": 1314.939061988214,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -1569,7 +1570,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
@@ -1639,8 +1640,8 @@
             "idUnique": "iwyl7y9kdj"
           },
           "position": {
-            "x": 1614.445176551706,
-            "y": 445.3641866349534
+            "x": 1636.375947633638,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -1655,7 +1656,7 @@
           "data": {
             "id": "zvv71lhmjx",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1687,8 +1688,8 @@
             }
           },
           "position": {
-            "x": 690,
-            "y": 3311.354875385779
+            "x": 690.346102907941,
+            "y": 3384.4783985401737
           },
           "group": "nodes",
           "removed": false,
@@ -1703,7 +1704,7 @@
           "data": {
             "id": "wa4y1kxzz1",
             "nodeType": "CONNECTION",
-            "connectionId": "80a251201e8396220aa8f99ee0c81cef",
+            "connectionId": "a093ebf43637bb54dcc7c79347720b27",
             "connectorId": "analyticsConnector",
             "name": "Flow Analytics",
             "label": "Flow Analytics",
@@ -1736,8 +1737,8 @@
             "idUnique": "4vm07atcy6"
           },
           "position": {
-            "x": 648.6623610901851,
-            "y": 3881.042628470342
+            "x": 690.346102907941,
+            "y": 3946.9826305392367
           },
           "group": "nodes",
           "removed": false,
@@ -1768,7 +1769,7 @@
                 "value": "Global User Sign On Experience"
               },
               "width": {
-                "value": 2300
+                "value": 4000
               },
               "fontStyle": {
                 "value": "bold"
@@ -1786,7 +1787,7 @@
             "status": "configured"
           },
           "position": {
-            "x": 261.3913253540759,
+            "x": 255.68374181775593,
             "y": 214
           },
           "group": "nodes",
@@ -1815,10 +1816,10 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "Check Session and begin Login Journey"
+                "value": "Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey                    -                    -                    -                    -                    -                    Check Session and begin Login Journey"
               },
               "width": {
-                "value": 2000
+                "value": 3500
               },
               "fontStyle": {
                 "value": "bold"
@@ -1836,8 +1837,8 @@
             "status": "configured"
           },
           "position": {
-            "x": 287.5304578894835,
-            "y": 266.27826507081517
+            "x": 255.68374181775593,
+            "y": 265.1367483635512
           },
           "group": "nodes",
           "removed": false,
@@ -1895,8 +1896,8 @@
             "status": "configured"
           },
           "position": {
-            "x": 546.3888643630827,
-            "y": 3548.6537641072596
+            "x": 720,
+            "y": 3630
           },
           "group": "nodes",
           "removed": false,
@@ -1956,7 +1957,7 @@
           },
           "position": {
             "x": 623.4567059299279,
-            "y": 2998.89071192631
+            "y": 3059.4804668356564
           },
           "group": "nodes",
           "removed": false,
@@ -2016,7 +2017,7 @@
           },
           "position": {
             "x": 720,
-            "y": 2531.354875385779
+            "y": 2591.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -2075,8 +2076,8 @@
             "idUnique": "es8nqp40b4"
           },
           "position": {
-            "x": 751.5520649464838,
-            "y": 334.023139976215
+            "x": 485.79910945373626,
+            "y": 367.4102450906536
           },
           "group": "nodes",
           "removed": false,
@@ -2111,8 +2112,8 @@
             }
           },
           "position": {
-            "x": 2226.820933174767,
-            "y": 445.3641866349534
+            "x": 2582.405792359335,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2160,8 +2161,8 @@
             }
           },
           "position": {
-            "x": 2560.8440731509822,
-            "y": 445.3641866349534
+            "x": 2914.7946567224176,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2206,8 +2207,8 @@
             "idUnique": "st25w9b9hi"
           },
           "position": {
-            "x": 2867.0319514625126,
-            "y": 779.3873266111684
+            "x": 3247.1835210855,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -2232,8 +2233,8 @@
             }
           },
           "position": {
-            "x": 2700.020381474405,
-            "y": 445.3641866349534
+            "x": 3068.204901813071,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2255,32 +2256,8 @@
             }
           },
           "position": {
-            "x": 2393.8325031628747,
-            "y": 445.3641866349534
-          },
-          "group": "nodes",
-          "removed": false,
-          "selected": false,
-          "selectable": true,
-          "locked": false,
-          "grabbable": true,
-          "pannable": false,
-          "classes": ""
-        },
-        {
-          "data": {
-            "id": "p9tgefruwc",
-            "nodeType": "EVAL",
-            "label": "Evaluator",
-            "properties": {
-              "1op7fc2h0e": {
-                "value": "anyTriggersFalse"
-              }
-            }
-          },
-          "position": {
-            "x": 1753.621484875129,
-            "y": 445.3641866349534
+            "x": 2735.8160374499885,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2305,8 +2282,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-                  "value": "ba162cb5e982c0d43d891c25c421a88e"
+                  "label": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+                  "value": "3a9bfd3a96c69934a2fce8036244eef9"
                 }
               },
               "subFlowVersionId": {
@@ -2345,8 +2322,8 @@
             }
           },
           "position": {
-            "x": 1892.797793198552,
-            "y": 445.3641866349534
+            "x": 2250.016927996252,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2371,8 +2348,8 @@
             }
           },
           "position": {
-            "x": 2059.8093631866595,
-            "y": 445.3641866349534
+            "x": 2403.427173086906,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2397,8 +2374,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PRO] Protect Evaluation | [N/a]",
-                  "value": "ba162cb5e982c0d43d891c25c421a88e"
+                  "label": "[SubFlow: PRO] Protect Evaluation _ [N/a]",
+                  "value": "3a9bfd3a96c69934a2fce8036244eef9"
                 }
               },
               "subFlowVersionId": {
@@ -2436,7 +2413,7 @@
           },
           "position": {
             "x": 660,
-            "y": 2651.354875385779
+            "y": 2711.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -2459,7 +2436,7 @@
           },
           "position": {
             "x": 810,
-            "y": 2651.354875385779
+            "y": 2711.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -2499,7 +2476,7 @@
           },
           "position": {
             "x": 960,
-            "y": 2771.354875385779
+            "y": 2831.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -2539,8 +2516,8 @@
             }
           },
           "position": {
-            "x": 389.6936633055842,
-            "y": 445.3641866349534
+            "x": 383.5256127266339,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2557,8 +2534,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 501.0347099643226,
-            "y": 445.3641866349534
+            "x": 511.36748363551186,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -2597,8 +2574,8 @@
             "idUnique": "o5t34kztof"
           },
           "position": {
-            "x": 2226.820933174767,
-            "y": 779.3873266111684
+            "x": 2582.405792359335,
+            "y": 648.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -2656,8 +2633,8 @@
             "idUnique": "kpw6rg7ta7"
           },
           "position": {
-            "x": 1614.445176551706,
-            "y": 779.3873266111684
+            "x": 1610.8075734518623,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -2674,8 +2651,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1753.621484875129,
-            "y": 835.0578499405376
+            "x": 1764.217818542516,
+            "y": 929.9144770897166
           },
           "group": "nodes",
           "removed": false,
@@ -2693,8 +2670,8 @@
             "label": "Evaluator"
           },
           "position": {
-            "x": 1753.621484875129,
-            "y": 779.3873266111684
+            "x": 1764.217818542516,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -2781,8 +2758,8 @@
             "idUnique": "925o4hy071"
           },
           "position": {
-            "x": 1892.797793198552,
-            "y": 779.3873266111684
+            "x": 1892.0596894513938,
+            "y": 827.6409803626142
           },
           "group": "nodes",
           "removed": false,
@@ -2799,8 +2776,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1753.621484875129,
-            "y": 1002.0694199286452
+            "x": 1764.217818542516,
+            "y": 1134.4614705439215
           },
           "group": "nodes",
           "removed": false,
@@ -2890,8 +2867,8 @@
             "idUnique": "9ppgrvc75g"
           },
           "position": {
-            "x": 1892.797793198552,
-            "y": 1002.0694199286452
+            "x": 1892.0596894513938,
+            "y": 1134.4614705439215
           },
           "group": "nodes",
           "removed": false,
@@ -2909,7 +2886,7 @@
           },
           "position": {
             "x": 521.0135905991037,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -2976,7 +2953,7 @@
           },
           "position": {
             "x": 1314.939061988214,
-            "y": 1485.534621297632
+            "y": 1546.1243762069785
           },
           "group": "nodes",
           "removed": false,
@@ -2994,7 +2971,7 @@
           },
           "position": {
             "x": 1166.078036102756,
-            "y": 1386.293937373993
+            "y": 1446.8836922833395
           },
           "group": "nodes",
           "removed": false,
@@ -3012,7 +2989,7 @@
           },
           "position": {
             "x": 1166.078036102756,
-            "y": 1485.534621297632
+            "y": 1546.1243762069785
           },
           "group": "nodes",
           "removed": false,
@@ -3051,8 +3028,8 @@
             "idUnique": "kn2ab2k91i"
           },
           "position": {
-            "x": 2560.8440731509822,
-            "y": 779.3873266111684
+            "x": 2914.7946567224176,
+            "y": 648.6623610901851
           },
           "group": "nodes",
           "removed": false,
@@ -3080,7 +3057,7 @@
                 "value": "#ffffffff"
               },
               "annotation": {
-                "value": "End Risk Experience"
+                "value": "End Risk Experience                    -                    -                    -                    -                    -                    End Risk Experience"
               },
               "width": {
                 "value": 1500
@@ -3103,7 +3080,7 @@
           },
           "position": {
             "x": 240,
-            "y": 2441.354875385779
+            "y": 2501.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -3156,8 +3133,8 @@
             "idUnique": "5drwebg4dj"
           },
           "position": {
-            "x": 690,
-            "y": 3131.354875385779
+            "x": 690.346102907941,
+            "y": 3205.4997792677445
           },
           "group": "nodes",
           "removed": false,
@@ -3174,8 +3151,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 840,
-            "y": 3131.354875385779
+            "x": 818.187973816819,
+            "y": 3205.4997792677445
           },
           "group": "nodes",
           "removed": false,
@@ -3235,7 +3212,7 @@
           },
           "position": {
             "x": 1042.0271811982075,
-            "y": 1262.2430824694445
+            "y": 1322.832837378791
           },
           "group": "nodes",
           "removed": false,
@@ -3294,8 +3271,8 @@
             "idUnique": "xk7gg6f6v5"
           },
           "position": {
-            "x": 1697.9509615457598,
-            "y": 668.04627995243
+            "x": 1457.3973283612088,
+            "y": 699.7991094537363
           },
           "group": "nodes",
           "removed": false,
@@ -3355,7 +3332,7 @@
           },
           "position": {
             "x": 322.5322227518261,
-            "y": 1237.432911488535
+            "y": 1298.0226663978815
           },
           "group": "nodes",
           "removed": false,
@@ -3415,7 +3392,7 @@
           },
           "position": {
             "x": 240,
-            "y": 2531.354875385779
+            "y": 2591.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -3473,8 +3450,8 @@
             "idUnique": "9mvtqge67x"
           },
           "position": {
-            "x": 2867.0319514625126,
-            "y": 445.3641866349534
+            "x": 3247.1835210855,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -3491,8 +3468,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3034.04352145062,
-            "y": 528.8699716290072
+            "x": 3375.025391994378,
+            "y": 597.5256127266339
           },
           "group": "nodes",
           "removed": false,
@@ -3576,8 +3553,8 @@
             "idUnique": "q4huaoyxo5"
           },
           "position": {
-            "x": 3201.0550914387277,
-            "y": 445.3641866349534
+            "x": 3528.435637085032,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -3664,8 +3641,8 @@
             "idUnique": "am5srk7wu2"
           },
           "position": {
-            "x": 3201.0550914387277,
-            "y": 695.8815416171146
+            "x": 3528.435637085032,
+            "y": 802.0726061808386
           },
           "group": "nodes",
           "removed": false,
@@ -3682,8 +3659,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3034.04352145062,
-            "y": 445.3641866349534
+            "x": 3375.025391994378,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -3700,8 +3677,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3034.04352145062,
-            "y": 695.8815416171146
+            "x": 3375.025391994378,
+            "y": 802.0726061808386
           },
           "group": "nodes",
           "removed": false,
@@ -3740,8 +3717,8 @@
             "idUnique": "jiom89re3u"
           },
           "position": {
-            "x": 668.04627995243,
-            "y": 445.3641866349534
+            "x": 664.7777287261654,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -3763,8 +3740,8 @@
             }
           },
           "position": {
-            "x": 807.222588275853,
-            "y": 445.3641866349534
+            "x": 818.187973816819,
+            "y": 495.2521159995315
           },
           "group": "nodes",
           "removed": false,
@@ -3815,7 +3792,7 @@
           },
           "position": {
             "x": 270,
-            "y": 1781.354875385779
+            "y": 1841.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -3850,7 +3827,7 @@
           },
           "position": {
             "x": 390,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -3910,7 +3887,7 @@
           },
           "position": {
             "x": 270,
-            "y": 1841.354875385779
+            "y": 1901.9446302951255
           },
           "group": "nodes",
           "removed": false,
@@ -3959,7 +3936,7 @@
           },
           "position": {
             "x": 990,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -3977,7 +3954,7 @@
           },
           "position": {
             "x": 1140,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -3995,7 +3972,7 @@
           },
           "position": {
             "x": 1140,
-            "y": 2131.026072252147
+            "y": 2191.6158271614936
           },
           "group": "nodes",
           "removed": false,
@@ -4027,7 +4004,7 @@
           },
           "position": {
             "x": 810,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -4053,8 +4030,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[Subflow: VER] Verify Evaluation | [PID-1]",
-                  "value": "4a91dda108b78bbebd0b42dbbc3c79c5"
+                  "label": "[Subflow: VER] Verify Evaluation _ [PID-1]",
+                  "value": "43c7e3248d122406e1ae0f796877d26c"
                 }
               },
               "subFlowVersionId": {
@@ -4151,7 +4128,7 @@
           },
           "position": {
             "x": 660,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -4169,7 +4146,7 @@
           },
           "position": {
             "x": 510,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -4316,8 +4293,8 @@
             "idUnique": "qhn2bm7atb"
           },
           "position": {
-            "x": 1892.797793198552,
-            "y": 918.5636349345914
+            "x": 1892.0596894513938,
+            "y": 1032.187973816819
           },
           "group": "nodes",
           "removed": false,
@@ -4334,8 +4311,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 1753.621484875129,
-            "y": 918.5636349345914
+            "x": 1764.217818542516,
+            "y": 1032.187973816819
           },
           "group": "nodes",
           "removed": false,
@@ -4405,7 +4382,7 @@
           },
           "position": {
             "x": 1320,
-            "y": 2011.0260722521468
+            "y": 2071.615827161493
           },
           "group": "nodes",
           "removed": false,
@@ -4475,7 +4452,7 @@
           },
           "position": {
             "x": 1320,
-            "y": 2131.026072252147
+            "y": 2191.6158271614936
           },
           "group": "nodes",
           "removed": false,
@@ -4548,7 +4525,7 @@
           },
           "position": {
             "x": 990,
-            "y": 2251.026072252147
+            "y": 2311.6158271614936
           },
           "group": "nodes",
           "removed": false,
@@ -4695,8 +4672,8 @@
             "idUnique": "6add2vd2d5"
           },
           "position": {
-            "x": 3201.0550914387277,
-            "y": 612.375756623061
+            "x": 3528.435637085032,
+            "y": 699.7991094537363
           },
           "group": "nodes",
           "removed": false,
@@ -4713,8 +4690,8 @@
             "nodeType": "EVAL"
           },
           "position": {
-            "x": 3034.04352145062,
-            "y": 612.375756623061
+            "x": 3375.025391994378,
+            "y": 699.7991094537363
           },
           "group": "nodes",
           "removed": false,
@@ -4732,7 +4709,288 @@
           },
           "position": {
             "x": 1140,
-            "y": 2070
+            "y": 2130.5897549093465
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "vlm8qgk44u",
+            "nodeType": "EVAL",
+            "properties": {
+              "undefined": {
+                "value": "anyTriggersFalse"
+              },
+              "mo550o0ofj": {
+                "value": "anyTriggersFalse"
+              },
+              "mg2ug4c9dq": {
+                "value": "anyTriggersFalse"
+              }
+            }
+          },
+          "position": {
+            "x": 2071.038308723823,
+            "y": 495.2521159995315
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "6inehnax0b",
+            "nodeType": "CONNECTION",
+            "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+            "connectorId": "httpConnector",
+            "name": "Http",
+            "label": "Http",
+            "status": "configured",
+            "capabilityName": "customHTMLTemplate",
+            "type": "trigger",
+            "properties": {
+              "customHTML": {
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+              },
+              "customScript": {
+                "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
+              },
+              "formFieldsList": {
+                "value": [
+                  {
+                    "propertyName": "buttonValue",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false,
+                    "displayName": ""
+                  },
+                  {
+                    "propertyName": "origin",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "rpId",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "webAuthNSupport",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  },
+                  {
+                    "propertyName": "riskPayload",
+                    "preferredControlType": "textField",
+                    "preferredDataType": "string",
+                    "value": "",
+                    "hashedVisibility": false
+                  }
+                ]
+              },
+              "nodeTitle": {
+                "value": "Gather Protect Payload"
+              },
+              "nodeDescription": {
+                "value": "JS to execute PingOne Protect profiling. <contains skRisk Component>"
+              },
+              "outputSchema": {
+                "value": {}
+              },
+              "inputSchema": {
+                "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"navBar\": {\n            \"type\": \"string\",\n            \"displayName\": \"Nav Bar Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true\n        },\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n        \"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        }\n    }\n}"
+              },
+              "title": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Ensuring a secure experience.\"\n      }\n    ]\n  }\n]"
+              },
+              "textOne": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"We are ensuring your experience is secure. We apologize for your delay.\"\n      }\n    ]\n  }\n]"
+              },
+              "navBar": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              }
+            },
+            "idUnique": "ym0b2vhqf1"
+          },
+          "position": {
+            "x": 2250.016927996252,
+            "y": 776.504231999063
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "pek7mb5pjq",
+            "nodeType": "CONNECTION",
+            "connectionId": "de650ca45593b82c49064ead10b9fe17",
+            "connectorId": "functionsConnector",
+            "name": "Functions",
+            "label": "Functions",
+            "status": "configured",
+            "capabilityName": "AIsEmpty",
+            "type": "trigger",
+            "properties": {
+              "leftValueA": {
+                "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"http.svg\",\n        \"url\": \"riskPayload\",\n        \"data\": \"{{local.qgxc6nvhfo.payload.output.riskPayload}}\",\n        \"tooltip\": \"{{local.qgxc6nvhfo.payload.output.riskPayload}}\",\n        \"children\": [\n          {\n            \"text\": \"riskPayload\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+              },
+              "checkNullORUndefined": {
+                "value": true
+              },
+              "nodeTitle": {
+                "value": "is riskPayload empty?"
+              },
+              "nodeDescription": {
+                "value": "Is the Risk Payload empty or null, if so go back to profile the browser"
+              }
+            }
+          },
+          "position": {
+            "x": 1917.6280636331694,
+            "y": 495.2521159995315
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "k93ni3h5up",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1764.217818542516,
+            "y": 495.2521159995315
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "m9mo48ngl9",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 2403.427173086906,
+            "y": 776.504231999063
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "6o915bqqxh",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "goToNode",
+            "type": "action",
+            "properties": {
+              "nodeInstanceId": {
+                "value": "iiqp8i1o1f"
+              }
+            }
+          },
+          "position": {
+            "x": 2582.405792359335,
+            "y": 776.504231999063
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "iiqp8i1o1f",
+            "nodeType": "CONNECTION",
+            "connectionId": "3566e86a35c26e575396dcfb89a3dcc0",
+            "connectorId": "nodeConnector",
+            "name": "Teleport",
+            "label": "Teleport",
+            "status": "configured",
+            "capabilityName": "startNode",
+            "type": "trigger",
+            "properties": {
+              "nodeTitle": {
+                "value": "Re-Profile"
+              },
+              "nodeDescription": {
+                "value": "Ensure the payload is not empty before continuing "
+              }
+            },
+            "idUnique": "mw94vk1pyy"
+          },
+          "position": {
+            "x": 1303.987083270555,
+            "y": 367.4102450906536
+          },
+          "group": "nodes",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": false,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "3wnl884kt3",
+            "nodeType": "EVAL"
+          },
+          "position": {
+            "x": 1431.8289541794331,
+            "y": 367.4102450906536
           },
           "group": "nodes",
           "removed": false,
@@ -4745,6 +5003,25 @@
         }
       ],
       "edges": [
+        {
+          "data": {
+            "id": "x8n0pxuz9u",
+            "source": "2161o49x0b",
+            "target": "ievtgmfdvr"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
         {
           "data": {
             "id": "2d2glnjczj",
@@ -5130,13 +5407,14 @@
         },
         {
           "data": {
-            "id": "crg2vncul2",
-            "source": "qgxc6nvhfo",
-            "target": "p9tgefruwc"
+            "id": "law4f7zeyu",
+            "source": "g9sb0svnmm",
+            "target": "1d2zgar4ub",
+            "multiValueSourceId": "ue0dqii49q"
           },
           "position": {
-            "x": 0,
-            "y": 0
+            "x": 64,
+            "y": 132
           },
           "group": "edges",
           "removed": false,
@@ -5283,9 +5561,9 @@
         },
         {
           "data": {
-            "id": "2o52j0oztq",
-            "source": "p9tgefruwc",
-            "target": "mg2ug4c9dq"
+            "id": "06on12rkc2",
+            "source": "eimc9354ug",
+            "target": "qw3zna7yj1"
           },
           "position": {
             "x": 0,
@@ -6146,9 +6424,9 @@
         },
         {
           "data": {
-            "id": "x8n0pxuz9u",
-            "source": "2161o49x0b",
-            "target": "ievtgmfdvr"
+            "id": "suxzx0ttup",
+            "source": "pek7mb5pjq",
+            "target": "vlm8qgk44u"
           },
           "position": {
             "x": 0,
@@ -6165,14 +6443,13 @@
         },
         {
           "data": {
-            "id": "law4f7zeyu",
-            "source": "g9sb0svnmm",
-            "target": "1d2zgar4ub",
-            "multiValueSourceId": "ue0dqii49q"
+            "id": "6ydq0h5fm9",
+            "source": "vlm8qgk44u",
+            "target": "6inehnax0b"
           },
           "position": {
-            "x": 64,
-            "y": 132
+            "x": 0,
+            "y": 0
           },
           "group": "edges",
           "removed": false,
@@ -6185,9 +6462,123 @@
         },
         {
           "data": {
-            "id": "06on12rkc2",
-            "source": "eimc9354ug",
-            "target": "qw3zna7yj1"
+            "id": "qt9fjayj7y",
+            "source": "vlm8qgk44u",
+            "target": "mg2ug4c9dq"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "kt4lv39hm",
+            "source": "qgxc6nvhfo",
+            "target": "k93ni3h5up"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "uik7yx1knx",
+            "source": "k93ni3h5up",
+            "target": "pek7mb5pjq"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "izjkux5k78",
+            "source": "iiqp8i1o1f",
+            "target": "3wnl884kt3"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "usvln300e3",
+            "source": "6inehnax0b",
+            "target": "m9mo48ngl9"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "n7yi4aw2qh",
+            "source": "m9mo48ngl9",
+            "target": "6o915bqqxh"
+          },
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "group": "edges",
+          "removed": false,
+          "selected": false,
+          "selectable": true,
+          "locked": false,
+          "grabbable": true,
+          "pannable": true,
+          "classes": ""
+        },
+        {
+          "data": {
+            "id": "c69a7s2yru",
+            "source": "3wnl884kt3",
+            "target": "qgxc6nvhfo"
           },
           "position": {
             "x": 0,
@@ -6222,11 +6613,11 @@
     }
   },
   "flowColor": "#ff661c",
-  "savedDate": 1761666849042,
+  "savedDate": 1762195612402,
   "variables": [
     {
       "context": "flowInstance",
-      "createdDate": 1760708351502,
+      "createdDate": 1760708780640,
       "fields": {
         "type": "string",
         "displayName": "Url for company's logo image",
@@ -6234,51 +6625,53 @@
         "min": 0,
         "max": 2000
       },
-      "id": "28a23b00-d386-4f74-bdbe-4e1227f65fe7",
+      "id": "1ab00024-b6f4-4b60-85d0-d4b9ec81fee5",
       "type": "property",
       "visibility": "private",
       "name": "companyLogo##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760708351500,
+      "createdDate": 1760708780679,
       "fields": {
         "type": "string",
         "displayName": "",
         "mutable": true,
         "min": 0,
-        "max": 2000
+        "max": 2000,
+        "value": "Ping Identity"
       },
-      "id": "a8ed9354-da8a-48a5-a38f-263fc498fe00",
+      "id": "7734eb54-165e-4dff-9392-10c603268db4",
       "type": "property",
+      "updatedDate": 1761881760481,
       "visibility": "private",
       "name": "companyName##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716175685,
+      "createdDate": 1760708782567,
       "fields": {
         "type": "object",
         "displayName": "JSON Object to host all Ping Identity create variables",
-        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"7018280b-f5a0-41fb-aa76-cb64fd7dac6a\",             \"ssprPolicy\": \"07730a51-bbd6-4b5b-98d4-ade96c6b6b93\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"41439de5-e0e0-4b07-9e58-67827749bd72\",             \"selfiePolicy\": \"015ad860-85b8-4a95-bf4c-3264f66fb877\"         }     } }",
+        "value": "{     \"general\": {},     \"PingOneProtect\": {         \"ProtectPolicyIds\": {             \"authPolicy\": \"38a3a659-16ed-48f0-aaaa-d679cb7098a5\",             \"ssprPolicy\": \"75e9977b-5418-4ae1-99a9-125f8babcc68\"         }     },     \"PingMFA\": {         \"mandatoryAuthenticationMethods\": [             \"FIDO2\",             \"PINGID_MOBILE\"         ],         \"byPassMFADate\": \"2026-11-01\",         \"allowOTPFallback\": true,         \"allowedBackUpMethods\": [             \"SMS\",             \"EMAIL\",             \"VOICE\"         ],         \"aggregateFido\": false     },     \"PingOneVerify\": {         \"VerifyPolicyIds\": {             \"authPolicy\": \"2ab4da34-e4a8-4a79-91cd-fd9db56dd442\",             \"selfiePolicy\": \"888495ad-bc88-4237-bcaa-81153f3987ec\"         }     } }",
         "mutable": true,
         "min": 0,
         "max": 2000
       },
-      "id": "9af1e5d3-640a-4fd9-b2c7-e4eabbd4c8c5",
+      "id": "50513cbc-c1b9-467d-92f8-5971b71141c2",
       "type": "property",
-      "updatedDate": 1760716383483,
+      "updatedDate": 1760710980844,
       "visibility": "private",
       "name": "gv-VariableObject##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ],
   "connections": [
     {
       "connectorId": "codeSnippetConnector",
-      "createdDate": 1760716175732,
+      "createdDate": 1760708782600,
       "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
       "name": "Variable Parse",
       "properties": {
@@ -6321,7 +6714,7 @@
       },
       "updatedDate": 1755031019315,
       "connectionId": "f38f99131630a9f27c0d3c8ec57a6252",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ]
 }

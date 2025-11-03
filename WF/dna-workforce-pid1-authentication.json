@@ -1,5 +1,5 @@
 {
-  "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44",
+  "companyId": "effa9215-e77b-4465-9af7-a4534abbff76",
   "authTokenExpireIds": [],
   "connectorIds": [
     "pingOneMfaConnector",
@@ -12,10 +12,10 @@
     "flowConnector",
     "pingOneSSOConnector"
   ],
-  "createdDate": 1761666843986,
-  "currentVersion": 1,
+  "createdDate": 1762187756197,
+  "currentVersion": 2,
   "customerId": "f5662d8f6868dfb9de9a9befe91371fa",
-  "deployedDate": 1761666844093,
+  "deployedDate": 1762187759773,
   "description": "PingID flow to allow for Device Auth to trigger a device flow for users with registered devices. This flow does call the PingID Device Reg flow for inline if passed in",
   "flowStatus": "enabled",
   "inputSchemaCompiled": {
@@ -143,8 +143,8 @@
   },
   "isInputSchemaSaved": true,
   "isOutputSchemaSaved": false,
-  "name": "[SubFlow: PID-1] PingID Device Authentication | [PID-2]",
-  "publishedVersion": 1,
+  "name": "[SubFlow: PID-1] PingID Device Authentication _ [PID-2]",
+  "publishedVersion": 2,
   "settings": {
     "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
     "intermediateLoadingScreenCSS": "",
@@ -158,13 +158,14 @@
     "useCustomScript": false,
     "jsLinks": [],
     "flowTimeoutInSeconds": 2100,
-    "logLevel": 4,
+    "logLevel": 3,
     "displayNodeIDs": true,
     "validateOnSave": false
   },
-  "updatedDate": 1761666844166,
-  "flowId": "73c840c56d3d6a52540befc653a38e0b",
-  "versionId": 1,
+  "timeouts": "null",
+  "updatedDate": 1762187759874,
+  "flowId": "0ca18a5312cd0a1a1498384f082f3ecd",
+  "versionId": 2,
   "graphData": {
     "elements": {
       "nodes": [
@@ -4098,7 +4099,7 @@
                 "value": "/* \n  This selector class is required as DV\n  injects a div into any data-skcomponent=\"skbutton\",\n  which alters layout\n*/\nbutton > div:first-child {\n display: contents;\n}  \n.p.authNFirst{\n  border:2px solid #FF0000;\n  display: inline-block;\n}\n.borderexample {\n border-width:3px;\n border-style:solid;\n border-color:#FF0000;\n}\n\n"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 460px; width: 100%\">\n            <div class=\"card rounded-3 my-5 container-xxl\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    <!-- <h1 id=\"header\" class=\"text-center mb-4\">{{pageTitle}}</h1> -->\n                    <h1 class=\"text-muted text-center\">Please choose your authentication method</h1>\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger text-center mb-4\" data-skcomponent=\"skerror\"></p>\n                    {{#if regAuthN}}\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-dark text-center\"; style=\"background-color: LightYellow\";></p>\n                    {{/if}}\n                    <!-- {{local.hvne69pky6.payload.output.AuthNMessage}} -->\n                    <p id=\"maxDevicesFeedback\" data-id=\"feedback\" class=\"text-danger text-center\"></p>\n                    <form id=\"deviceSelectionForm\" data-id=\"deviceSelectionForm\" class=\"form\">\n                        <div class=\"d-flex flex-column gap-4 mb-4\">\n                            {{#each devices}}\n                            <button\n                                class=\"btn btn-outline-light rounded-3 flex-grow-1 d-flex align-items-center gap-4 w-100\"\n                                type=\"submit\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttonvalue=\"{{id}}\"\n                                id=\"btnDevice-{{id}}\"\n                                data-skform=\"deviceSelectionForm\">\n                                <i class=\"mdi {{displayIcon}} text-dark fs-2\" aria-hidden=\"true\"></i>\n                                <div class=\"d-flex flex-column text-start gap-1\">\n                                    <div class=\"fw-semibold text-black\">{{displayType}}</div>\n                                    <div class=\"fs-5 text-secondary\">\n                                        {{displayText}}\n                                    </div>\n                                </div>\n                                {{#if @first}}<span class=\"badge fs-5 rounded-3 bg-success-subtle border border-success text-muted mt-2 ms-auto\">DEFAULT</span>{{/if}}\n                            </button>\n                            {{/each}}\n                        </div>\n                        <div class=\"d-flex flex-column\">\n                            {{#if allowBackUp}}\n                            <button\n                                data-id=\"submit-button\"\n                                type=\"submit\"\n                                class=\"btn btn-outline-secondary rounded-3\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skbuttonvalue=\"FORGOT\"\n                                id=\"btnCreate\">\n                                    Forgot your device?\n                            </button>\n                            {{/if}}\n                            <button\n                                class=\"btn btn-link\"\n                                data-id=\"cancel-button\"\n                                type=\"submit\"\n                                class=\"btn btn-link mb-3\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skbuttonvalue=\"CANCEL\"\n                                id=\"btnCancel\">\n                                    Cancel\n                            </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n        <footer class=\"mt-5 text-center text-body-secondary small\">\n            <div class=\"footerLogo mx-auto mb-2\"></div>\n            <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n        </footer>\n    </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 460px; width: 100%\">\n            <div class=\"card rounded-3 my-5 container-xxl\">\n                <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    <!-- <h1 id=\"header\" class=\"text-center mb-4\">{{pageTitle}}</h1> -->\n                    <h1 class=\"text-muted text-center\">Please choose your authentication method</h1>\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger text-center mb-4\" data-skcomponent=\"skerror\"></p>\n                    {{#if regAuthN}}\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-dark text-center\"; style=\"background-color: LightYellow\";></p>\n                    {{/if}}\n                    <!-- {{local.hvne69pky6.payload.output.AuthNMessage}} -->\n                    <p id=\"maxDevicesFeedback\" data-id=\"feedback\" class=\"text-danger text-center\"></p>\n                    <form id=\"deviceSelectionForm\" data-id=\"deviceSelectionForm\" class=\"form\">\n                        <div class=\"d-flex flex-column gap-4 mb-4\">\n                            {{#each devices}}\n                            <button\n                                class=\"btn btn-outline-light rounded-3 flex-grow-1 d-flex align-items-center gap-4 w-100\"\n                                type=\"submit\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttonvalue=\"{{id}}\"\n                                id=\"btnDevice-{{id}}\"\n                                data-skform=\"deviceSelectionForm\">\n                                <i class=\"mdi {{displayIcon}} text-dark fs-2\" aria-hidden=\"true\"></i>\n                                <div class=\"d-flex flex-column text-start gap-1\">\n                                    <div class=\"fw-semibold text-black\">{{displayType}}</div>\n                                    <div class=\"fs-5 text-secondary\">\n                                        {{displayText}}\n                                    </div>\n                                </div>\n                                {{#if @first}}<span class=\"badge fs-5 rounded-3 bg-success-subtle border border-success text-muted mt-2 ms-auto\">DEFAULT</span>{{/if}}\n                            </button>\n                            {{/each}}\n                        </div>\n                        <div class=\"d-flex flex-column\">\n                            {{#if allowBackUp}}\n                            <button\n                                data-id=\"submit-button\"\n                                type=\"submit\"\n                                class=\"btn btn-outline-secondary rounded-3\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skbuttonvalue=\"FORGOT\"\n                                id=\"btnCreate\">\n                                    Forgot your device?\n                            </button>\n                            {{/if}}\n                            <button\n                                class=\"btn btn-link\"\n                                data-id=\"cancel-button\"\n                                type=\"submit\"\n                                class=\"btn btn-link mb-3\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skbuttonvalue=\"CANCEL\"\n                                id=\"btnCancel\">\n                                    Cancel\n                            </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n        <footer class=\"mt-5 text-center text-body-secondary small\">\n            <div class=\"footerLogo mx-auto mb-2\"></div>\n            <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n        </footer>\n    </div>\n</div>"
               },
               "customScript": {
                 "value": "\n\n// const size = {{local.x1veihohtu.payload.output.rawResponse.size}};\n// const maxAllowedDevices = {{local.x1veihohtu.payload.output.mfaSettings.pairing.maxAllowedDevices}};\n\n//     var btnCreate = document.getElementById('btnCreate');\n//     var dvBtnCreate = document.getElementById('dvBtnCreate');\n// if (btnCreate && dvBtnCreate) {\n//     btnCreate.addEventListener('click', function() {\n//         // Check if 'size' is smaller than 'maxAllowedDevices'\n//         if (size < maxAllowedDevices) {\n       \n              \n//             dvBtnCreate.click();\n//         } else {\n//             maxDevicesFeedback.innerText = \"You have reached the max device limit. To register another device, you will have to delete an existing device.\";\n//             btnCreate.disabled = true;\n\n//         }\n//     });\n// }\n\n\n"
@@ -4513,7 +4514,7 @@
                 "value": "/* \n  This selector class is required as DV\n  injects a div into any data-skcomponent=\"skbutton\",\n  which alters layout\n*/\nbutton > div:first-child {\n display: contents;\n}  \n.p.authNFirst{\n  border:2px solid #FF0000;\n  display: inline-block;\n}\n.borderexample {\n border-width:3px;\n border-style:solid;\n border-color:#FF0000;\n}\n\n\nbutton.ios-btn {\n    background-size: 106px 25px;\n    background-image: url(https://authenticator.pingone.com//registration/images/multiple-devices/add-device/ios.png);\n    background-position: center 4px;\n    margin: 0 5px 0 0;\n    height: 37px;\n    width: 125px;\n    background-repeat: no-repeat;\n        display: inline-block;\n    background-color: #fff;\n    border: thin solid #000;\n    border-radius: 3px;\n    cursor: pointer;\n}\nbutton.android-btn {\n    background-size: 78px 24px;\n    background-image: url(https://authenticator.pingone.com//registration/images/multiple-devices/add-device/android.png);\n    background-position: center 6px;\n    height: 37px;\n    width: 125px;\n    background-repeat: no-repeat;\n        display: inline-block;\n    background-color: #fff;\n    border: thin solid #000;\n    border-radius: 3px;\n    cursor: pointer;\n}"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 460px; width: 100%\">\n            <div class=\"card rounded-3 my-5 container-xxl\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    <!-- <h1 id=\"header\" class=\"text-center mb-4\">{{pageTitle}}</h1> -->\n                    <h1 class=\"text-muted text-center\">Please choose your authentication method</h1>\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger text-center mb-4\" data-skcomponent=\"skerror\">\n                    </p>\n                    {{#if regAuthN}}\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-dark text-center\" ;\n                        style=\"background-color: LightYellow\" ;> Testing this </p>\n                    {{/if}}\n                    <!-- {{local.hvne69pky6.payload.output.AuthNMessage}} -->\n                    <p id=\"maxDevicesFeedback\" data-id=\"feedback\" class=\"text-danger text-center\"></p>\n                    <form id=\"deviceSelectionForm\" data-id=\"deviceSelectionForm\" class=\"form\">\n                        <div class=\"d-flex flex-column gap-4 mb-4\">\n                            {{#each devices}}\n                            <button\n                                class=\"btn btn-outline-light rounded-3 flex-grow-1 d-flex align-items-center gap-4 w-100\"\n                                type=\"submit\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttonvalue=\"{{id}}\"\n                                id=\"btnDevice-{{id}}\"\n                                data-skform=\"deviceSelectionForm\">\n                                <i class=\"mdi {{displayIcon}} text-dark fs-2\" aria-hidden=\"true\"></i>\n                                <div class=\"d-flex flex-column text-start gap-1\">\n                                    <div class=\"fw-semibold text-dark\">{{displayType}}</div>\n                                    <div class=\"fs-5 text-secondary\">\n                                        {{description}}\n                                    </div>\n                                </div>\n                            </button>\n                            {{/each}}\n                        </div>\n                        <div class=\"d-flex flex-column\">\n                            <button\n                                    class=\"btn btn-link\"\n                                    data-id=\"cancel-button\"\n                                    type=\"submit\"\n                                    class=\"btn btn-link mb-3\"\n                                    data-skcomponent=\"skbutton\"\n                                    data-skbuttontype=\"form-submit\"\n                                    data-skbuttonvalue=\"CANCEL\"\n                                    id=\"btnCancel\">\n                                        Cancel\n                                </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n        <footer class=\"mt-5 text-center text-body-secondary small\">\n            <div class=\"footerLogo mx-auto mb-2\"></div>\n            <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n        </footer>\n    </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 460px; width: 100%\">\n            <div class=\"card rounded-3 my-5 container-xxl\">\n                <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n                    <!-- <h1 id=\"header\" class=\"text-center mb-4\">{{pageTitle}}</h1> -->\n                    <h1 class=\"text-muted text-center\">Please choose your authentication method</h1>\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-danger text-center mb-4\" data-skcomponent=\"skerror\">\n                    </p>\n                    {{#if regAuthN}}\n                    <p id=\"feedback\" data-id=\"feedback\" class=\"text-dark text-center\" ;\n                        style=\"background-color: LightYellow\" ;> Testing this </p>\n                    {{/if}}\n                    <!-- {{local.hvne69pky6.payload.output.AuthNMessage}} -->\n                    <p id=\"maxDevicesFeedback\" data-id=\"feedback\" class=\"text-danger text-center\"></p>\n                    <form id=\"deviceSelectionForm\" data-id=\"deviceSelectionForm\" class=\"form\">\n                        <div class=\"d-flex flex-column gap-4 mb-4\">\n                            {{#each devices}}\n                            <button\n                                class=\"btn btn-outline-light rounded-3 flex-grow-1 d-flex align-items-center gap-4 w-100\"\n                                type=\"submit\"\n                                data-skbuttontype=\"form-submit\"\n                                data-skcomponent=\"skbutton\"\n                                data-skbuttonvalue=\"{{id}}\"\n                                id=\"btnDevice-{{id}}\"\n                                data-skform=\"deviceSelectionForm\">\n                                <i class=\"mdi {{displayIcon}} text-dark fs-2\" aria-hidden=\"true\"></i>\n                                <div class=\"d-flex flex-column text-start gap-1\">\n                                    <div class=\"fw-semibold text-dark\">{{displayType}}</div>\n                                    <div class=\"fs-5 text-secondary\">\n                                        {{description}}\n                                    </div>\n                                </div>\n                            </button>\n                            {{/each}}\n                        </div>\n                        <div class=\"d-flex flex-column\">\n                            <button\n                                    class=\"btn btn-link\"\n                                    data-id=\"cancel-button\"\n                                    type=\"submit\"\n                                    class=\"btn btn-link mb-3\"\n                                    data-skcomponent=\"skbutton\"\n                                    data-skbuttontype=\"form-submit\"\n                                    data-skbuttonvalue=\"CANCEL\"\n                                    id=\"btnCancel\">\n                                        Cancel\n                                </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n        <footer class=\"mt-5 text-center text-body-secondary small\">\n            <div class=\"footerLogo mx-auto mb-2\"></div>\n            <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n        </footer>\n    </div>\n</div>"
               },
               "customScript": {
                 "value": "\n\n// const size = {{local.x1veihohtu.payload.output.rawResponse.size}};\n// const maxAllowedDevices = {{local.x1veihohtu.payload.output.mfaSettings.pairing.maxAllowedDevices}};\n\n//     var btnCreate = document.getElementById('btnCreate');\n//     var dvBtnCreate = document.getElementById('dvBtnCreate');\n// if (btnCreate && dvBtnCreate) {\n//     btnCreate.addEventListener('click', function() {\n//         // Check if 'size' is smaller than 'maxAllowedDevices'\n//         if (size < maxAllowedDevices) {\n       \n              \n//             dvBtnCreate.click();\n//         } else {\n//             maxDevicesFeedback.innerText = \"You have reached the max device limit. To register another device, you will have to delete an existing device.\";\n//             btnCreate.disabled = true;\n\n//         }\n//     });\n// }\n\n\n"
@@ -5020,7 +5021,7 @@
                 "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Success\"\n      }\n    ]\n  }\n]"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; width: 100%;\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n            <h1 id=\"title\" class=\"text-center mb-4\">\n              <i class=\"mdi {{global.variables.selectedDeviceIcon}} text-dark fs-1\" aria-hidden=\"true\"></i>\n                {{global.variables.selectedDeviceType}}\n            </h1>\n            <!-- {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}} -->\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passcodeError\" data-skerrorid=\"passcode\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"otp-form\" data-id=\"otp-form\">\n              {{#ifEquals type \"YUBIKEY\"}}\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control rounded-3 text-center otp-control\" id=\"passcode\" type=\"password\" autocomplete=\"one-time-code\" maxlength=\"{{maxLength}}\" aria-required=\"true\" aria-describedby=\"passcodeLabel\" placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n                {{else}}\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control rounded-3 text-center otp-control\" id=\"passcode\" type=\"text\" autocomplete=\"one-time-code\" maxlength=\"{{maxLength}}\" aria-required=\"true\" aria-describedby=\"passcodeLabel\" placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n              {{/ifEquals}}\n              <p class=\"text-muted text-center\" id=\"contact\">\n                {{#ifEquals type \"SMS\"}}\n                Message sent to:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n\n                {{#ifEquals type \"Voice\"}}\n                Calling:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n\n                {{#ifEquals type \"EMAIL\"}}\n                Email sent to:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n              </p>\n              <div class=\"d-flex flex-column\">\n                {{#ifEquals type \"TOTP\"}}\n                <!-- exclude resend option -->\n                {{else}}\n                {{#ifEquals type \"PINGID_DESKTOP\"}}\n                <!-- exclude resend option for Desktop App-->\n                {{else}}\n                {{#ifEquals type \"YUBIKEY\"}}\n                <!-- exclude resend option for YubiKey-->\n                {{else}}\n                <button\n                  id=\"resend\"\n                  type=\"button\"\n                  class=\"btn btn-link\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"next-event\"\n                  data-skbuttonvalue=\"RESEND\">\n                  {{resendButtonLabel}}\n                </button>\n                {{/ifEquals}}\n                {{/ifEquals}}\n                {{/ifEquals}}\n                {{#if verifyButtonLabel}}\n                <button\n                  id=\"submit\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"otp-form\"\n                  data-skbuttonvalue=\"VERIFY\">\n                  {{verifyButtonLabel}}\n                </button>\n                {{/if}}\n                {{#if canChangeDevice}}\n                <button\n                  id=\"cancel\"\n                  type=\"button\"\n                  class=\"btn btn-link mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"next-event\"\n                  data-skform=\"otp-form\"\n                  data-skbuttonvalue=\"CANCEL\">\n                  Choose a different device\n                </button>\n                {{/if}}\n                {{#if allowBackUp}}\n                <button\n                  data-id=\"submit-button\"\n                  type=\"submit\"\n                  class=\"btn btn-outline-secondary rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skbuttonvalue=\"FORGOT\"\n                  id=\"btnForgot\">\n                    Forgot your device?\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; width: 100%;\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n            <h1 id=\"title\" class=\"text-center mb-4\">\n              <i class=\"mdi {{global.variables.selectedDeviceIcon}} text-dark fs-1\" aria-hidden=\"true\"></i>\n                {{global.variables.selectedDeviceType}}\n            </h1>\n            <!-- {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}} -->\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passcodeError\" data-skerrorid=\"passcode\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <form id=\"otp-form\" data-id=\"otp-form\">\n              {{#ifEquals type \"YUBIKEY\"}}\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control rounded-3 text-center otp-control\" id=\"passcode\" type=\"password\" autocomplete=\"one-time-code\" maxlength=\"{{maxLength}}\" aria-required=\"true\" aria-describedby=\"passcodeLabel\" placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n                {{else}}\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control rounded-3 text-center otp-control\" id=\"passcode\" type=\"text\" autocomplete=\"one-time-code\" maxlength=\"{{maxLength}}\" aria-required=\"true\" aria-describedby=\"passcodeLabel\" placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n              {{/ifEquals}}\n              <p class=\"text-muted text-center\" id=\"contact\">\n                {{#ifEquals type \"SMS\"}}\n                Message sent to:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n\n                {{#ifEquals type \"Voice\"}}\n                Calling:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n\n                {{#ifEquals type \"EMAIL\"}}\n                Email sent to:<br>\n                {{maskedContact}}\n                {{/ifEquals}}\n              </p>\n              <div class=\"d-flex flex-column\">\n                {{#ifEquals type \"TOTP\"}}\n                <!-- exclude resend option -->\n                {{else}}\n                {{#ifEquals type \"PINGID_DESKTOP\"}}\n                <!-- exclude resend option for Desktop App-->\n                {{else}}\n                {{#ifEquals type \"YUBIKEY\"}}\n                <!-- exclude resend option for YubiKey-->\n                {{else}}\n                <button\n                  id=\"resend\"\n                  type=\"button\"\n                  class=\"btn btn-link\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"next-event\"\n                  data-skbuttonvalue=\"RESEND\">\n                  {{resendButtonLabel}}\n                </button>\n                {{/ifEquals}}\n                {{/ifEquals}}\n                {{/ifEquals}}\n                {{#if verifyButtonLabel}}\n                <button\n                  id=\"submit\"\n                  type=\"submit\"\n                  class=\"btn btn-primary rounded-3 mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skform=\"otp-form\"\n                  data-skbuttonvalue=\"VERIFY\">\n                  {{verifyButtonLabel}}\n                </button>\n                {{/if}}\n                {{#if canChangeDevice}}\n                <button\n                  id=\"cancel\"\n                  type=\"button\"\n                  class=\"btn btn-link mb-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"next-event\"\n                  data-skform=\"otp-form\"\n                  data-skbuttonvalue=\"CANCEL\">\n                  Choose a different device\n                </button>\n                {{/if}}\n                {{#if allowBackUp}}\n                <button\n                  data-id=\"submit-button\"\n                  type=\"submit\"\n                  class=\"btn btn-outline-secondary rounded-3\"\n                  data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\"\n                  data-skbuttonvalue=\"FORGOT\"\n                  id=\"btnForgot\">\n                    Forgot your device?\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
               },
               "formFieldsList": {
                 "value": [
@@ -5889,7 +5890,7 @@
                 "value": ".hidden-button{\n    display: none;\n}\n/* #dropdownMenuButton\n{\n    background-color:white;\n    border: solid 2px;\n    border-color: black;\n    color: #022848;\n} */"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5 container-xxl\">\n        <div class=\"card-body p-5 d-flex flex-column\">\n          <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n          <!-- <h1> <span class=\"text-left-to-icon\">Authentication</span> </h1> -->\n          <div class=\"text-block branding-template-primary-text text-block--Large\">\n            <div class=\"d-flex flex-column\">\n              <div class=\"text-block--overflow-wrap text-center mb-3\">\n                <strong class> FIDO Authentication <!--with {{deviceName}} --> </strong>\n                <p>\n                  {{#ifEquals type \"PLATFORM\"}}\n                  Complete authentication using Touch ID.\n                  {{/ifEquals}}\n                  {{#ifEquals type \"SECURITY_KEY\"}}\n                  Use your security key to authenticate.\n                  {{/ifEquals}}\n                </p>\n              </div>\n            </div>\n            <div class=\"mdi {{global.variables.selectedDeviceIcon}} text-dark text-center\" aria-hidden=\"true\" style=\"font-size:4rem\"></div>\n            <div class=\"form\">\n              <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n              <p id=\"feedback\" data-id=\"feedback\" class=\"text-success \">\n                {{local.6hjlwfaudb.payload.output.AuthNMessage}}\n              </p>\n              <form id=\"securityKeyForm\" method=\"post\">\n                <div class=\"float-label placeholder-shown\">\n                  <input type=\"hidden\" name=\"assertionValue\" id=\"assertionValue\" />\n                  <button\n                    data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"form-submit\"\n                    class=\"hidden-button\"\n                    data-skbuttonvalue=\"SUBMIT\"\n                    data-skform=\"securityKeyForm\"\n                    id=\"assertionButton\"\n                    style=\"margin-bottom:10px\">\n                    Continue\n                  </button>\n                </div>\n                <div class=\"buttons-group\">\n                  <div class=\"d-flex flex-column\">\n                    <button class=\"btn btn-link mb-3\" id=\"fidoButton\" data-skbuttonvalue=\"SUBMIT\">Try Device again</button>\n                    <div class=\"d-flex flex-column\">\n                      {{#if canChangeDevice}}\n                      <div\n                        class=\"btn btn-link mb-3\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\"\n                        id=\"change\"\n                        href=\"#\"\n                        data-skbuttonvalue=\"CANCEL\"\n                        style=\"margin-bottom:-15px\">\n                        Choose a different device\n                      </div>\n                      {{/if}}\n                      {{#if showRegButton}}\n                      <button\n                        class=\"btn btn-link mb-3\"\n                        data-id=\"submit-button\"\n                        type=\"submit\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\"\n                        data-skbuttonvalue=\"REGISTER\"\n                        id=\"btnRegister\">\n                        Register another device\n                      </button>\n                      {{/if}}\n                      {{#if allowBackUp}}\n                      <button\n                        data-id=\"submit-button\"\n                        type=\"submit\"\n                        class=\"btn btn-outline-secondary rounded-3\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"form-submit\"\n                        data-skbuttonvalue=\"FORGOT\"\n                        id=\"btnForgot\">\n                          Forgot your device?\n                      </button>\n                      {{/if}}\n                    </div>\n                  </div>\n              </form>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5 container-xxl\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n          <img class=\"companyLogo align-self-center mb-5\" alt=\"{{global.variables.companyName}}\" />\n          <!-- <h1> <span class=\"text-left-to-icon\">Authentication</span> </h1> -->\n          <div class=\"text-block branding-template-primary-text text-block--Large\">\n            <div class=\"d-flex flex-column\">\n              <div class=\"text-block--overflow-wrap text-center mb-3\">\n                <strong class> FIDO Authentication <!--with {{deviceName}} --> </strong>\n                <p>\n                  {{#ifEquals type \"PLATFORM\"}}\n                  Complete authentication using Touch ID.\n                  {{/ifEquals}}\n                  {{#ifEquals type \"SECURITY_KEY\"}}\n                  Use your security key to authenticate.\n                  {{/ifEquals}}\n                </p>\n              </div>\n            </div>\n            <div class=\"mdi {{global.variables.selectedDeviceIcon}} text-dark text-center\" aria-hidden=\"true\" style=\"font-size:4rem\"></div>\n            <div class=\"form\">\n              <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n              <p id=\"feedback\" data-id=\"feedback\" class=\"text-success \">\n                {{local.6hjlwfaudb.payload.output.AuthNMessage}}\n              </p>\n              <form id=\"securityKeyForm\" method=\"post\">\n                <div class=\"float-label placeholder-shown\">\n                  <input type=\"hidden\" name=\"assertionValue\" id=\"assertionValue\" />\n                  <button\n                    data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"form-submit\"\n                    class=\"hidden-button\"\n                    data-skbuttonvalue=\"SUBMIT\"\n                    data-skform=\"securityKeyForm\"\n                    id=\"assertionButton\"\n                    style=\"margin-bottom:10px\">\n                    Continue\n                  </button>\n                </div>\n                <div class=\"buttons-group\">\n                  <div class=\"d-flex flex-column\">\n                    <button class=\"btn btn-link mb-3\" id=\"fidoButton\" data-skbuttonvalue=\"SUBMIT\">Try Device again</button>\n                    <div class=\"d-flex flex-column\">\n                      {{#if canChangeDevice}}\n                      <div\n                        class=\"btn btn-link mb-3\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\"\n                        id=\"change\"\n                        href=\"#\"\n                        data-skbuttonvalue=\"CANCEL\"\n                        style=\"margin-bottom:-15px\">\n                        Choose a different device\n                      </div>\n                      {{/if}}\n                      {{#if showRegButton}}\n                      <button\n                        class=\"btn btn-link mb-3\"\n                        data-id=\"submit-button\"\n                        type=\"submit\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\"\n                        data-skbuttonvalue=\"REGISTER\"\n                        id=\"btnRegister\">\n                        Register another device\n                      </button>\n                      {{/if}}\n                      {{#if allowBackUp}}\n                      <button\n                        data-id=\"submit-button\"\n                        type=\"submit\"\n                        class=\"btn btn-outline-secondary rounded-3\"\n                        data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"form-submit\"\n                        data-skbuttonvalue=\"FORGOT\"\n                        id=\"btnForgot\">\n                          Forgot your device?\n                      </button>\n                      {{/if}}\n                    </div>\n                  </div>\n              </form>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "var authAbortController = window.PublicKeyCredential ? new AbortController() : null;\nvar authAbortSignal = window.PublicKeyCredential ? authAbortController.signal : null;\n\nwindow.abortWebAuthnSignal = function abortWebAuthnSignal()\n{\n    authAbortController.abort();\n    authAbortController = new AbortController();\n    authAbortSignal = authAbortController.signal;\n}\n// console.log(\"In JS\")\nwindow.IsWebAuthnSupported = function IsWebAuthnSupported()\n{\n    if (!window.PublicKeyCredential)\n    {\n            console.log(\"Web Authentication API is not supported on this browser.\");\n            return false;\n    }\n    return true;\n}\n\nwindow.isWebAuthnPlatformAuthenticatorAvailable = function isWebAuthnPlatformAuthenticatorAvailable() {\n    var timer;\n    var p1 = new Promise(function(resolve) {\n            timer = setTimeout(function() {\n                    resolve(false);\n            }, 1000);\n    });\n    var p2 = new Promise(function(resolve) {\n            if (IsWebAuthnSupported() && window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable) {\n                    resolve(\n                            window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable().catch(function(err) {\n                                    console.log(err);\n                                    return false;\n                            }));\n            }\n            else {\n                    resolve(false);\n            }\n    });\n    return Promise.race([p1, p2]).then(function (res) {\n            clearTimeout(timer);\n            return res;\n    });\n}\nwindow.WebAuthnPlatformAuthentication = function WebAuthnPlatformAuthentication(publicKeyCredentialRequestOptions) {\n    return new Promise(function(resolve, reject) {\n            isWebAuthnPlatformAuthenticatorAvailable().then(function (result) {\n                    if (result) {\n                            resolve(Authenticate(publicKeyCredentialRequestOptions));\n                    }\n                    reject(Error(\"UnSupportedBrowserError\"));\n            });\n    });\n}\nfunction Authenticate(publicKeyCredentialRequestOptions) {\n    return new Promise(function(resolve, reject) {\n            var options = JSON.parse(publicKeyCredentialRequestOptions);\n            var publicKeyCredential = {};\n            publicKeyCredential.challenge = new Uint8Array(options.challenge);\n            if ('allowCredentials' in options) {\n                    publicKeyCredential.allowCredentials = credentialListConversion(options.allowCredentials);\n            }\n            if ('rpId' in options) {\n                    publicKeyCredential.rpId = options.rpId;\n            }\n            if ('timeout' in options) {\n                    publicKeyCredential.timeout = options.timeout;\n            }\n            if ('userVerification' in options) {\n                    publicKeyCredential.userVerification = options.userVerification;\n            }\n            navigator.credentials.get({\"publicKey\": publicKeyCredential})\n                    .then(function (assertion) {\n                            // Send new credential info to server for verification and registration.\n                            var publicKeyCredential = {};\n                            if ('id' in assertion) {\n                                    publicKeyCredential.id = assertion.id;\n                            }\n                            if ('rawId' in assertion) {\n                                    publicKeyCredential.rawId = toBase64Str(assertion.rawId);\n                            }\n                            if ('type' in assertion) {\n                                    publicKeyCredential.type = assertion.type;\n                            }\n                            var response = {};\n                            response.clientDataJSON = toBase64Str(assertion.response.clientDataJSON);\n                            response.authenticatorData = toBase64Str(assertion.response.authenticatorData);\n                            response.signature = toBase64Str(assertion.response.signature);\n                            response.userHandle = toBase64Str(assertion.response.userHandle);\n                            publicKeyCredential.response = response;\n                            resolve(JSON.stringify(publicKeyCredential));\n                            document.getElementById(\"assertionValue\").value = JSON.stringify(publicKeyCredential);\n                        //     createCredentialsOptions.authenticatorSelection.authenticatorAttachment = '';\n                            \n                            document.getElementById('assertionButton').click();\n                    }).catch(function (err) {\n                            // No acceptable authenticator or user refused consent. Cancel authentication\n                            // if this is the only device so we don't loop\n                            console.log(\"No acceptable authenticator or user refused consent\");\n\n            });\n    });\n}\nfunction credentialListConversion(list) {\n    var credList = [];\n    for (var i=0; i < list.length; i++) {\n            var cred = {\n                    type: list[i].type,\n                    id: new Uint8Array(list[i].id)\n            };\n            if (list[i].transports) {\n                    cred.transports = list[i].transports;\n            }\n            credList.push(cred);\n    }\n    return credList;\n}\nfunction toBase64Str(bin){\n    return btoa(String.fromCharCode.apply(null, new Uint8Array(bin)));\n}\n\nconst fidoButton = document.getElementById(\"fidoButton\");\nfidoButton.addEventListener(\"click\", startFido);\nfunction startFido() {  \n    Authenticate('{{{skjson publicKeyCredentialCreationOptions}}}');\n}\nfidoButton.click();\n\n// if (document.readyState === \"loading\") {\n//     // Loading hasn't finished yet\n//     document.onreadystatechange = () => {\n//         if (document.readyState === \"complete\") {\n//             const selectedDeviceId = '{{global.variables.selectedDeviceId}}';\n//             console.log(selectedDeviceId);\n//             const hideButtonElementId = \"btnDevice-\" + selectedDeviceId;\n//             console.log(hideButtonElementId);\n//             const dropdownButton = document.getElementById('dropdownMenuButton');\n//             const hideButtonElement = document.getElementById(hideButtonElementId);\n//             console.log(hideButtonElement);\n\n//             if (dropdownButton && hideButtonElement) {\n//                 dropdownButton.addEventListener('click', function() {\n//                     hideButtonElement.style.setProperty('display', 'none', 'important');\n//                     console.log('hidingButton' + hideButtonElementId);\n//                 });\n//             }\n//         }\n//     };\n// } else {\n//     // `DOMContentLoaded` has already fired\n//         const selectedDeviceId = '{{global.variables.selectedDeviceId}}';\n//             console.log(selectedDeviceId);\n//             const hideButtonElementId = \"btnDevice-\" + selectedDeviceId;\n//             console.log(hideButtonElementId);\n//             const dropdownButton = document.getElementById('dropdownMenuButton');\n//             const hideButtonElement = document.getElementById(hideButtonElementId);\n//             console.log(hideButtonElement);\n\n//             if (dropdownButton && hideButtonElement) {\n//                 dropdownButton.addEventListener('click', function() {\n//                     hideButtonElement.style.setProperty('display', 'none', 'important');\n//                     console.log('hidingButton' + hideButtonElementId);\n//                 });\n//             }\n// }"
@@ -6190,7 +6191,7 @@
                 "value": ".btn--hide {\n    display:none;\n}\n\n.spinner-container {\n    position: relative;\n    background-image: url(https://authenticator.pingone.com/pingid/assets/images/icon-iphone6.png);\n    background-color: #000000;\n    display: block;\n    background-size: 90px;\n    border-radius: 10px;\n    background-position: center;\n    height: 188px;\n    width: 100%;\n    max-width: 100px;\n    margin: auto;\n    filter: invert(1);\n    background-repeat: no-repeat;\n}\n\n.spinner-border {\n    margin: 70px 35px;\n}\n\n.mdi-clock {\n    background-size: contain;\n    background-image: url(https://authenticator.pingone.com/pingid/assets/images/icon-timedout.png);\n    background-color: #003fff00;\n    position: absolute;\n    border-radius: 25px;\n    display: block;\n    height: 62px;\n    width: auto;\n    margin: 58px 20px;\n    background-repeat: no-repeat;\n    aspect-ratio: 1 / 1;\n}"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 450px; width: 100%\"\">\n    <div class=\"card rounded-3 my-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-4\" alt=\"{{global.variables.companyName}}\" />\n        <div class=\"spinner-container mb-3\">\n          {{#if numberMatch}}\n          <h1 class=\"text-white text-center\" style=\"margin: 68px 20px; font-size: 2.5rem;\">{{numberMatch}}</h1>\n          {{else}}\n          <div class=\"spinner-border text-white\" role=\"status\">\n            <span class=\"visually-hidden\">Loading...</span>\n          </div>\n          {{/if}}\n        </div>\n        <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n        {{#if textOne}}\n        <h1 class=\"text-muted text-center mb-3\">\n          {{textOne}}\n        </h1>\n        {{/if}}\n        {{#if textTwo}}\n        <p class=\"text-muted text-center\">\n          {{textTwo}}\n        </p>\n        {{/if}}\n        {{#if buttonLabel}}\n        <div class=\"d-flex flex-column\">\n          <button data-id=\"submit-button\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"  data-skbuttonvalue=\"SUBMIT\" id=\"btnSubmit\">\n            {{buttonLabel}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if otpFallBack}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnOffline\" type=\"button\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CODE\">\n            {{buttonLabel2}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if buttonLabel3}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnCancel\" type=\"button\" class=\"btn btn-link mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CANCEL\">\n            {{buttonLabel3}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if allowBackUp}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnForgot\" type=\"button\" class=\"btn btn-outline-secondary rounded-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"FORGOT\">\n              Forgot your device?\n          </button>\n        </div>\n        {{/if}}\n        </form>\n        [[[skcomponent###c2tjb21wb25lbnQgInNrcG9sbGluZyIgIGNsYXNzPSJkLW5vbmUiIHBvbGxJbnRlcnZhbD0iMjAwMCIgcG9sbFJldHJpZXM9IjIwMCIgcG9sbENoYWxsZW5nZVN0YXR1cz0iZmFsc2Ui###eyJuYW1lIjoic2twb2xsaW5nIiwib3B0aW9ucyI6eyJjbGFzcyI6ImQtbm9uZSIsInBvbGxJbnRlcnZhbCI6IjIwMDAiLCJwb2xsUmV0cmllcyI6IjIwMCIsInBvbGxDaGFsbGVuZ2VTdGF0dXMiOiJmYWxzZSJ9LCJjb21wb25lbnRQcm9wcyI6eyJjbGFzcyI6eyJuYW1lIjoiY2xhc3MiLCJkaXNwbGF5TmFtZSI6IkNTUyBDbGFzcyJ9LCJwb2xsSW50ZXJ2YWwiOnsibmFtZSI6InBvbGxJbnRlcnZhbCIsImRpc3BsYXlOYW1lIjoiUG9sbCBJbnRlcnZhbCIsInZhbHVlIjoyMDAwfSwicG9sbFJldHJpZXMiOnsibmFtZSI6InBvbGxSZXRyaWVzIiwiZGlzcGxheU5hbWUiOiJQb2xsIFJldHJpZXMiLCJ2YWx1ZSI6NjB9LCJwb2xsQ2hhbGxlbmdlU3RhdHVzIjp7Im5hbWUiOiJwb2xsQ2hhbGxlbmdlU3RhdHVzIiwiZGlzcGxheU5hbWUiOiJQb2xsIENoYWxsZW5nZSBTdGF0dXMiLCJ0eXBlIjoic2VsZWN0IiwidmFsdWUiOiJ0cnVlIiwib3B0aW9ucyI6W3sibmFtZSI6IlRydWUiLCJ2YWx1ZSI6InRydWUifSx7Im5hbWUiOiJGYWxzZSIsInZhbHVlIjoiZmFsc2UifV19fX0=]]]\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 450px; width: 100%\"\">\n    <div class=\"card rounded-3 my-5\">\n      <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-4\" alt=\"{{global.variables.companyName}}\" />\n        <div class=\"spinner-container mb-3\">\n          {{#if numberMatch}}\n          <h1 class=\"text-white text-center\" style=\"margin: 68px 20px; font-size: 2.5rem;\">{{numberMatch}}</h1>\n          {{else}}\n          <div class=\"spinner-border text-white\" role=\"status\">\n            <span class=\"visually-hidden\">Loading...</span>\n          </div>\n          {{/if}}\n        </div>\n        <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n        {{#if textOne}}\n        <h1 class=\"text-muted text-center mb-3\">\n          {{textOne}}\n        </h1>\n        {{/if}}\n        {{#if textTwo}}\n        <p class=\"text-muted text-center\">\n          {{textTwo}}\n        </p>\n        {{/if}}\n        {{#if buttonLabel}}\n        <div class=\"d-flex flex-column\">\n          <button data-id=\"submit-button\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"  data-skbuttonvalue=\"SUBMIT\" id=\"btnSubmit\">\n            {{buttonLabel}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if otpFallBack}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnOffline\" type=\"button\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CODE\">\n            {{buttonLabel2}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if buttonLabel3}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnCancel\" type=\"button\" class=\"btn btn-link mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CANCEL\">\n            {{buttonLabel3}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if allowBackUp}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnForgot\" type=\"button\" class=\"btn btn-outline-secondary rounded-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"FORGOT\">\n              Forgot your device?\n          </button>\n        </div>\n        {{/if}}\n        </form>\n        [[[skcomponent###c2tjb21wb25lbnQgInNrcG9sbGluZyIgIGNsYXNzPSJkLW5vbmUiIHBvbGxJbnRlcnZhbD0iMjAwMCIgcG9sbFJldHJpZXM9IjIwMCIgcG9sbENoYWxsZW5nZVN0YXR1cz0iZmFsc2Ui###eyJuYW1lIjoic2twb2xsaW5nIiwib3B0aW9ucyI6eyJjbGFzcyI6ImQtbm9uZSIsInBvbGxJbnRlcnZhbCI6IjIwMDAiLCJwb2xsUmV0cmllcyI6IjIwMCIsInBvbGxDaGFsbGVuZ2VTdGF0dXMiOiJmYWxzZSJ9LCJjb21wb25lbnRQcm9wcyI6eyJjbGFzcyI6eyJuYW1lIjoiY2xhc3MiLCJkaXNwbGF5TmFtZSI6IkNTUyBDbGFzcyJ9LCJwb2xsSW50ZXJ2YWwiOnsibmFtZSI6InBvbGxJbnRlcnZhbCIsImRpc3BsYXlOYW1lIjoiUG9sbCBJbnRlcnZhbCIsInZhbHVlIjoyMDAwfSwicG9sbFJldHJpZXMiOnsibmFtZSI6InBvbGxSZXRyaWVzIiwiZGlzcGxheU5hbWUiOiJQb2xsIFJldHJpZXMiLCJ2YWx1ZSI6NjB9LCJwb2xsQ2hhbGxlbmdlU3RhdHVzIjp7Im5hbWUiOiJwb2xsQ2hhbGxlbmdlU3RhdHVzIiwiZGlzcGxheU5hbWUiOiJQb2xsIENoYWxsZW5nZSBTdGF0dXMiLCJ0eXBlIjoic2VsZWN0IiwidmFsdWUiOiJ0cnVlIiwib3B0aW9ucyI6W3sibmFtZSI6IlRydWUiLCJ2YWx1ZSI6InRydWUifSx7Im5hbWUiOiJGYWxzZSIsInZhbHVlIjoiZmFsc2UifV19fX0=]]]\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "\n  // var auto = setTimeout(function(){ autoRefresh(); }, 1000);\n\n  // function submitform(){\n  //   document.getElementById('qrCodeClaimed').click();\n  // }\n\n  // function autoRefresh(){\n  //     clearTimeout(auto);\n  //     auto = setTimeout(function(){ submitform(); autoRefresh(); }, 1000);\n  // }"
@@ -6407,7 +6408,7 @@
                 "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Success\"\n      }\n    ]\n  }\n]"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; width: 100%;\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n            <h1 id=\"title\" class=\"text-center mb-4\">\n              <i class=\"mdi {{local.5tlkd4zp39.payload.output.backUpInfo.displayIcon}} text-dark fs-1\" aria-hidden=\"true\"></i>\n               {{local.5tlkd4zp39.payload.output.backUpInfo.displayType}}\n            </h1>\n            {{#if textOne}}\n            <strong class=\"text-muted mb-3\">{{textOne}}</strong>\n            {{/if}}\n            {{#if textTwo}}\n            <p class=\"text-muted\">{{textTwo}}</p>\n            {{/if}}\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passcodeError\" data-skerrorid=\"passcode\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            {{#if resendMessage}}\n            <p class=\"text-info text-center\">{{resendMessage}}</p>\n            {{/if}}\n            <form id=\"otp-form\" data-id=\"otp-form\">\n              <div class=\"mb-5 form-floating\">\n                <input\n                  class=\"form-control rounded-3 text-center otp-control\"\n                  id=\"passcode\"\n                  type=\"text\"\n                  autocomplete=\"one-time-code\"\n                  maxlength=\"6\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passcodeLabel\"\n                  placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n              {{#if numberMatch}}\n                <p class=\"text-muted mb-2\"> If PingID mobile app gives you the option to select a number from a list, tap this number:</p>\n                <div class=\"display-6 text-muted text-center mb-2\">{{numberMatch}}</div>\n              {{/if}}\n              <div class=\"d-flex flex-column\">\n                {{#ifEquals type \"TOTP\"}}\n                <!-- exclude resend option -->\n                {{else}}\n                <button id=\"resend\" type=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"RESEND\">\n                  {{resendButtonLabel}}\n                </button>\n                {{/ifEquals}}\n                {{#if verifyButtonLabel}}\n                <button id=\"submit\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"otp-form\" data-skbuttonvalue=\"VERIFY\">\n                  {{verifyButtonLabel}}\n                </button>\n                {{/if}}\n                {{#if canChangeDevice}}\n                <button id=\"cancel\" type=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skform=\"otp-form\" data-skbuttonvalue=\"CANCEL\">\n                  Cancel\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; width: 100%;\">\n      <div class=\"card rounded-3 my-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n            <h1 id=\"title\" class=\"text-center mb-4\">\n              <i class=\"mdi {{local.5tlkd4zp39.payload.output.backUpInfo.displayIcon}} text-dark fs-1\" aria-hidden=\"true\"></i>\n               {{local.5tlkd4zp39.payload.output.backUpInfo.displayType}}\n            </h1>\n            {{#if textOne}}\n            <strong class=\"text-muted mb-3\">{{textOne}}</strong>\n            {{/if}}\n            {{#if textTwo}}\n            <p class=\"text-muted\">{{textTwo}}</p>\n            {{/if}}\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passcodeError\" data-skerrorid=\"passcode\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            {{#if resendMessage}}\n            <p class=\"text-info text-center\">{{resendMessage}}</p>\n            {{/if}}\n            <form id=\"otp-form\" data-id=\"otp-form\">\n              <div class=\"mb-5 form-floating\">\n                <input\n                  class=\"form-control rounded-3 text-center otp-control\"\n                  id=\"passcode\"\n                  type=\"text\"\n                  autocomplete=\"one-time-code\"\n                  maxlength=\"6\"\n                  aria-required=\"true\"\n                  aria-describedby=\"passcodeLabel\"\n                  placeholder=\"Passcode\" />\n                <label id=\"passcodeLabel\" class=\"form-label\" for=\"passcode\">Passcode</label>\n              </div>\n              {{#if numberMatch}}\n                <p class=\"text-muted mb-2\"> If PingID mobile app gives you the option to select a number from a list, tap this number:</p>\n                <div class=\"display-6 text-muted text-center mb-2\">{{numberMatch}}</div>\n              {{/if}}\n              <div class=\"d-flex flex-column\">\n                {{#ifEquals type \"TOTP\"}}\n                <!-- exclude resend option -->\n                {{else}}\n                <button id=\"resend\" type=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"RESEND\">\n                  {{resendButtonLabel}}\n                </button>\n                {{/ifEquals}}\n                {{#if verifyButtonLabel}}\n                <button id=\"submit\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" data-skform=\"otp-form\" data-skbuttonvalue=\"VERIFY\">\n                  {{verifyButtonLabel}}\n                </button>\n                {{/if}}\n                {{#if canChangeDevice}}\n                <button id=\"cancel\" type=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skform=\"otp-form\" data-skbuttonvalue=\"CANCEL\">\n                  Cancel\n                </button>\n                {{/if}}\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div>\n</div>"
               },
               "formFieldsList": {
                 "value": [
@@ -7374,8 +7375,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PID-2] PingID Device Registration | [N/a]",
-                  "value": "e6c86e0ed1c0f4106adc4def477f1c88"
+                  "label": "[SubFlow: PID-2] PingID Device Registration _ [N/a]",
+                  "value": "3908ffb0fca60f5684a4b1891b3ace16"
                 }
               },
               "subFlowVersionId": {
@@ -7535,7 +7536,7 @@
                 "value": ".btn--hide {\n    display:none;\n}\n\n.spinner-container {\n    position: relative;\n    background-image: url(https://authenticator.pingone.com/pingid/assets/images/icon-iphone6.png);\n    background-color: #ffbf0000;\n    display: block;\n    background-size: 90px;\n    border-radius: 10px;\n    background-position: center;\n    height: 188px;\n    width: 100%;\n    max-width: 100px;\n    margin: auto;\n    filter: sepia(1) saturate(20) hue-rotate(-40deg);\n    background-repeat: no-repeat;\n}\n\n.spinner-border {\n    margin: 70px 28px;\n}\n\n/* .mdi-clock {\n    background-size: contain;\n    background-image: url(https://authenticator.pingone.com/pingid/assets/images/icon-timedout.png);\n    background-color: #003fff00;\n    position: absolute;\n    border-radius: 25px;\n    display: block;\n    height: 62px;\n    width: auto;\n    margin: 58px 20px;\n    background-repeat: no-repeat;\n    aspect-ratio: 1 / 1;\n} */"
               },
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 450px; width: 100%\"\">\n    <div class=\"card rounded-3 my-5\">\n      <div class=\"card-body p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-4\" alt=\"{{global.variables.companyName}}\" />\n        <div class=\"spinner-container d-flex justify-content-center align-items-center mb-3\">\n            <div class=\"mdi mdi-clock-time-nine-outline display-4\" style=\"color: #FFCD2E\"></div>\n        </div>\n        <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n        {{#if textOne}}\n        <h1 class=\"text-muted text-center mb-3\">\n          {{textOne}}\n        </h1>\n        {{/if}}\n        {{#if textTwo}}\n        <p class=\"text-muted text-center\">\n          {{textTwo}}\n        </p>\n        {{/if}}\n        {{#if buttonLabel}}\n        <div class=\"d-flex flex-column\">\n          <button data-id=\"submit-button\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"  data-skbuttonvalue=\"RETRY\" id=\"btnSubmit\">\n            {{buttonLabel}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if otpFallBack}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnOffline\" type=\"button\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CODE\">\n            {{buttonLabel2}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if buttonLabel3}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnCancel\" type=\"button\" class=\"btn btn-link mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CANCEL\">\n            {{buttonLabel3}}\n          </button>\n        </div>\n        {{/if}}\n        </form>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div> \n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 450px; width: 100%\"\">\n    <div class=\"card rounded-3 my-5\">\n      <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n        <img class=\"companyLogo align-self-center mb-4\" alt=\"{{global.variables.companyName}}\" />\n        <div class=\"spinner-container d-flex justify-content-center align-items-center mb-3\">\n            <div class=\"mdi mdi-clock-time-nine-outline display-4\" style=\"color: #FFCD2E\"></div>\n        </div>\n        <p class=\"text-danger mdi mdi-alert-circle text-center\" data-id=\"feedback\" data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n        {{#if textOne}}\n        <h1 class=\"text-muted text-center mb-3\">\n          {{textOne}}\n        </h1>\n        {{/if}}\n        {{#if textTwo}}\n        <p class=\"text-muted text-center\">\n          {{textTwo}}\n        </p>\n        {{/if}}\n        {{#if buttonLabel}}\n        <div class=\"d-flex flex-column\">\n          <button data-id=\"submit-button\" type=\"submit\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"  data-skbuttonvalue=\"RETRY\" id=\"btnSubmit\">\n            {{buttonLabel}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if otpFallBack}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnOffline\" type=\"button\" class=\"btn btn-primary rounded-3 mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CODE\">\n            {{buttonLabel2}}\n          </button>\n        </div>\n        {{/if}}\n        {{#if buttonLabel3}}\n        <div class=\"d-flex flex-column\">\n          <button id=\"btnCancel\" type=\"button\" class=\"btn btn-link mb-3\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"CANCEL\">\n            {{buttonLabel3}}\n          </button>\n        </div>\n        {{/if}}\n        </form>\n      </div>\n    </div>\n    <footer class=\"mt-5 text-center text-body-secondary small\">\n        <div class=\"footerLogo mx-auto mb-2\"></div>\n        <div>{{global.company.variables.gv-pingIdFooterMessage}}</div>\n    </footer>\n  </div> \n</div>"
               },
               "customScript": {
                 "value": "\n  // var auto = setTimeout(function(){ autoRefresh(); }, 1000);\n\n  // function submitform(){\n  //   document.getElementById('qrCodeClaimed').click();\n  // }\n\n  // function autoRefresh(){\n  //     clearTimeout(auto);\n  //     auto = setTimeout(function(){ submitform(); autoRefresh(); }, 1000);\n  // }"
@@ -10722,7 +10723,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card rounded-3 my-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    {{#if buttonLabel}}\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"d-none btn btn-primary rounded-3 mb-3\" type=\"submit\" data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                        {{buttonLabel}}\n                        </button>\n                    </div>\n                    {{/if}}\n                    <!-- <div\n                        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n                        <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"10\" data-skpollRetries=\"1\"\n                            data-skpollChallengeStatus=\"false\"></div>\n                    </div> -->\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n    {{#if navBar}}\n    <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n        <div class=\"container-fluid d-flex align-items-center\">\n        \n        <!-- Left: Logo -->\n        <div class=\"navbar-brand d-flex align-items-center mb-0\">\n            <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n        </div>\n\n        <!-- Center: Title -->\n        <div class=\"flex-grow-1 text-center px-2\">\n            <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n        </div>\n\n        <!-- Right: Logout Button -->\n        <div>\n            <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n            <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n                Log Out\n            </button>\n            </form>\n        </div>\n\n        </div>\n    </nav>\n    {{/if}}\n    <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n        <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card rounded-3 my-5\">\n                <div class=\"card-body rounded-3 p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    {{#if buttonLabel}}\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"d-none btn btn-primary rounded-3 mb-3\" type=\"submit\" data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                        {{buttonLabel}}\n                        </button>\n                    </div>\n                    {{/if}}\n                    <!-- <div\n                        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n                        <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"10\" data-skpollRetries=\"1\"\n                            data-skpollChallengeStatus=\"false\"></div>\n                    </div> -->\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
               },
               "formFieldsList": {
                 "value": [
@@ -11228,8 +11229,8 @@
             "properties": {
               "subFlowId": {
                 "value": {
-                  "label": "[SubFlow: PID-2] PingID Device Registration | [N/a]",
-                  "value": "e6c86e0ed1c0f4106adc4def477f1c88"
+                  "label": "[SubFlow: PID-2] PingID Device Registration _ [N/a]",
+                  "value": "3908ffb0fca60f5684a4b1891b3ace16"
                 }
               },
               "subFlowVersionId": {
@@ -11660,7 +11661,7 @@
             "type": "trigger",
             "properties": {
               "customHTML": {
-                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                "value": "<div class=\"end-user-nano\">\n  {{#if navBar}}\n  <nav class=\"navbar navbar-dark bg-dark sticky-top shadow-sm py-2\">\n    <div class=\"container-fluid d-flex align-items-center\">\n      \n      <!-- Left: Logo -->\n      <div class=\"navbar-brand d-flex align-items-center mb-0\">\n        <img src=\"\" alt=\"Company Logo\" class=\"companyLogo me-3\">\n      </div>\n\n      <!-- Center: Title -->\n      <div class=\"flex-grow-1 text-center px-2\">\n        <h1 class=\"text-white fw-semibold fs-2 mb-0\">{{navBar}}</h1>\n      </div>\n\n      <!-- Right: Logout Button -->\n      <div>\n        <form id=\"menuForm\" data-id=\"menuForm\" class=\"mb-0\">\n          <button id=\"skbutton_form-submit\" class=\"btn btn-secondary rounded-3 p-2\" type=\"submit\" data-skbuttonvalue=\"LOGOUT\" data-skform=\"menuForm\" data-skbuttontype=\"form-submit\" data-skcomponent=\"skbutton\">\n            Log Out\n          </button>\n        </form>\n      </div>\n\n    </div>\n  </nav>\n  {{/if}}\n  <div class=\"min-vh-100 bg-light d-flex flex-column align-items-center py-4\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card rounded-3 my-5\">\n        <div class=\"card-body rounded-3 p-5 d-flex flex-column align-items-center\">\n          <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n          <div class=\"d-flex justify-content-center w-100 mb-4\">\n            <div class=\"spinner-border text-primary\" role=\"status\" style=\"width: 3rem; height: 3rem;\">\n              <span class=\"visually-hidden\">Loading...</span>\n            </div>\n          </div>\n\n          {{#if title}}\n          <h3 class=\"text-center mb-4\">{{title}}</h3>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          <form id=\"pollingForm\" aria-labelledby=\"title\" data-id=\"pollingForm\">\n            <div style=\"display: none;\">\n              <!-- Hidden WebAuthn Support Fields -->\n              <input type=\"hidden\" id=\"origin\" name=\"origin\" />\n              <input type=\"hidden\" id=\"rpId\" name=\"rpId\" />\n              <input type=\"hidden\" id=\"webAuthNSupport\" name=\"webAuthNSupport\" />\n\n              <!-- Risk Payload and Submission Button -->\n              <button data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\" style=\"display: none\" data-skbuttonvalue=\"SUBMIT\" data-skform=\"pollingForm\" id=\"continueButton\"> \n                Next\n              </button>\n            </div>\n          </form>\n\n\n          <!-- Auto Advance -->\n          <!-- <div class=\"d-none\" data-skcomponent=\"skpolling\" data-skpollInterval=\"50\" data-skpollRetries=\"1\" data-skpollChallengeStatus=\"false\"></div> -->\n\n          <!-- PingOne Protect -->\n          <div data-skcomponent=\"skrisk\" data-skenvironmentid=\"{{global.companyId}}\" data-skcollectBehavioralData=\"true\" data-skpropertyname=\"riskPayload\" data-skuniversaldeviceidentification=\"false\" data-skpingidagent=\"false\" data-skpingidagenttimeout=\"\" data-skpingidagentport=\"\"></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
               },
               "customScript": {
                 "value": "/**\r\n * WebAuthn detection variables\r\n */\r\nlet _origin = \"\";\r\nlet _rpId = \"\";\r\nlet _webAuthNSupport = \"\";\r\n\r\n/**\r\n * Initializes WebAuthn state.\r\n * Stores results in _origin, _rpId, _webAuthNSupport.\r\n */\r\nfunction initializeWebAuthnDetectionAsync() {\r\n    _origin = window.location.origin;\r\n    _rpId = extractRPID(_origin);\r\n\r\n    const supported = !!window.PublicKeyCredential;\r\n    if (\r\n        supported &&\r\n        typeof window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable === 'function'\r\n    ) {\r\n        return window.PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()\r\n            .then((available) => {\r\n                _webAuthNSupport = available ? \"FULL\" : \"SECURITY_KEY_ONLY\";\r\n            })\r\n            .catch(() => {\r\n                _webAuthNSupport = \"SECURITY_KEY_ONLY\";\r\n            });\r\n    } else {\r\n        _webAuthNSupport = \"NONE\";\r\n        return Promise.resolve();\r\n    }\r\n}\r\n\r\nfunction extractRPID(origin) {\r\n    try {\r\n        const hostname = new URL(origin).hostname;\r\n        if (hostname === \"localhost\" || /^\\d{1,3}(\\.\\d{1,3}){3}$/.test(hostname)) {\r\n            return hostname;\r\n        }\r\n        const parts = hostname.split(\".\");\r\n        return parts.length < 2 ? hostname : parts.slice(-2).join(\".\");\r\n    } catch {\r\n        return \"unknown\";\r\n    }\r\n}\r\n\r\nfunction applyWebAuthnFieldsToForm() {\r\n    const originInput = document.getElementById(\"origin\");\r\n    const rpIdInput = document.getElementById(\"rpId\");\r\n    const supportInput = document.querySelector(\"[name='webAuthNSupport']\");\r\n\r\n    if (originInput) originInput.value = _origin;\r\n    if (rpIdInput) rpIdInput.value = _rpId;\r\n    if (supportInput) supportInput.value = _webAuthNSupport;\r\n    // console.log(\"📋 Applying to form:\");\r\n    // console.log(\" - origin =\", _origin);\r\n    // console.log(\" - rpId =\", _rpId);\r\n    // console.log(\" - webAuthNSupport =\", _webAuthNSupport);\r\n\r\n    // console.log(\"🧪 Form input values before submit:\");\r\n    // console.log(\"   origin input =\", originInput?.value);\r\n    // console.log(\"   rpId input =\", rpIdInput?.value);\r\n    // console.log(\"   webAuthNSupport input =\", supportInput?.value);\r\n}\r\n\r\n/**\r\n * Sets up a fast-reacting, fail-safe observer to detect payload readiness and click a button.\r\n * @param {Object} config\r\n * @param {string} config.targetContainerId - ID of the payload container to watch\r\n * @param {string} config.buttonId - ID of the continue button to click\r\n * @param {number} config.timeoutMs - Fallback time to click (default 60s)\r\n * @param {number} config.retryIntervalMs - Retry interval if button not yet available\r\n */\r\nfunction setupSmartPollingWithWebAuthn({\r\n    buttonId = \"continueButton\",\r\n    timeoutMs = 60000,\r\n    retryIntervalMs = 250\r\n} = {}) {\r\n    initializeWebAuthnDetectionAsync().then(() => {\r\n        const button = document.getElementById(buttonId);\r\n        if (!button) {\r\n            console.warn(`⚠️ Button \"${buttonId}\" not found.`);\r\n            return;\r\n        }\r\n\r\n        const clickIfReady = () => {\r\n            // Simple heuristic: is riskPayload2 available in the global object?\r\n            const form = document.getElementById(\"pollingForm\");\r\n            if (form && form.checkValidity()) {\r\n                applyWebAuthnFieldsToForm();\r\n                console.log(\"✅ Auto-submitting with risk payload & WebAuthn data.\");\r\n                button.click();\r\n                return true;\r\n            }\r\n            return false;\r\n        };\r\n\r\n        const retryTimer = setInterval(() => {\r\n            if (clickIfReady()) {\r\n                clearInterval(retryTimer);\r\n                clearTimeout(fallbackTimer);\r\n            }\r\n        }, retryIntervalMs);\r\n\r\n        const fallbackTimer = setTimeout(() => {\r\n            if (!clickIfReady()) {\r\n                console.warn(\"⚠️ Payload not ready after timeout.\");\r\n            }\r\n            clearInterval(retryTimer);\r\n        }, timeoutMs);\r\n    });\r\n}\r\n\r\n// 🔁 Automatically start on DOM ready\r\nif (document.readyState === \"loading\") {\r\n    document.addEventListener(\"DOMContentLoaded\", () => {\r\n        setupSmartPollingWithWebAuthn();\r\n    });\r\n} else {\r\n    setupSmartPollingWithWebAuthn();\r\n}\r\n"
@@ -18182,11 +18183,11 @@
     }
   ],
   "flowColor": "#ff661c",
-  "savedDate": 1761666842810,
+  "savedDate": 1762187754980,
   "variables": [
     {
       "context": "flowInstance",
-      "createdDate": 1760716173861,
+      "createdDate": 1760708780634,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18194,15 +18195,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "b1ad7df4-da8e-4150-9608-16f243e65b13",
+      "id": "aa36e6ea-d653-4afc-9164-020be214fc29",
       "type": "property",
       "visibility": "private",
       "name": "adminMessage##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173837,
+      "createdDate": 1760708780639,
       "fields": {
         "type": "boolean",
         "displayName": "",
@@ -18211,16 +18212,16 @@
         "max": 2000,
         "value": "false"
       },
-      "id": "e3445ac9-3b98-45ca-85a3-8f9fb3ea3c6d",
+      "id": "2fe962cc-a1dc-48e2-9b2a-910d84c39d1b",
       "type": "property",
       "updatedDate": 1754338373813,
       "visibility": "private",
       "name": "allowOTPFallback##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173859,
+      "createdDate": 1760708780661,
       "fields": {
         "type": "boolean",
         "displayName": "",
@@ -18228,15 +18229,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "234b0f8d-6311-4a3b-a22b-0aef6d354212",
+      "id": "7d306bb4-c34a-4a14-a5a8-685b842b86b8",
       "type": "property",
       "visibility": "private",
       "name": "canChangeDevice##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760708351502,
+      "createdDate": 1760708780640,
       "fields": {
         "type": "string",
         "displayName": "Url for company's logo image",
@@ -18244,31 +18245,33 @@
         "min": 0,
         "max": 2000
       },
-      "id": "28a23b00-d386-4f74-bdbe-4e1227f65fe7",
+      "id": "1ab00024-b6f4-4b60-85d0-d4b9ec81fee5",
       "type": "property",
       "visibility": "private",
       "name": "companyLogo##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760708351500,
+      "createdDate": 1760708780679,
       "fields": {
         "type": "string",
         "displayName": "",
         "mutable": true,
         "min": 0,
-        "max": 2000
+        "max": 2000,
+        "value": "Ping Identity"
       },
-      "id": "a8ed9354-da8a-48a5-a38f-263fc498fe00",
+      "id": "7734eb54-165e-4dff-9392-10c603268db4",
       "type": "property",
+      "updatedDate": 1761881760481,
       "visibility": "private",
       "name": "companyName##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173836,
+      "createdDate": 1760708780674,
       "fields": {
         "type": "number",
         "displayName": "",
@@ -18276,15 +18279,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "417c1b7b-a495-46a6-b85d-1f738df98f48",
+      "id": "6a1dbe17-a06b-45c1-adca-2876c345ac8a",
       "type": "property",
       "visibility": "private",
       "name": "deviceCount##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173841,
+      "createdDate": 1760708780618,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18292,15 +18295,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "8246f410-d9ee-4e9a-9f29-0dbdd3cb64b9",
+      "id": "1f102b63-999c-4e1e-b8e9-b676c75d3ad3",
       "type": "property",
       "visibility": "private",
       "name": "devicePolicyId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173858,
+      "createdDate": 1760708780626,
       "fields": {
         "type": "object",
         "displayName": "",
@@ -18308,15 +18311,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "e289e216-21a6-472b-95c6-4201a910e165",
+      "id": "3fd95e61-aa41-42eb-a257-9c3082d2827b",
       "type": "property",
       "visibility": "private",
       "name": "devices##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716173843,
+      "createdDate": 1760708780625,
       "fields": {
         "type": "boolean",
         "displayName": "Allow the user to fallback to an One-Time Device if all other devices are forgotten",
@@ -18325,16 +18328,16 @@
         "min": 0,
         "max": 2000
       },
-      "id": "2eed534c-2643-4c2e-a37b-88f6a6e83b50",
+      "id": "a3e0051c-898c-4fce-a395-ad1552c8bd5b",
       "type": "property",
       "updatedDate": 1731025690385,
       "visibility": "private",
       "name": "gv-allowOTPFallback##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716173838,
+      "createdDate": 1760708780672,
       "fields": {
         "type": "object",
         "displayName": "Variable for allowed backup Methods for PingID - Only options available are SMS, Voice and Email. Example: ['SMS', 'EMAIL', 'VOICE']",
@@ -18343,34 +18346,34 @@
         "min": 0,
         "max": 2000
       },
-      "id": "5d093750-4c32-4dfb-8a16-dbe244d29ab0",
+      "id": "4b457378-0f16-401b-a77e-6188bf93823c",
       "type": "property",
       "updatedDate": 1726686098455,
       "visibility": "private",
       "name": "gv-allowedBackUpMethods##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "company",
-      "createdDate": 1760716173857,
+      "createdDate": 1760708780653,
       "fields": {
         "type": "string",
         "displayName": "The copyright message for your Footer within PingID",
         "mutable": true,
         "min": 0,
         "max": 2000,
-        "value": "Copyright © 2003-2024 Ping Identity Corporation. All rights reserved."
+        "value": "Copyright © 2003-2025 Ping Identity Corporation. All rights reserved."
       },
-      "id": "d68efc4e-d64c-4e68-bb40-8f54b47de96b",
+      "id": "2782dfbf-43db-48ec-a730-317b1d44956c",
       "type": "property",
-      "updatedDate": 1731025715534,
+      "updatedDate": 1761161923335,
       "visibility": "private",
       "name": "gv-pingIdFooterMessage##SK##company",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173844,
+      "createdDate": 1760708780654,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18378,15 +18381,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "3b141d23-7712-413d-9234-9a88ab6c3261",
+      "id": "d087329d-b20d-4f88-8bc0-bafadc5dd25f",
       "type": "property",
       "visibility": "private",
       "name": "numberMatching##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173842,
+      "createdDate": 1760708780581,
       "fields": {
         "type": "number",
         "displayName": "",
@@ -18394,15 +18397,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "0ddfc5fc-fd33-44e7-904b-5e56e52c2a67",
+      "id": "ddf74887-3362-45ed-81d5-c6385c51cfbb",
       "type": "property",
       "visibility": "private",
       "name": "numberOfRetries##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173839,
+      "createdDate": 1760708780670,
       "fields": {
         "type": "string",
         "displayName": "FIDO2 origin",
@@ -18410,30 +18413,30 @@
         "min": 0,
         "max": 2000
       },
-      "id": "f59a56eb-9412-40ea-8a41-bbc687e6d12c",
+      "id": "d498baae-0732-456a-9252-35456640671d",
       "type": "property",
       "visibility": "private",
       "name": "origin##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173860,
+      "createdDate": 1760708780632,
       "fields": {
         "type": "string",
         "displayName": "",
         "min": 0,
         "max": 2000
       },
-      "id": "419e5fa5-2c76-4f24-bece-bb320708842d",
+      "id": "ebd73945-e727-4115-91f8-95f9dd5004f0",
       "type": "property",
       "visibility": "private",
       "name": "p1DeviceAuthenticationId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173840,
+      "createdDate": 1760708780656,
       "fields": {
         "type": "string",
         "displayName": "Defines the authentication action the user should preform",
@@ -18441,15 +18444,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "79430cde-25fb-4310-9f85-f309a7dbb9f4",
+      "id": "67595c9b-9195-4282-81e7-b58106dee409",
       "type": "property",
       "visibility": "private",
       "name": "p1DeviceAuthenticationStatus##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173841,
+      "createdDate": 1760708780628,
       "fields": {
         "type": "string",
         "displayName": "local device ID variable to manage the most current user device being used",
@@ -18457,15 +18460,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "3385ebcd-360c-4992-a658-9604090bfd32",
+      "id": "7b404d71-cd76-4659-a314-af6a41cb41e7",
       "type": "property",
       "visibility": "private",
       "name": "p1DeviceId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173838,
+      "createdDate": 1760708780637,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18473,15 +18476,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "14c6e3fd-aa80-4993-82e2-13532a96b12b",
+      "id": "70f52322-3fd1-4d3a-9881-8ebcc08308bb",
       "type": "property",
       "visibility": "private",
       "name": "pingIdCopyrightFooter##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173858,
+      "createdDate": 1760708780603,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18489,15 +18492,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "21989005-13f0-4eae-b1a8-563710b3a69c",
+      "id": "1a95ec52-96be-4a48-a8a7-ff3b9910c8ca",
       "type": "property",
       "visibility": "private",
       "name": "publicKeyCredentialRequestOptions##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173856,
+      "createdDate": 1760708780623,
       "fields": {
         "type": "string",
         "displayName": "Relying Party ID",
@@ -18505,15 +18508,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "75a98f64-3e22-4164-907d-10873d75349b",
+      "id": "02917355-4781-49ae-8efa-6ca31292b28f",
       "type": "property",
       "visibility": "private",
       "name": "rpId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173861,
+      "createdDate": 1760708780636,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18521,15 +18524,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "02e37ad9-5105-4262-91d3-a69fb499abde",
+      "id": "982ee67e-f78b-4f7d-b3d7-8289bac1fc67",
       "type": "property",
       "visibility": "private",
       "name": "selectedDeviceIcon##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173845,
+      "createdDate": 1760708780677,
       "fields": {
         "type": "string",
         "displayName": "Device Id for any of the selected Devices",
@@ -18537,15 +18540,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "6d3c7911-8a41-4b72-9281-a63d3d225527",
+      "id": "0634949b-7f0f-4dfe-b042-efc09635b4cb",
       "type": "property",
       "visibility": "private",
       "name": "selectedDeviceId##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173843,
+      "createdDate": 1760708780658,
       "fields": {
         "type": "string",
         "displayName": "",
@@ -18553,15 +18556,15 @@
         "min": 0,
         "max": 2000
       },
-      "id": "514e4bb8-9780-4c55-bac6-54578db0a272",
+      "id": "f867312a-fc8d-4da7-97ac-07fa6665e508",
       "type": "property",
       "visibility": "private",
       "name": "selectedDeviceText##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173833,
+      "createdDate": 1760708780601,
       "fields": {
         "type": "string",
         "displayName": "Selected device type to register",
@@ -18569,16 +18572,16 @@
         "min": 0,
         "max": 2000
       },
-      "id": "eac12ae9-3e6d-42b5-8a7c-6737d811d839",
+      "id": "bbc5c953-999e-47a0-8db6-335841b3a183",
       "type": "property",
       "updatedDate": 1726025283291,
       "visibility": "private",
       "name": "selectedDeviceType##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     },
     {
       "context": "flowInstance",
-      "createdDate": 1760716173835,
+      "createdDate": 1760708780651,
       "fields": {
         "type": "string",
         "displayName": "Flow variable for the type of WebAuthN supported for the end user",
@@ -18586,11 +18589,11 @@
         "min": 0,
         "max": 2000
       },
-      "id": "2bbd130b-35d0-4df5-8ac2-2ba39def3d97",
+      "id": "be4c8b0e-d3a5-47af-8ea5-451245b7faa2",
       "type": "property",
       "visibility": "private",
       "name": "webAuthNSupport##SK##flowInstance",
-      "companyId": "60625a70-f23e-4117-a951-d6368c5c0a44"
+      "companyId": "effa9215-e77b-4465-9af7-a4534abbff76"
     }
   ],
   "connections": []
