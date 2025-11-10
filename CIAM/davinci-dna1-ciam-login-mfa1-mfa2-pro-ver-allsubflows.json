@@ -47830,13 +47830,13 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"riskEvaluationId\",\n        \"data\": \"{{global.variables.riskEvaluationId}}\",\n        \"tooltip\": \"{{global.variables.riskEvaluationId}}\",\n        \"children\": [\n          {\n            \"text\": \"riskEvaluationId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "completionStatus": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"SUCCESS\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"FAILED\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Complete Risk Evaluation"
                   },
                   "nodeDescription": {
-                    "value": "With No score being detected. The users journey will end here with a SUCCESS for a successful stopped attempt of Risk"
+                    "value": "With No score being detected. The users journey will end here with a FAILED for a successful stopped attempt of Risk"
                   }
                 },
                 "idUnique": "lx51tjblgm"
@@ -48043,13 +48043,13 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"riskEvaluationId\",\n        \"data\": \"{{global.variables.riskEvaluationId}}\",\n        \"tooltip\": \"{{global.variables.riskEvaluationId}}\",\n        \"children\": [\n          {\n            \"text\": \"riskEvaluationId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "completionStatus": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"SUCCESS\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"FAILED\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Complete Risk Evaluation"
                   },
                   "nodeDescription": {
-                    "value": "With BOT being detected. The users journey will end here with a SUCCESS for a successful stopped attempt of Risk"
+                    "value": "With BOT being detected. The users journey will end here with a FAILED for a successful stopped attempt of Risk"
                   }
                 },
                 "idUnique": "lx51tjblgm"
@@ -49486,13 +49486,13 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"riskEvaluationId\",\n        \"data\": \"{{global.variables.riskEvaluationId}}\",\n        \"tooltip\": \"{{global.variables.riskEvaluationId}}\",\n        \"children\": [\n          {\n            \"text\": \"riskEvaluationId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "completionStatus": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"SUCCESS\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"FAILED\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Complete Risk Evaluation"
                   },
                   "nodeDescription": {
-                    "value": "With AITM being detected. The users journey will end here with a SUCCESS for a successful stopped attempt of Risk"
+                    "value": "With AITM being detected. The users journey will end here with a FAILED for a successful stopped attempt of Risk"
                   }
                 },
                 "idUnique": "lx51tjblgm"
@@ -49629,13 +49629,13 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"riskEvaluationId\",\n        \"data\": \"{{global.variables.riskEvaluationId}}\",\n        \"tooltip\": \"{{global.variables.riskEvaluationId}}\",\n        \"children\": [\n          {\n            \"text\": \"riskEvaluationId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "completionStatus": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"SUCCESS\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"FAILED\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Complete Risk Evaluation"
                   },
                   "nodeDescription": {
-                    "value": "With TEMP_EMAIL being detected. The users journey will end here with a SUCCESS for a successful stopped attempt of Risk"
+                    "value": "With TEMP_EMAIL being detected. The users journey will end here with a FAILED for a successful stopped attempt of Risk"
                   }
                 },
                 "idUnique": "lx51tjblgm"
@@ -49772,13 +49772,13 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"riskEvaluationId\",\n        \"data\": \"{{global.variables.riskEvaluationId}}\",\n        \"tooltip\": \"{{global.variables.riskEvaluationId}}\",\n        \"children\": [\n          {\n            \"text\": \"riskEvaluationId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "completionStatus": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"SUCCESS\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"FAILED\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Complete Risk Evaluation"
                   },
                   "nodeDescription": {
-                    "value": "With a Geo Velocity Fraud being detected. The users journey will end here with a SUCCESS for a successful stopped attempt of Risk"
+                    "value": "With a Geo Velocity Fraud being detected. The users journey will end here with a FAILED for a successful stopped attempt of Risk"
                   }
                 },
                 "idUnique": "lx51tjblgm"
