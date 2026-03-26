@@ -833,7 +833,7 @@
                 "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"400\"\n      }\n    ]\n  }\n]"
               },
               "errorMessage": {
-                "value": "error"
+                "value": "invalid_request"
               },
               "errorDescription": {
                 "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"errorMessage\",\n        \"data\": \"{{local.1r7nicubyf.payload.output.errorMessage}}\",\n        \"tooltip\": \"{{local.1r7nicubyf.payload.output.errorMessage}}\",\n        \"children\": [\n          {\n            \"text\": \"errorMessage\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
